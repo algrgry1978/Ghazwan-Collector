@@ -1,0 +1,39 @@
+name: Professional Port-Specific Collector
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # تحديث آلي كل 6 ساعات
+  workflow_dispatch: # زر التشغيل اليدوي
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Fetch and Filter Servers
+        run: |
+          # تصفير الملف القديم وإنشاء ملف مؤقت
+          touch temp_all.txt
+          
+          # جلب البيانات من مصادرك الأربعة المختارة
+          curl -sL "https://shz.al/~WangCai" >> temp_all.txt
+          curl -sL "https://b2n.ir/v2ray-configs" >> temp_all.txt
+          curl -sL "https://raw.githubusercontent.com/yebekhe/vpn-fail/main/sub-link" >> temp_all.txt
+          curl -sL "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/super-sub.txt" >> temp_all.txt
+          
+          # التصفية للمنافذ 443 و 80 حصراً
+          echo "# Professional Server List - Ports 443 & 80 Only" > mysubs.txt
+          echo "# Project: Baby House - Optimized by Ghazwan Al-Jarjari" >> mysubs.txt
+          
+          # استخراج الروابط التي تحتوي على المنافذ المطلوبة فقط
+          grep -E ":443|:80" temp_all.txt >> mysubs.txt || echo "No servers found for these ports yet" >> mysubs.txt
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "Ghazwan-Designer"
+          git config --global user.email "ghazwan@example.com"
+          git add mysubs.txt
+          # الحفظ فقط في حال وجود تغييرات فعلية
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated Filtered Sync" && git push)
