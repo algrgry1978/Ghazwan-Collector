@@ -2,8 +2,8 @@ name: Professional Port-Specific Collector
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # تحديث آلي كل 6 ساعات
-  workflow_dispatch: # زر التشغيل اليدوي
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -12,28 +12,33 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Fetch and Filter Servers
+      - name: Fetch, Decode and Filter
         run: |
-          # تصفير الملف القديم وإنشاء ملف مؤقت
-          touch temp_all.txt
-          
-          # جلب البيانات من مصادرك الأربعة المختارة
-          curl -sL "https://shz.al/~WangCai" >> temp_all.txt
-          curl -sL "https://b2n.ir/v2ray-configs" >> temp_all.txt
-          curl -sL "https://raw.githubusercontent.com/yebekhe/vpn-fail/main/sub-link" >> temp_all.txt
-          curl -sL "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/super-sub.txt" >> temp_all.txt
-          
-          # التصفية للمنافذ 443 و 80 حصراً
+          # إنشاء ترويسة الملف
           echo "# Professional Server List - Ports 443 & 80 Only" > mysubs.txt
           echo "# Project: Baby House - Optimized by Ghazwan Al-Jarjari" >> mysubs.txt
           
-          # استخراج الروابط التي تحتوي على المنافذ المطلوبة فقط
-          grep -E ":443|:80" temp_all.txt >> mysubs.txt || echo "No servers found for these ports yet" >> mysubs.txt
+          # جلب البيانات وفك تشفيرها (Base64) ثم البحث عن المنافذ
+          sources=(
+            "https://shz.al/~WangCai"
+            "https://b2n.ir/v2ray-configs"
+            "https://raw.githubusercontent.com/yebekhe/vpn-fail/main/sub-link"
+            "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/super-sub.txt"
+          )
+
+          for url in "${sources[@]}"; do
+            # جلب المحتوى وفك التشفير إذا كان Base64، ثم البحث عن المنافذ المطلوبة
+            curl -sL "$url" | base64 -d 2>/dev/null | grep -E ":443|:80" >> mysubs.txt || \
+            curl -sL "$url" | grep -E ":443|:80" >> mysubs.txt
+          done
+
+          # تنظيف الملف من التكرار
+          sort -u mysubs.txt -o mysubs.txt
+          echo "# Updated by Ghazwan Al-Jarjari Factory" >> mysubs.txt
 
       - name: Commit and Push
         run: |
           git config --global user.name "Ghazwan-Designer"
           git config --global user.email "ghazwan@example.com"
           git add mysubs.txt
-          # الحفظ فقط في حال وجود تغييرات فعلية
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated Filtered Sync" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Advanced Port-Filtered Sync" && git push)
