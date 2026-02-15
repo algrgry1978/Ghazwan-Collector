@@ -1,8 +1,8 @@
-name: Ghazwan Pro-Collector (Zain-IQ Edition)
+name: Ghazwan Only-Address Injection
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # تحديث كل 4 ساعات آلياً
+    - cron: '0 */4 * * *'
   workflow_dispatch: 
 
 jobs:
@@ -12,48 +12,39 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Advanced Server Injection and Branding
+      - name: Inject Host into Address Field Only
         run: |
-          # 1. إعداد ترويسة الملف مع البصمة الزمنية
-          TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p') # توقيت العراق
-          echo "###############################################" > mysubs.txt
-          echo "# OWNER: GHAZWAN AL-JARJARI" >> mysubs.txt
-          echo "# PROJECT: BABY HOUSE & HOME DESIGN" >> mysubs.txt
-          echo "# LAST UPDATE: $TIMESTAMP (BAGHDAD)" >> mysubs.txt
-          echo "###############################################" >> mysubs.txt
-          
-          # 2. جمع المواد الخام من المصادر العالمية
-          touch raw_data.txt
-          curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw_data.txt
+          # 1. جمع السيرفرات العالمية
+          curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" > raw_data.txt
           curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw_data.txt
-          curl -sL "https://raw.githubusercontent.com/MatinGhanbari/v2ray-config/main/all.txt" >> raw_data.txt
           
-          # 3. تنظيف البيانات (حذف SS، اختيار منافذ 443/80، حذف الرموز الغريبة)
-          grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | grep -v "Your_Subscription" | sort -u > clean_data.txt
+          # 2. تنظيف وفلترة (حذف SS وإبقاء 443/80)
+          grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | sort -u > clean_data.txt
 
-          # 4. عملية "الحقن الجراحي" للهوستات الذهبية الخاصة بغزوان
-          # سنقسم السيرفرات لـ 5 مجموعات، كل مجموعة تأخذ هوست معين لضمان التنوع والسرعة
-          
-          # هوست Viber Out LP
-          sed -E 's/(sni|host)=[^&?#]*/\1=Viberout-lp.viber.com/g' clean_data.txt | head -n 200 | sed 's/#.*/#Ghazwan-Viber-Out/' >> mysubs.txt
-          
-          # هوست Viber LP
-          sed -E 's/(sni|host)=[^&?#]*/\1=lp.viber.com/g' clean_data.txt | sed -n '201,400p' | sed 's/#.*/#Ghazwan-Viber-LP/' >> mysubs.txt
-          
-          # هوست Braze Images (سريع جداً للصور)
-          sed -E 's/(sni|host)=[^&?#]*/\1=braze-images.com/g' clean_data.txt | sed -n '401,600p' | sed 's/#.*/#Ghazwan-Braze-Images/' >> mysubs.txt
-          
-          # هوست Braze CDN (الأفضل للرفع)
-          sed -E 's/(sni|host)=[^&?#]*/\1=cdn.braze.com/g' clean_data.txt | sed -n '601,800p' | sed 's/#.*/#Ghazwan-Braze-CDN/' >> mysubs.txt
-          
-          # هوست Braze Go
-          sed -E 's/(sni|host)=[^&?#]*/\1=go.braze.com/g' clean_data.txt | sed -n '801,1000p' | sed 's/#.*/#Ghazwan-Braze-Go/' >> mysubs.txt
+          # 3. تفريغ الملف القديم للبدء بالحقن الجديد
+          echo "# Last Update: $(date)" > mysubs.txt
 
-          echo "# TOTAL INJECTED SERVERS: $(wc -l < mysubs.txt)" >> mysubs.txt
+          # 4. عملية استبدال العنوان (Address) فقط مع الحفاظ على الباقي
+          # سيتم تقسيم السيرفرات على هوستاتك الخمسة بالتساوي
+          
+          # Viberout-lp.viber.com
+          sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' clean_data.txt | head -n 200 >> mysubs.txt
+          
+          # lp.viber.com
+          sed -E 's/@[^:]+:/@lp.viber.com:/g' clean_data.txt | sed -n '201,400p' >> mysubs.txt
+          
+          # braze-images.com
+          sed -E 's/@[^:]+:/@braze-images.com:/g' clean_data.txt | sed -n '401,600p' >> mysubs.txt
+          
+          # cdn.braze.com
+          sed -E 's/@[^:]+:/@cdn.braze.com:/g' clean_data.txt | sed -n '601,800p' >> mysubs.txt
+          
+          # go.braze.com
+          sed -E 's/@[^:]+:/@go.braze.com:/g' clean_data.txt | sed -n '801,1000p' >> mysubs.txt
 
-      - name: Commit and Push to Master
+      - name: Push Changes
         run: |
-          git config --global user.name "Ghazwan-Pro-Designer"
-          git config --global user.email "ghazwan@babyhouse.com"
+          git config --global user.name "Ghazwan-Pro"
+          git config --global user.email "ghazwan@pro.com"
           git add mysubs.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-Injected Golden Hosts $TIMESTAMP" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Only Address Injected" && git push)
