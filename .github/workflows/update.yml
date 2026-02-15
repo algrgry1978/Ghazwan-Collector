@@ -1,8 +1,8 @@
-name: Ghazwan Pro-Collector
+name: Ghazwan Pro-Collector (Zain-IQ Edition)
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */4 * * *' # تحديث كل 4 ساعات آلياً
   workflow_dispatch: 
 
 jobs:
@@ -12,29 +12,48 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Global Harvest - No SS - Branding
+      - name: Advanced Server Injection and Branding
         run: |
-          # ترويسة الملف
-          echo "# Professional Server List - Ports 443 & 80 Only" > mysubs.txt
-          echo "# Filter: No SS Configs - Project: Baby House" >> mysubs.txt
+          # 1. إعداد ترويسة الملف مع البصمة الزمنية
+          TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p') # توقيت العراق
+          echo "###############################################" > mysubs.txt
+          echo "# OWNER: GHAZWAN AL-JARJARI" >> mysubs.txt
+          echo "# PROJECT: BABY HOUSE & HOME DESIGN" >> mysubs.txt
+          echo "# LAST UPDATE: $TIMESTAMP (BAGHDAD)" >> mysubs.txt
+          echo "###############################################" >> mysubs.txt
           
-          # تجميع من المصادر العالمية
+          # 2. جمع المواد الخام من المصادر العالمية
           touch raw_data.txt
           curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw_data.txt
           curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw_data.txt
           curl -sL "https://raw.githubusercontent.com/MatinGhanbari/v2ray-config/main/all.txt" >> raw_data.txt
           
-          # الفلترة الذكية:
-          # 1. اختيار المنافذ 443 و 80
-          # 2. حذف أي رابط يبدأ بـ ss:// (عبر أمر grep -v)
-          # 3. وضع بصمة "Ghazwan-Pro"
-          grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | sed 's/#.*/#Ghazwan-Pro-Server/' | sort -u >> mysubs.txt
+          # 3. تنظيف البيانات (حذف SS، اختيار منافذ 443/80، حذف الرموز الغريبة)
+          grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | grep -v "Your_Subscription" | sort -u > clean_data.txt
 
-          echo "# Total Verified Servers: $(wc -l < mysubs.txt)" >> mysubs.txt
+          # 4. عملية "الحقن الجراحي" للهوستات الذهبية الخاصة بغزوان
+          # سنقسم السيرفرات لـ 5 مجموعات، كل مجموعة تأخذ هوست معين لضمان التنوع والسرعة
+          
+          # هوست Viber Out LP
+          sed -E 's/(sni|host)=[^&?#]*/\1=Viberout-lp.viber.com/g' clean_data.txt | head -n 200 | sed 's/#.*/#Ghazwan-Viber-Out/' >> mysubs.txt
+          
+          # هوست Viber LP
+          sed -E 's/(sni|host)=[^&?#]*/\1=lp.viber.com/g' clean_data.txt | sed -n '201,400p' | sed 's/#.*/#Ghazwan-Viber-LP/' >> mysubs.txt
+          
+          # هوست Braze Images (سريع جداً للصور)
+          sed -E 's/(sni|host)=[^&?#]*/\1=braze-images.com/g' clean_data.txt | sed -n '401,600p' | sed 's/#.*/#Ghazwan-Braze-Images/' >> mysubs.txt
+          
+          # هوست Braze CDN (الأفضل للرفع)
+          sed -E 's/(sni|host)=[^&?#]*/\1=cdn.braze.com/g' clean_data.txt | sed -n '601,800p' | sed 's/#.*/#Ghazwan-Braze-CDN/' >> mysubs.txt
+          
+          # هوست Braze Go
+          sed -E 's/(sni|host)=[^&?#]*/\1=go.braze.com/g' clean_data.txt | sed -n '801,1000p' | sed 's/#.*/#Ghazwan-Braze-Go/' >> mysubs.txt
 
-      - name: Commit and Push
+          echo "# TOTAL INJECTED SERVERS: $(wc -l < mysubs.txt)" >> mysubs.txt
+
+      - name: Commit and Push to Master
         run: |
-          git config --global user.name "Ghazwan-Designer"
-          git config --global user.email "ghazwan@example.com"
+          git config --global user.name "Ghazwan-Pro-Designer"
+          git config --global user.email "ghazwan@babyhouse.com"
           git add mysubs.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Clean Sync - No SS Protocols" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-Injected Golden Hosts $TIMESTAMP" && git push)
