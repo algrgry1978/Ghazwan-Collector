@@ -1,8 +1,8 @@
-name: Ghazwan Only-Address Injection
+name: Ghazwan_pro
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */4 * * *' 
   workflow_dispatch: 
 
 jobs:
@@ -12,39 +12,47 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Inject Host into Address Field Only
+      - name: Fetch and Inject Golden Hosts
         run: |
-          # 1. جمع السيرفرات العالمية
-          curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" > raw_data.txt
+          # 1. إعداد الترويسة
+          TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
+          echo "###############################################" > mysubs.txt
+          echo "# BRAND: Ghazwan_pro" >> mysubs.txt
+          echo "# SOURCES: WangCai + Global" >> mysubs.txt
+          echo "# UPDATE: $TIMESTAMP (BAGHDAD)" >> mysubs.txt
+          echo "###############################################" >> mysubs.txt
+          
+          # 2. جمع السيرفرات (إضافة المصدر الجديد WangCai)
+          touch raw_data.txt
+          curl -sL "https://shz.al/~WangCai" >> raw_data.txt
+          curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw_data.txt
           curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw_data.txt
           
-          # 2. تنظيف وفلترة (حذف SS وإبقاء 443/80)
+          # 3. تنظيف البيانات (حذف SS، إبقاء 443/80، حذف الروابط المعطوبة)
           grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | sort -u > clean_data.txt
 
-          # 3. تفريغ الملف القديم للبدء بالحقن الجديد
-          echo "# Last Update: $(date)" > mysubs.txt
-
-          # 4. عملية استبدال العنوان (Address) فقط مع الحفاظ على الباقي
-          # سيتم تقسيم السيرفرات على هوستاتك الخمسة بالتساوي
+          # 4. حقن الهوستات في خانة العنوان (Address) - تقسيم السيرفرات بالتساوي
           
           # Viberout-lp.viber.com
-          sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' clean_data.txt | head -n 200 >> mysubs.txt
+          sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' clean_data.txt | head -n 300 >> mysubs.txt
           
           # lp.viber.com
-          sed -E 's/@[^:]+:/@lp.viber.com:/g' clean_data.txt | sed -n '201,400p' >> mysubs.txt
+          sed -E 's/@[^:]+:/@lp.viber.com:/g' clean_data.txt | sed -n '301,600p' >> mysubs.txt
           
           # braze-images.com
-          sed -E 's/@[^:]+:/@braze-images.com:/g' clean_data.txt | sed -n '401,600p' >> mysubs.txt
+          sed -E 's/@[^:]+:/@braze-images.com:/g' clean_data.txt | sed -n '601,900p' >> mysubs.txt
           
           # cdn.braze.com
-          sed -E 's/@[^:]+:/@cdn.braze.com:/g' clean_data.txt | sed -n '601,800p' >> mysubs.txt
+          sed -E 's/@[^:]+:/@cdn.braze.com:/g' clean_data.txt | sed -n '901,1200p' >> mysubs.txt
           
           # go.braze.com
-          sed -E 's/@[^:]+:/@go.braze.com:/g' clean_data.txt | sed -n '801,1000p' >> mysubs.txt
+          sed -E 's/@[^:]+:/@go.braze.com:/g' clean_data.txt | sed -n '1201,1500p' >> mysubs.txt
 
-      - name: Push Changes
+          echo "# TOTAL SERVERS AFTER INJECTION: $(wc -l < mysubs.txt)" >> mysubs.txt
+
+      - name: Deploy Update
         run: |
-          git config --global user.name "Ghazwan-Pro"
+          git config --global user.name "Ghazwan_pro"
           git config --global user.email "ghazwan@pro.com"
           git add mysubs.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Only Address Injected" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Ghazwan_pro + WangCai Source $TIMESTAMP" && git push)
