@@ -26,7 +26,7 @@ jobs:
           curl -sL "https://shz.al/~WangCai" >> raw_data.txt
           curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw_data.txt
           curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw_data.txt
-          
+          curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/Sub1.txt
           # 3. تنظيف البيانات (إبقاء المنافذ 443/80 وحذف SS)
           grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | sort -u > clean_data.txt
 
