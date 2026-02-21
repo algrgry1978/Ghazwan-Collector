@@ -1,4 +1,4 @@
-name: Original_Remark_Script
+name: Server_Host_Rotation_Script
 
 on:
   schedule:
@@ -12,43 +12,37 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Inject Host and Keep Original Remark
+      - name: Rotate Hosts for Each Server
         run: |
           # 1. إعداد ترويسة الملف
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs.txt
+          echo "# MODE: Host Rotation (5 Hosts per Server)" >> mysubs.txt
           echo "# UPDATE: $TIMESTAMP (BAGHDAD)" >> mysubs.txt
           echo "###############################################" >> mysubs.txt
           
-          # 2. جمع السيرفرات من المصادر
+          # 2. جمع السيرفرات وتنظيفها
           touch raw_data.txt
           curl -sL "https://shz.al/~WangCai" >> raw_data.txt
           curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw_data.txt
           curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw_data.txt
           
-          # 3. تنظيف البيانات (إبقاء المنافذ 443/80 وحذف SS)
-          grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | sort -u > clean_data.txt
+          # إبقاء أول 100 سيرفر فريد فقط لتجنب ضخامة الملف (بما أننا سنكررها 5 مرات)
+          grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | sort -u | head -n 100 > clean_data.txt
 
-          # 4. تغيير العنوان (Address) فقط مع الحفاظ على الـ Remark الأصلي
-          
-          # Viberout-lp.viber.com
-          sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' clean_data.txt | head -n 300 >> mysubs.txt
-          
-          # lp.viber.com
-          sed -E 's/@[^:]+:/@lp.viber.com:/g' clean_data.txt | sed -n '301,600p' >> mysubs.txt
-          
-          # braze-images.com
-          sed -E 's/@[^:]+:/@braze-images.com:/g' clean_data.txt | sed -n '601,900p' >> mysubs.txt
-          
-          # cdn.braze.com
-          sed -E 's/@[^:]+:/@cdn.braze.com:/g' clean_data.txt | sed -n '901,1200p' >> mysubs.txt
-          
-          # go.braze.com
-          sed -E 's/@[^:]+:/@go.braze.com:/g' clean_data.txt | sed -n '1201,1500p' >> mysubs.txt
+          # 3. عملية التدوير (Rotation)
+          # سنأخذ كل سيرفر ونطبقه على الـ 5 هوستات
+          while read -r line; do
+            echo "$line" | sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' >> mysubs.txt
+            echo "$line" | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs.txt
+            echo "$line" | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs.txt
+            echo "$line" | sed -E 's/@[^:]+:/@cdn.braze.com:/g' >> mysubs.txt
+            echo "$line" | sed -E 's/@[^:]+:/@go.braze.com:/g' >> mysubs.txt
+          done < clean_data.txt
 
       - name: Push to Master
         run: |
           git config --global user.name "Auto-Updater"
           git config --global user.email "updater@action.com"
           git add mysubs.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Configs with Original Remarks $TIMESTAMP" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Host Rotation Update $TIMESTAMP" && git push)
