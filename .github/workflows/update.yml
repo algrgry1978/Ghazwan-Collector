@@ -1,4 +1,4 @@
-name: Ghazwan_pro
+name: Original_Remark_Script
 
 on:
   schedule:
@@ -12,16 +12,15 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Inject Host and Set Brand Name
+      - name: Inject Host and Keep Original Remark
         run: |
           # 1. إعداد ترويسة الملف
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs.txt
-          echo "# BRAND: Ghazwan_pro" >> mysubs.txt
           echo "# UPDATE: $TIMESTAMP (BAGHDAD)" >> mysubs.txt
           echo "###############################################" >> mysubs.txt
           
-          # 2. جمع السيرفرات من المصادر (بما فيها WangCai)
+          # 2. جمع السيرفرات من المصادر
           touch raw_data.txt
           curl -sL "https://shz.al/~WangCai" >> raw_data.txt
           curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw_data.txt
@@ -30,27 +29,26 @@ jobs:
           # 3. تنظيف البيانات (إبقاء المنافذ 443/80 وحذف SS)
           grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | sort -u > clean_data.txt
 
-          # 4. العملية المزدوجة: تغيير العنوان (Address) + تغيير الاسم إلى Ghazwan_pro
-          # سنقوم بمسح كل شيء بعد علامة # ونكتب اسمك مكانه
+          # 4. تغيير العنوان (Address) فقط مع الحفاظ على الـ Remark الأصلي
           
           # Viberout-lp.viber.com
-          sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' clean_data.txt | head -n 300 | sed 's/#.*/#Ghazwan_pro/' >> mysubs.txt
+          sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' clean_data.txt | head -n 300 >> mysubs.txt
           
           # lp.viber.com
-          sed -E 's/@[^:]+:/@lp.viber.com:/g' clean_data.txt | sed -n '301,600p' | sed 's/#.*/#Ghazwan_pro/' >> mysubs.txt
+          sed -E 's/@[^:]+:/@lp.viber.com:/g' clean_data.txt | sed -n '301,600p' >> mysubs.txt
           
           # braze-images.com
-          sed -E 's/@[^:]+:/@braze-images.com:/g' clean_data.txt | sed -n '601,900p' | sed 's/#.*/#Ghazwan_pro/' >> mysubs.txt
+          sed -E 's/@[^:]+:/@braze-images.com:/g' clean_data.txt | sed -n '601,900p' >> mysubs.txt
           
           # cdn.braze.com
-          sed -E 's/@[^:]+:/@cdn.braze.com:/g' clean_data.txt | sed -n '901,1200p' | sed 's/#.*/#Ghazwan_pro/' >> mysubs.txt
+          sed -E 's/@[^:]+:/@cdn.braze.com:/g' clean_data.txt | sed -n '901,1200p' >> mysubs.txt
           
           # go.braze.com
-          sed -E 's/@[^:]+:/@go.braze.com:/g' clean_data.txt | sed -n '1201,1500p' | sed 's/#.*/#Ghazwan_pro/' >> mysubs.txt
+          sed -E 's/@[^:]+:/@go.braze.com:/g' clean_data.txt | sed -n '1201,1500p' >> mysubs.txt
 
       - name: Push to Master
         run: |
-          git config --global user.name "Ghazwan_pro"
-          git config --global user.email "ghazwan@pro.com"
+          git config --global user.name "Auto-Updater"
+          git config --global user.email "updater@action.com"
           git add mysubs.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Ghazwan_pro Brand Injected $TIMESTAMP" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Configs with Original Remarks $TIMESTAMP" && git push)
