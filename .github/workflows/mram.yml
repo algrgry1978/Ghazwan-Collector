@@ -1,4 +1,4 @@
-name: Ghazwan_Iraq_Final_Fix
+name: Ghazwan_Iraq_Elite_Final
 
 on:
   schedule:
@@ -17,13 +17,13 @@ jobs:
           # 1. التوقيت والترويسة
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs_new.txt
-          echo "# BRAND: Ghazwan_pro - IRAQ FIXED" >> mysubs_new.txt
-          echo "# STATUS: PORT 443 ONLY (CLEAN)" >> mysubs_new.txt
+          echo "# BRAND: Ghazwan_pro - ELITE FIXED" >> mysubs_new.txt
+          echo "# STATUS: PORT 443 ONLY - TLS/WS SUPPORT" >> mysubs_new.txt
           echo "# UPDATE: $TIMESTAMP" >> mysubs_new.txt
           echo "###############################################" >> mysubs_new.txt
           
           touch raw.txt
-          # المصادر القوية (إيران + Multiply + النخبة)
+          # المصادر التي تجلب سيرفرات مشابهة لـ CreationLong والنخبة
           urls=(
             "https://raw.githubusercontent.com/yebekhe/TVip/main/Sub/v2ray.txt"
             "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt"
@@ -35,10 +35,10 @@ jobs:
             curl -sL "$url" >> raw.txt
           done
           
-          # 2. الفلترة الصارمة: بورت 443 فقط وحذف الضعيف
+          # 2. الفلترة الصارمة: بورت 443 حصراً لضمان العمل في العراق وحذف الضعيف
           grep -iE ":443" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "chillguy" | grep -i "tls" | sort -u > clean.txt
 
-          # 3. حقن الهوستات (استبدال العنوان مع الحفاظ على البورت 443 الأصلي دون تكرار)
+          # 3. حقن الهوستات (استبدال العنوان مع الحفاظ على البورت 443 الأصلي بشكل سليم)
           sed -n '1,150p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:/g' >> mysubs_new.txt
           sed -n '151,300p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs_new.txt
           sed -n '301,450p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs_new.txt
@@ -49,5 +49,5 @@ jobs:
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git commit -m "Iraq Clean Port Fix $TIMESTAMP" || exit 0
+          git commit -m "Elite Iraq Fix $TIMESTAMP" || exit 0
           git push
