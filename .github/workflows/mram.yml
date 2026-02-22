@@ -1,4 +1,4 @@
-name: Ghazwan_Ultra_Stable
+name: Ghazwan_Iraq_Only_443_80
 
 on:
   schedule:
@@ -12,36 +12,45 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Collect Elite Servers
+      - name: Collect Elite Servers (Port 443 & 80 Only)
         run: |
+          # 1. التوقيت والترويسة
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs_new.txt
-          echo "# BRAND: Ghazwan_pro - ELITE VERSION" >> mysubs_new.txt
+          echo "# BRAND: Ghazwan_pro - IRAQ OPTIMIZED" >> mysubs_new.txt
+          echo "# STATUS: PORT 443/80 ONLY + TLS" >> mysubs_new.txt
           echo "# UPDATE: $TIMESTAMP" >> mysubs_new.txt
           echo "###############################################" >> mysubs_new.txt
           
           touch raw.txt
-          # المصادر التي أثبتت جدارتها عندك
-          curl -sL "https://raw.githubusercontent.com/yebekhe/TVip/main/Sub/v2ray.txt" >> raw.txt
-          curl -sL "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt" >> raw.txt
-          curl -sL "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt" >> raw.txt
-          
-          # الفلترة الذكية:
-          # 1. إبقاء البروتوكولات القوية فقط
-          # 2. حذف سيرفرات chillguy الضعيفة
-          # 3. حذف المتكرر لتقليل حجم الملف
-          grep -Ei "vmess|vless|trojan" raw.txt | grep -iv "chillguy" | sort -u > clean.txt
+          # المصادر القوية (إيران + Multiply + النخبة)
+          urls=(
+            "https://raw.githubusercontent.com/yebekhe/TVip/main/Sub/v2ray.txt"
+            "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt"
+            "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt"
+            "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt"
+          )
 
-          # حقن الهوستات لضمان التخطي (توزيع 150 سيرفر لكل هوست)
-          sed -n '1,150p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:/g' >> mysubs_new.txt
-          sed -n '151,300p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs_new.txt
-          sed -n '301,450p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs_new.txt
-          sed -n '451,600p' clean.txt | sed -E 's/@[^:]+:/@cdn.braze.com:/g' >> mysubs_new.txt
+          for url in "${urls[@]}"; do
+            curl -sL "$url" >> raw.txt
+          done
+          
+          # 2. الفلترة الصارمة جداً:
+          # - إبقاء بورت 443 و 80 حصراً
+          # - حذف chillguy (الضعيف)
+          # - إبقاء TLS لضمان استقرار الـ ms
+          grep -iE ":443|:80" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "chillguy" | grep -i "tls" | sort -u > clean.txt
+
+          # 3. حقن الهوستات العراقية (توزيع مباشر لضمان تخطي الحجب)
+          sed -n '1,150p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:443/g' >> mysubs_new.txt
+          sed -n '151,300p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:443/g' >> mysubs_new.txt
+          sed -n '301,450p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:443/g' >> mysubs_new.txt
+          sed -n '451,600p' clean.txt | sed -E 's/@[^:]+:/@cdn.braze.com:443/g' >> mysubs_new.txt
 
       - name: Push to Master
         run: |
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git commit -m "Elite Update $TIMESTAMP" || exit 0
+          git commit -m "Iraq Port Fix 443/80 $TIMESTAMP" || exit 0
           git push
