@@ -1,7 +1,7 @@
 ###############################################
-# BRAND: Ghazwan_pro - IRAQ FIXED
-# STATUS: PORT 443 ONLY (CLEAN)
-# UPDATE: 2026-02-22 04:34 PM
+# BRAND: Ghazwan_pro - ELITE FIXED
+# STATUS: PORT 443 ONLY - TLS/WS SUPPORT
+# UPDATE: 2026-02-22 04:42 PM
 ###############################################
 trojan://1338f666-2fcc-4538-bc29-1ebf89624383@viberout-lp.viber.com:443?security=tls&sni=ilop.uk2033.ccwu.cc&alpn=http/1.1&type=ws&host=ilop.uk2033.ccwu.cc&path=/XCLcnSashhgSVE3HOw1VI85y#IP_CF_Config-374
 trojan://1338f666-2fcc-4538-bc29-1ebf89624383@viberout-lp.viber.com:443?security=tls&sni=u8.ok8.ccwu.cc&alpn=http/1.1&type=ws&host=u8.ok8.ccwu.cc&path=/XCLcnSashhgSVE3HOw1VI85y#IP_CF_Config-375
