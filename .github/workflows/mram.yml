@@ -1,4 +1,4 @@
-name: Ghazwan_Iraq_Only_443_80
+name: Ghazwan_Iraq_Final_Fix
 
 on:
   schedule:
@@ -12,13 +12,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Collect Elite Servers (Port 443 & 80 Only)
+      - name: Collect Elite Servers (Strict Port 443)
         run: |
           # 1. التوقيت والترويسة
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs_new.txt
-          echo "# BRAND: Ghazwan_pro - IRAQ OPTIMIZED" >> mysubs_new.txt
-          echo "# STATUS: PORT 443/80 ONLY + TLS" >> mysubs_new.txt
+          echo "# BRAND: Ghazwan_pro - IRAQ FIXED" >> mysubs_new.txt
+          echo "# STATUS: PORT 443 ONLY (CLEAN)" >> mysubs_new.txt
           echo "# UPDATE: $TIMESTAMP" >> mysubs_new.txt
           echo "###############################################" >> mysubs_new.txt
           
@@ -35,22 +35,19 @@ jobs:
             curl -sL "$url" >> raw.txt
           done
           
-          # 2. الفلترة الصارمة جداً:
-          # - إبقاء بورت 443 و 80 حصراً
-          # - حذف chillguy (الضعيف)
-          # - إبقاء TLS لضمان استقرار الـ ms
-          grep -iE ":443|:80" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "chillguy" | grep -i "tls" | sort -u > clean.txt
+          # 2. الفلترة الصارمة: بورت 443 فقط وحذف الضعيف
+          grep -iE ":443" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "chillguy" | grep -i "tls" | sort -u > clean.txt
 
-          # 3. حقن الهوستات العراقية (توزيع مباشر لضمان تخطي الحجب)
-          sed -n '1,150p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:443/g' >> mysubs_new.txt
-          sed -n '151,300p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:443/g' >> mysubs_new.txt
-          sed -n '301,450p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:443/g' >> mysubs_new.txt
-          sed -n '451,600p' clean.txt | sed -E 's/@[^:]+:/@cdn.braze.com:443/g' >> mysubs_new.txt
+          # 3. حقن الهوستات (استبدال العنوان مع الحفاظ على البورت 443 الأصلي دون تكرار)
+          sed -n '1,150p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:/g' >> mysubs_new.txt
+          sed -n '151,300p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs_new.txt
+          sed -n '301,450p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs_new.txt
+          sed -n '451,600p' clean.txt | sed -E 's/@[^:]+:/@cdn.braze.com:/g' >> mysubs_new.txt
 
       - name: Push to Master
         run: |
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git commit -m "Iraq Port Fix 443/80 $TIMESTAMP" || exit 0
+          git commit -m "Iraq Clean Port Fix $TIMESTAMP" || exit 0
           git push
