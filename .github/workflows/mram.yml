@@ -12,26 +12,31 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Collect High-Quality Servers
+      - name: Collect Elite Servers Only
         run: |
-          # 1. إعداد التوقيت بتوقيت بغداد
+          # 1. التوقيت والترويسة
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs_new.txt
-          echo "# BRAND: Ghazwan_pro - ULTRA STABLE" >> mysubs_new.txt
-          echo "# STATUS: TLS + WS (VLESS/VMESS)" >> mysubs_new.txt
+          echo "# BRAND: Ghazwan_pro - ELITE VERSION" >> mysubs_new.txt
+          echo "# FOCUS: Iran High-Speed + Multiply Dose" >> mysubs_new.txt
           echo "# UPDATE: $TIMESTAMP" >> mysubs_new.txt
           echo "###############################################" >> mysubs_new.txt
           
-          # 2. جمع سيرفرات من أقوى المصادر العالمية
+          # 2. جلب السيرفرات من المصادر "القوية جداً" التي جربتها
           touch raw.txt
+          # مصدر سيرفرات إيران القوية
           curl -sL "https://raw.githubusercontent.com/yebekhe/TVip/main/Sub/v2ray.txt" >> raw.txt
+          # مصدر سيرفرات Multiply و Fr33C0nfig
           curl -sL "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt" >> raw.txt
-          curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw.txt
+          curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw.txt
           
-          # 3. الفلترة: إبقاء Vless/Vmess التي تدعم TLS و WS حصراً (مثل صورتك)
-          grep -Ei "vmess|vless" raw.txt | grep -i "tls" | sort -u > clean.txt
+          # 3. الفلترة المتقدمة:
+          # - حذف chillguy لتقليل الـ ms
+          # - إبقاء السيرفرات التي تدعم TLS (لأنها الأقوى)
+          grep -Ei "vmess|vless|trojan" raw.txt | grep -iv "chillguy" | grep -i "tls" | sort -u > clean.txt
 
-          # 4. حقن الهوستات الشغالة في العنوان الرئيسي
+          # 4. التوزيع على هوستاتك المعتمدة (تخطي الحجب)
+          # توزيع السيرفرات المختارة فقط
           sed -n '1,100p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:/g' >> mysubs_new.txt
           sed -n '101,200p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs_new.txt
           sed -n '201,300p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs_new.txt
@@ -42,5 +47,4 @@ jobs:
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git commit -m "Ultra Stable Start $TIMESTAMP" || exit 0
-          git push
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Elite Servers Update $TIMESTAMP" && git push)
