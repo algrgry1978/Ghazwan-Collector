@@ -12,46 +12,49 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Fetch Low-Latency Sources
+      - name: Fetch Low-Latency High-Availability Sources
         run: |
           # 1. إعداد التوقيت
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs_new.txt
-          echo "# GHAZWAN PRO - LOW LATENCY VERSION" >> mysubs_new.txt
+          echo "# GHAZWAN PRO - FAST & FULL VERSION" >> mysubs_new.txt
           echo "# UPDATE: $TIMESTAMP (BAGHDAD)" >> mysubs_new.txt
           echo "###############################################" >> mysubs_new.txt
           
-          # 2. جمع سيرفرات من مصادر "نخبة" (أقل Ping ممكن)
+          # 2. جمع سيرفرات من أقوى المصادر (توسيع النطاق لضمان البيانات)
           touch raw_data_new.txt
           urls=(
             "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt"
             "https://raw.githubusercontent.com/yebekhe/TVip/main/Sub/v2ray.txt"
             "https://raw.githubusercontent.com/mzy9/Scraper/main/outputs/v2ray.txt"
             "https://raw.githubusercontent.com/vfarid/v2ray-worker/master/sub/v2ray.txt"
-            "https://raw.githubusercontent.com/anaer/Sub/main/v2ray.txt"
             "https://raw.githubusercontent.com/Sumbul-V2ray/v2ray-collector/main/v2ray-configs.txt"
+            "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt"
+            "https://shz.al/~WangCai"
           )
 
           for url in "${urls[@]}"; do
             curl -sL "$url" >> raw_data_new.txt
           done
           
-          # 3. تنقية السيرفرات: إبقاء 443 و 80 وحذف الـ Shadowsocks (SS)
-          grep -iE ":443|:80" raw_data_new.txt | grep -iv "^ss://" | sort -u > clean_data_new.txt
+          # 3. التنقية الذكية:
+          # - حذف الـ Shadowsocks (SS) نهائياً
+          # - إبقاء السيرفرات التي تبدأ بـ vmess, vless, trojan
+          # - حذف المتكرر
+          grep -Ei "^vmess://|^vless://|^trojan://" raw_data_new.txt | sort -u > clean_data_new.txt
 
-          # 4. توزيع ذكي للهوستات كـ SNI لضمان الاستقرار
-          # سيتم دمج الهوست في نهاية الرابط ليعمل السيرفر بمواصفاته الأصلية
+          # 4. توزيع الهوستات كـ SNI لضمان الاستقرار (بناءً على السيرفرات المتاحة)
           
-          # Viber SNI (أول 150 سيرفر - الأقرب جغرافياً)
+          # Viber SNI
           sed -n '1,150p' clean_data_new.txt | sed 's/$/?sni=Viberout-lp.viber.com\&host=Viberout-lp.viber.com/' >> mysubs_new.txt
           
-          # LP Viber SNI (من 151 إلى 300)
+          # LP Viber SNI
           sed -n '151,300p' clean_data_new.txt | sed 's/$/?sni=lp.viber.com\&host=lp.viber.com/' >> mysubs_new.txt
           
-          # Braze SNI (من 301 إلى 450)
+          # Braze SNI
           sed -n '301,450p' clean_data_new.txt | sed 's/$/?sni=braze-images.com\&host=braze-images.com/' >> mysubs_new.txt
           
-          # CDN Braze SNI (من 451 إلى 600)
+          # CDN Braze SNI
           sed -n '451,600p' clean_data_new.txt | sed 's/$/?sni=cdn.braze.com\&host=cdn.braze.com/' >> mysubs_new.txt
 
       - name: Push to Master
@@ -59,4 +62,4 @@ jobs:
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Low MS Update $TIMESTAMP" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Full Source Update $TIMESTAMP" && git push)
