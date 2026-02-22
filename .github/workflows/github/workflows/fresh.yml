@@ -1,0 +1,51 @@
+name: Ghazwan_Ultra_Stable
+
+on:
+  schedule:
+    - cron: '0 */4 * * *' # يعمل كل 4 ساعات تلقائياً
+  workflow_dispatch: # يتيح لك التشغيل اليدوي
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Collect High-Quality TLS Servers
+        run: |
+          # 1. إعداد الترويسة والوقت بتوقيت بغداد
+          TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
+          echo "###############################################" > mysubs_new.txt
+          echo "# BRAND: Ghazwan_pro - ULTRA STABLE" >> mysubs_new.txt
+          echo "# STATUS: TLS + WS (VLESS/VMESS)" >> mysubs_new.txt
+          echo "# UPDATE: $TIMESTAMP" >> mysubs_new.txt
+          echo "###############################################" >> mysubs_new.txt
+          
+          # 2. جلب سيرفرات من أقوى مصادر الـ TLS والـ WS
+          touch raw.txt
+          curl -sL "https://raw.githubusercontent.com/yebekhe/TVip/main/Sub/v2ray.txt" >> raw.txt
+          curl -sL "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt" >> raw.txt
+          curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw.txt
+          curl -sL "https://raw.githubusercontent.com/Sumbul-V2ray/v2ray-collector/main/v2ray-configs.txt" >> raw.txt
+          
+          # 3. الفلترة: إبقاء Vless/Vmess التي تدعم TLS حصراً (لحذف السيرفرات الضعيفة)
+          grep -Ei "vmess|vless" raw.txt | grep -i "tls" | sort -u > clean.txt
+
+          # 4. حقن هوستات فايبر وبريز في العنوان الرئيسي لضمان تخطي الحجب
+          # Viberout
+          sed -n '1,100p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:/g' >> mysubs_new.txt
+          # lp.viber
+          sed -n '101,200p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs_new.txt
+          # braze-images
+          sed -n '201,300p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs_new.txt
+          # cdn.braze
+          sed -n '301,400p' clean.txt | sed -E 's/@[^:]+:/@cdn.braze.com:/g' >> mysubs_new.txt
+
+      - name: Push Changes to GitHub
+        run: |
+          git config --global user.name "Ghazwan-Pro-Lab"
+          git config --global user.email "lab@ghazwan.pro"
+          git add mysubs_new.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Ultra Stable Fresh Start $TIMESTAMP" && git push)
+
