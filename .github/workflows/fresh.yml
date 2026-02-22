@@ -12,16 +12,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Fetch and Process New Data
+      - name: Fetch and Filter Data (No SS)
         run: |
           # 1. إعداد التوقيت والترويسة
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs_new.txt
-          echo "# NEW SOURCE PROJECT: PORT 443/80" >> mysubs_new.txt
+          echo "# NEW SOURCE PROJECT: PORT 443/80 (NO SS)" >> mysubs_new.txt
           echo "# UPDATE: $TIMESTAMP (BAGHDAD)" >> mysubs_new.txt
           echo "###############################################" >> mysubs_new.txt
           
-          # 2. جمع السيرفرات من قائمة مصادر موسعة ومضمونة
+          # 2. جمع السيرفرات من المصادر المعتمدة
           touch raw_data_new.txt
           urls=(
             "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/Sub1.txt"
@@ -37,12 +37,12 @@ jobs:
             curl -sL "$url" >> raw_data_new.txt
           done
           
-          # 3. الفلترة: إبقاء أي سيرفر يحتوي على 443 أو 80
-          # قمنا بتخفيف القيود قليلاً لضمان جلب البيانات
-          grep -iE ":443|:80" raw_data_new.txt | sort -u > clean_data_new.txt
+          # 3. الفلترة الصارمة: 
+          # - إبقاء المنافذ 443 و 80 فقط
+          # - حذف أي سطر يبدأ بـ ss:// نهائياً
+          grep -iE ":443|:80" raw_data_new.txt | grep -iv "^ss://" | sort -u > clean_data_new.txt
 
           # 4. توزيع السيرفرات على الهوستات الأربعة
-          # إذا كان الملف فارغاً، لن يضيف شيئاً، لذا تأكدنا من جلب البيانات فوق
           
           # Viberout-lp.viber.com
           sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' clean_data_new.txt | sed -n '1,300p' >> mysubs_new.txt
@@ -61,4 +61,4 @@ jobs:
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Fresh Source Update $TIMESTAMP" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated Sources - Removed SS $TIMESTAMP" && git push)
