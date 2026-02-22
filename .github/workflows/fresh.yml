@@ -12,24 +12,21 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Fetch and Filter Data (No SS)
+      - name: Fetch and Smart Fix
         run: |
-          # 1. إعداد التوقيت والترويسة
+          # 1. إعداد التوقيت
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs_new.txt
-          echo "# NEW SOURCE PROJECT: PORT 443/80 (NO SS)" >> mysubs_new.txt
+          echo "# GHAZWAN PRO - STABLE VERSION" >> mysubs_new.txt
           echo "# UPDATE: $TIMESTAMP (BAGHDAD)" >> mysubs_new.txt
           echo "###############################################" >> mysubs_new.txt
           
-          # 2. جمع السيرفرات من المصادر المعتمدة
+          # 2. جمع السيرفرات من المصادر التي نثق بها
           touch raw_data_new.txt
           urls=(
             "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/Sub1.txt"
             "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt"
-            "https://raw.githubusercontent.com/w1770946466/Auto_Proxy/main/Long_term_subscription_num"
             "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt"
-            "https://raw.githubusercontent.com/LonUp/V2Ray-Config/main/All_Configs_Sub.txt"
-            "https://raw.githubusercontent.com/mzy9/Scraper/main/outputs/all.txt"
             "https://shz.al/~WangCai"
           )
 
@@ -37,28 +34,27 @@ jobs:
             curl -sL "$url" >> raw_data_new.txt
           done
           
-          # 3. الفلترة الصارمة: 
-          # - إبقاء المنافذ 443 و 80 فقط
-          # - حذف أي سطر يبدأ بـ ss:// نهائياً
+          # 3. التنظيف: حذف SS وإبقاء 443/80
           grep -iE ":443|:80" raw_data_new.txt | grep -iv "^ss://" | sort -u > clean_data_new.txt
 
-          # 4. توزيع السيرفرات على الهوستات الأربعة
+          # 4. إضافة الهوستات كـ (SNI) بدلاً من تغيير العنوان بالكامل
+          # هذه الطريقة تضمن بقاء السيرفر يعمل مع "حقنه" بالهوست المطلوب لتخطي الحجب
           
-          # Viberout-lp.viber.com
-          sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' clean_data_new.txt | sed -n '1,300p' >> mysubs_new.txt
+          # Viber SNI (أول 150 سيرفر)
+          sed -n '1,150p' clean_data_new.txt | sed 's/$/?sni=Viberout-lp.viber.com\&host=Viberout-lp.viber.com/' >> mysubs_new.txt
           
-          # lp.viber.com
-          sed -E 's/@[^:]+:/@lp.viber.com:/g' clean_data_new.txt | sed -n '301,600p' >> mysubs_new.txt
+          # LP Viber SNI (من 151 إلى 300)
+          sed -n '151,300p' clean_data_new.txt | sed 's/$/?sni=lp.viber.com\&host=lp.viber.com/' >> mysubs_new.txt
           
-          # braze-images.com
-          sed -E 's/@[^:]+:/@braze-images.com:/g' clean_data_new.txt | sed -n '601,900p' >> mysubs_new.txt
+          # Braze SNI (من 301 إلى 450)
+          sed -n '301,450p' clean_data_new.txt | sed 's/$/?sni=braze-images.com\&host=braze-images.com/' >> mysubs_new.txt
           
-          # cdn.braze.com
-          sed -E 's/@[^:]+:/@cdn.braze.com:/g' clean_data_new.txt | sed -n '901,1200p' >> mysubs_new.txt
+          # CDN Braze SNI (من 451 إلى 600)
+          sed -n '451,600p' clean_data_new.txt | sed 's/$/?sni=cdn.braze.com\&host=cdn.braze.com/' >> mysubs_new.txt
 
       - name: Push to Master
         run: |
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated Sources - Removed SS $TIMESTAMP" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Stable SNI Update $TIMESTAMP" && git push)
