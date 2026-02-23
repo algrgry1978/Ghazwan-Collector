@@ -1,8 +1,8 @@
-name: King_of_Hearts_Full_Scan
+name: King_of_Hearts_Full_Protocols
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # تحديث كل 4 ساعات
+    - cron: '0 */4 * * *' # تحديث تلقائي كل 4 ساعات
   workflow_dispatch: 
 
 jobs:
@@ -12,21 +12,23 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Fetch and Filter (All Protocols - Port 443/80)
+      - name: Fetch and Filter (Vmess, Vless, Trojan - Port 443/80)
         run: |
           # 1. الترويسة والوقت
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > king_of_hearts.txt
-          echo "# BRAND: king of hearts - FULL SOURCE" >> king_of_hearts.txt
-          echo "# PORT: 443 & 80 ONLY" >> king_of_hearts.txt
+          echo "# BRAND: king of hearts - ALL PROTOCOLS" >> king_of_hearts.txt
+          echo "# STATUS: PORT 443 & 80 ONLY" >> king_of_hearts.txt
           echo "# UPDATE: $TIMESTAMP" >> king_of_hearts.txt
           echo "###############################################" >> king_of_hearts.txt
           
-          # 2. سحب البيانات من الرابط
+          # 2. سحب البيانات من مصدر Milad
           curl -sL "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt" > raw.txt
           
-          # 3. الفلترة (إبقاء الكل: vmess, vless, trojan)
-          # هنا أعدنا تفعيل البحث عن vmess و vless
+          # 3. الفلترة الشاملة:
+          # - إبقاء بورت 443 و 80 فقط
+          # - استخراج vmess و vless و trojan معاً
+          # - استبعاد Shadowsocks (ss://)
           grep -iE ":443|:80" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "ss://" | sort -u > clean.txt
           
           # 4. إضافة البصمة الملكية: king of hearts
@@ -38,10 +40,10 @@ jobs:
             fi
           done < clean.txt
 
-      - name: Commit and Push
+      - name: Commit and Push to GitHub
         run: |
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add king_of_hearts.txt
-          git commit -m "Full Update (Vless/Vmess/Trojan) - king of hearts" || exit 0
+          git commit -m "Update king of hearts: Full Protocols $TIMESTAMP" || exit 0
           git push
