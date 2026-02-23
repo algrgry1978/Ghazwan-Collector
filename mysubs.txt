@@ -1,6 +1,6 @@
 ###############################################
 # MODE: Host Rotation (5 Hosts per Server)
-# UPDATE: 2026-02-23 08:22 AM (BAGHDAD)
+# UPDATE: 2026-02-23 04:02 PM (BAGHDAD)
 ###############################################
 VPN:443 pinned «❤️سرویس تست فاکس نیم  💻 شما عزیزان می‌توانید قبل از خرید هم اکنون سرویس را تست نمایید و سپس اشتراک اختصاصی‌تان را خریداری نمایید.  vless://875ec245-7366-48dc-8756-e8889fec8816@Viberout-lp.viber.com:8080?type=ws&security=none&path=%2F#%40foxnim%20%2F%20TEST  📲از طریق…»
 VPN:443 pinned «❤️سرویس تست فاکس نیم  💻 شما عزیزان می‌توانید قبل از خرید هم اکنون سرویس را تست نمایید و سپس اشتراک اختصاصی‌تان را خریداری نمایید.  vless://875ec245-7366-48dc-8756-e8889fec8816@lp.viber.com:8080?type=ws&security=none&path=%2F#%40foxnim%20%2F%20TEST  📲از طریق…»
@@ -92,11 +92,11 @@ trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@lp.viber.com:443?allowInsecure=0&s
 trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@braze-images.com:443?allowInsecure=0&sni=afrcloud1.mmv.kr&ws=1&wspath=%2F5.223.47.32%3D443#%F0%9F%87%BA%F0%9F%87%B8%20_US_%E7%BE%8E%E5%9B%BD
 trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@cdn.braze.com:443?allowInsecure=0&sni=afrcloud1.mmv.kr&ws=1&wspath=%2F5.223.47.32%3D443#%F0%9F%87%BA%F0%9F%87%B8%20_US_%E7%BE%8E%E5%9B%BD
 trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@go.braze.com:443?allowInsecure=0&sni=afrcloud1.mmv.kr&ws=1&wspath=%2F5.223.47.32%3D443#%F0%9F%87%BA%F0%9F%87%B8%20_US_%E7%BE%8E%E5%9B%BD
-trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@Viberout-lp.viber.com:443?sni=afrcloud1.mmv.kr#%F0%9F%87%BA%F0%9F%87%B8US%E7%BE%8E%E5%9B%BD2
-trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@lp.viber.com:443?sni=afrcloud1.mmv.kr#%F0%9F%87%BA%F0%9F%87%B8US%E7%BE%8E%E5%9B%BD2
-trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@braze-images.com:443?sni=afrcloud1.mmv.kr#%F0%9F%87%BA%F0%9F%87%B8US%E7%BE%8E%E5%9B%BD2
-trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@cdn.braze.com:443?sni=afrcloud1.mmv.kr#%F0%9F%87%BA%F0%9F%87%B8US%E7%BE%8E%E5%9B%BD2
-trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@go.braze.com:443?sni=afrcloud1.mmv.kr#%F0%9F%87%BA%F0%9F%87%B8US%E7%BE%8E%E5%9B%BD2
+trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@Viberout-lp.viber.com:443?sni=afrcloud1.mmv.kr#%F0%9F%87%BA%F0%9F%87%B8US%E7%BE%8E%E5%9B%BD10
+trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@lp.viber.com:443?sni=afrcloud1.mmv.kr#%F0%9F%87%BA%F0%9F%87%B8US%E7%BE%8E%E5%9B%BD10
+trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@braze-images.com:443?sni=afrcloud1.mmv.kr#%F0%9F%87%BA%F0%9F%87%B8US%E7%BE%8E%E5%9B%BD10
+trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@cdn.braze.com:443?sni=afrcloud1.mmv.kr#%F0%9F%87%BA%F0%9F%87%B8US%E7%BE%8E%E5%9B%BD10
+trojan://5027e2a4-c4d2-463a-9508-83a2c7d1ad83@go.braze.com:443?sni=afrcloud1.mmv.kr#%F0%9F%87%BA%F0%9F%87%B8US%E7%BE%8E%E5%9B%BD10
 trojan://51410d3cb2931a01b366bb5c868264bf@Viberout-lp.viber.com:443?path=/api/live/stream/region-de/feed&amp%3Bsecurity=tls&amp%3Balpn=http/1.1&amp%3Binsecure=0&amp%3Bfp=random&amp%3Btype=ws&amp%3BallowInsecure=0&amp%3Bsni=persiancdn.top#%F0%9F%87%BD%F0%9F%87%BD%20XX%20%7C%20TROJAN%20%7C%20%40vpnv2raytop%20%231
 trojan://51410d3cb2931a01b366bb5c868264bf@lp.viber.com:443?path=/api/live/stream/region-de/feed&amp%3Bsecurity=tls&amp%3Balpn=http/1.1&amp%3Binsecure=0&amp%3Bfp=random&amp%3Btype=ws&amp%3BallowInsecure=0&amp%3Bsni=persiancdn.top#%F0%9F%87%BD%F0%9F%87%BD%20XX%20%7C%20TROJAN%20%7C%20%40vpnv2raytop%20%231
 trojan://51410d3cb2931a01b366bb5c868264bf@braze-images.com:443?path=/api/live/stream/region-de/feed&amp%3Bsecurity=tls&amp%3Balpn=http/1.1&amp%3Binsecure=0&amp%3Bfp=random&amp%3Btype=ws&amp%3BallowInsecure=0&amp%3Bsni=persiancdn.top#%F0%9F%87%BD%F0%9F%87%BD%20XX%20%7C%20TROJAN%20%7C%20%40vpnv2raytop%20%231
@@ -237,11 +237,11 @@ trojan://humanity@lp.viber.com:443?security=tls&sni=www.multiplydose.com&fp=chro
 trojan://humanity@braze-images.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=/assignment#کانفیگ رایگان = t.me/arisping
 trojan://humanity@cdn.braze.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=/assignment#کانفیگ رایگان = t.me/arisping
 trojan://humanity@go.braze.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=/assignment#کانفیگ رایگان = t.me/arisping
-trojan://humanity@Viberout-lp.viber.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A538
-trojan://humanity@lp.viber.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A538
-trojan://humanity@braze-images.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A538
-trojan://humanity@cdn.braze.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A538
-trojan://humanity@go.braze.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A538
+trojan://humanity@Viberout-lp.viber.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A530
+trojan://humanity@lp.viber.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A530
+trojan://humanity@braze-images.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A530
+trojan://humanity@cdn.braze.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A530
+trojan://humanity@go.braze.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A530
 trojan://humanity@Viberout-lp.viber.com:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.gossipglove.com#%3E%3E%40ip_cf%3A%3ANL
 trojan://humanity@lp.viber.com:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.gossipglove.com#%3E%3E%40ip_cf%3A%3ANL
 trojan://humanity@braze-images.com:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.gossipglove.com#%3E%3E%40ip_cf%3A%3ANL
@@ -387,11 +387,11 @@ trojan://humanity@lp.viber.com:443?security=tls&sni=www.multiplydose.com&fp=chro
 trojan://humanity@braze-images.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=www.multiplydose.com&path=/assignment#https://t.me/allproconf
 trojan://humanity@cdn.braze.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=www.multiplydose.com&path=/assignment#https://t.me/allproconf
 trojan://humanity@go.braze.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=www.multiplydose.com&path=/assignment#https://t.me/allproconf
-trojan://humanity@Viberout-lp.viber.com:443?security=tls&type=ws&sni=www.calmlunch.com&path=/assignment#%E6%9C%AA%E7%9F%A54
-trojan://humanity@lp.viber.com:443?security=tls&type=ws&sni=www.calmlunch.com&path=/assignment#%E6%9C%AA%E7%9F%A54
-trojan://humanity@braze-images.com:443?security=tls&type=ws&sni=www.calmlunch.com&path=/assignment#%E6%9C%AA%E7%9F%A54
-trojan://humanity@cdn.braze.com:443?security=tls&type=ws&sni=www.calmlunch.com&path=/assignment#%E6%9C%AA%E7%9F%A54
-trojan://humanity@go.braze.com:443?security=tls&type=ws&sni=www.calmlunch.com&path=/assignment#%E6%9C%AA%E7%9F%A54
+trojan://humanity@Viberout-lp.viber.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A533
+trojan://humanity@lp.viber.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A533
+trojan://humanity@braze-images.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A533
+trojan://humanity@cdn.braze.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A533
+trojan://humanity@go.braze.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A533
 trojan://humanity@Viberout-lp.viber.com:443?path=%2Fassignment&security=tls&insecure=1&host=www.gossipglove.com&type=ws&allowInsecure=1&sni=www.gossipglove.com#%3E%3E%40FreakConfig%3A%3ANL
 trojan://humanity@lp.viber.com:443?path=%2Fassignment&security=tls&insecure=1&host=www.gossipglove.com&type=ws&allowInsecure=1&sni=www.gossipglove.com#%3E%3E%40FreakConfig%3A%3ANL
 trojan://humanity@braze-images.com:443?path=%2Fassignment&security=tls&insecure=1&host=www.gossipglove.com&type=ws&allowInsecure=1&sni=www.gossipglove.com#%3E%3E%40FreakConfig%3A%3ANL
@@ -442,11 +442,11 @@ trojan://humanity@lp.viber.com:443?security=tls&sni=www.gossipglove.com&insecure
 trojan://humanity@braze-images.com:443?security=tls&sni=www.gossipglove.com&insecure=1&allowInsecure=1&type=ws&host=www.gossipglove.com&path=/assignment#کانفیگ رایگان = t.me/arisping
 trojan://humanity@cdn.braze.com:443?security=tls&sni=www.gossipglove.com&insecure=1&allowInsecure=1&type=ws&host=www.gossipglove.com&path=/assignment#کانفیگ رایگان = t.me/arisping
 trojan://humanity@go.braze.com:443?security=tls&sni=www.gossipglove.com&insecure=1&allowInsecure=1&type=ws&host=www.gossipglove.com&path=/assignment#کانفیگ رایگان = t.me/arisping
-trojan://humanity@Viberout-lp.viber.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A526
-trojan://humanity@lp.viber.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A526
-trojan://humanity@braze-images.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A526
-trojan://humanity@cdn.braze.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A526
-trojan://humanity@go.braze.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A526
+trojan://humanity@Viberout-lp.viber.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A511
+trojan://humanity@lp.viber.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A511
+trojan://humanity@braze-images.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A511
+trojan://humanity@cdn.braze.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A511
+trojan://humanity@go.braze.com:443?security=tls&type=ws&sni=www.gossipglove.com&path=/assignment&host=www.gossipglove.com#%E6%9C%AA%E7%9F%A511
 trojan://humanity@Viberout-lp.viber.com:443/?path=/assignment&security=tls&host=www.creationlong.org&type=ws&sni=www.creationlong.org#@v2rays_ha 10734
 trojan://humanity@lp.viber.com:443/?path=/assignment&security=tls&host=www.creationlong.org&type=ws&sni=www.creationlong.org#@v2rays_ha 10734
 trojan://humanity@braze-images.com:443/?path=/assignment&security=tls&host=www.creationlong.org&type=ws&sni=www.creationlong.org#@v2rays_ha 10734
