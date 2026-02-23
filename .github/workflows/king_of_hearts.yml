@@ -1,0 +1,49 @@
+name: King_of_Hearts_Special
+
+on:
+  schedule:
+    - cron: '0 */4 * * *' # تشغيل تلقائي كل 4 ساعات
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Fetch and Filter (Port 443/80 Only)
+        run: |
+          # 1. التوقيت والترويسة بالاسم الجديد
+          TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
+          echo "###############################################" > king_of_hearts.txt
+          echo "# BRAND: king of hearts - MILAD SOURCE" >> king_of_hearts.txt
+          echo "# STATUS: PORT 443 & 80 ONLY" >> king_of_hearts.txt
+          echo "# UPDATE: $TIMESTAMP" >> king_of_hearts.txt
+          echo "###############################################" >> king_of_hearts.txt
+          
+          # 2. سحب البيانات من الرابط المحدد
+          curl -sL "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt" > raw.txt
+          
+          # 3. الفلترة الصارمة:
+          # - إبقاء بورت 443 و 80 فقط
+          # - استخراج vmess, vless, trojan فقط
+          # - حذف أي سيرفر Shadowsocks (ss://)
+          grep -iE ":443|:80" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "ss://" | sort -u > clean.txt
+          
+          # 4. إضافة البصمة الملكية: king of hearts
+          while read -r line; do
+            if [[ $line == *"#"* ]]; then
+              echo "${line%#*}#king of hearts" >> king_of_hearts.txt
+            else
+              echo "$line#king of hearts" >> king_of_hearts.txt
+            fi
+          done < clean.txt
+
+      - name: Push to GitHub
+        run: |
+          git config --global user.name "Ghazwan-Pro-Lab" # هويتك كمهندس
+          git config --global user.email "lab@ghazwan.pro"
+          git add king_of_hearts.txt
+          git commit -m "Update: king of hearts server list $TIMESTAMP" || exit 0
+          git push
