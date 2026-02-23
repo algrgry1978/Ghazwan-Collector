@@ -1,0 +1,50 @@
+herename: Ghazwan_Milad_Special_NoSS
+
+on:
+  schedule:
+    - cron: '0 */4 * * *' # تحديث تلقائي كل 4 ساعات
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Fetch and Filter (No SS - Port 443/80)
+        run: |
+          # 1. الترويسة والوقت
+          TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
+          echo "###############################################" > ghazwan_milad.txt
+          echo "# BRAND: Ghazwan_pro - MILAD SOURCE" >> ghazwan_milad.txt
+          echo "# PROTOCOLS: VMESS/VLESS/TROJAN ONLY (NO SS)" >> ghazwan_milad.txt
+          echo "# PORT: 443 & 80 ONLY" >> ghazwan_milad.txt
+          echo "# UPDATE: $TIMESTAMP" >> ghazwan_milad.txt
+          echo "###############################################" >> ghazwan_milad.txt
+          
+          # 2. سحب البيانات من الرابط المحدد
+          curl -sL "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt" > raw.txt
+          
+          # 3. الفلترة الصارمة (بدون SS):
+          # - إبقاء بورت 443 و 80 فقط.
+          # - استخراج vmess, vless, trojan حصراً.
+          # - استبعاد أي سطر يحتوي على ss://.
+          grep -iE ":443|:80" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "ss://" | sort -u > clean.txt
+          
+          # 4. إضافة بصمة "Ghazwan_pro" لتمييز السيرفرات
+          while read -r line; do
+            if [[ $line == *"#"* ]]; then
+              echo "${line%#*}#Ghazwan_pro" >> ghazwan_milad.txt
+            else
+              echo "$line#Ghazwan_pro" >> ghazwan_milad.txt
+            fi
+          done < clean.txt
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "Ghazwan-Pro-Lab"
+          git config --global user.email "lab@ghazwan.pro"
+          git add ghazwan_milad.txt
+          git commit -m "Milad Source Update - No SS - $TIMESTAMP" || exit 0
+          git push
