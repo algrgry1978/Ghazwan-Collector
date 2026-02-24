@@ -12,37 +12,42 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Fetch and Filter (Basic Logic)
+      - name: Fetch and Filter (Stable Bash)
         run: |
-          # 1. تجهيز الملف والترويسة
+          # 1. الترويسة والوقت
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs_new.txt
           echo "# BRAND: Ghazwan_Pro_Titanium - BASIC FLOW" >> mysubs_new.txt
-          echo "# STATUS: HIGH RELIABILITY" >> mysubs_new.txt
           echo "# UPDATE: $TIMESTAMP" >> mysubs_new.txt
           echo "###############################################" >> mysubs_new.txt
           
-          # 2. سحب البيانات من المصادر الأساسية
+          # 2. سحب البيانات من "المنجم" والمصادر الأخرى
+          # نستخدم -L لتتبع الروابط وإحضار البيانات الخام مباشرة
           curl -sL "https://raw.githubusercontent.com/yebekhe/TVip/main/Sub/v2ray.txt" >> raw.txt
           curl -sL "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt" >> raw.txt
           curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw.txt
           
-          # 3. الفلترة المباشرة لبورت 443 و 80 (الأكثر استقراراً)
-          # نقوم بفلترة السطور التي تحتوي على البورتات المطلوبة حصراً
-          grep -iE ":443|:80" raw.txt | grep -Ei "vmess|vless|trojan" | sort -u > clean.txt
+          # 3. الفلترة المباشرة لبورت 443 و 80 (بدون تعقيد)
+          # نستخدم || true لضمان عدم فشل السكربت (Exit Code) إذا لم يجد نتائج في لحظة معينة
+          grep -iE ":443|:80" raw.txt | grep -Ei "vmess|vless|trojan" | sort -u > clean.txt || true
           
-          # 4. إضافة البصمة Titanium لكل سيرفر
-          while read -r line; do
-            if [[ $line == *"#"* ]]; then
-              echo "${line%#*}#Titanium" >> mysubs_new.txt
-            else
-              echo "$line#Titanium" >> mysubs_new.txt
-            fi
-          done < clean.txt
+          # 4. إضافة بصمة Titanium لجميع السيرفرات المفلترة
+          if [ -s clean.txt ]; then
+            while read -r line; do
+              if [[ $line == *"#"* ]]; then
+                echo "${line%#*}#Titanium" >> mysubs_new.txt
+              else
+                echo "$line#Titanium" >> mysubs_new.txt
+              fi
+            done < clean.txt
+          else
+            echo "# No servers found in this update" >> mysubs_new.txt
+          fi
 
-      - name: Commit and Push
+      - name: Push Updated List
         run: |
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git commit -m "Reverted to Basic Stable
+          git commit -m "Titanium Basic Reset: Stable Flow $TIMESTAMP" || exit 0
+          git push
