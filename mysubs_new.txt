@@ -1,5 +1,5 @@
 ###############################################
-# BRAND: Ghazwan_Pro_Titanium - FULL FLOW
-# UPDATE: 2026-02-24 03:32 PM
+# BRAND: Ghazwan_Pro_Titanium - BASIC FLOW
+# UPDATE: 2026-02-24 03:37 PM
 ###############################################
-
+# No servers found in this update
