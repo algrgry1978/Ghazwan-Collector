@@ -1,8 +1,8 @@
-name: Ghazwan_Pro_Titanium
+name: Iraq_Elite_Titanium_Optimized
 
 on:
   schedule:
-    - cron: '0 */4 * * *' 
+    - cron: '0 */4 * * *' # تحديث تلقائي كل 4 ساعات
   workflow_dispatch: 
 
 jobs:
@@ -12,41 +12,78 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Collect Titanium Elite Servers
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests # تأمين المكتبات لمنع فشل التشغيل
+
+      - name: Iraq Smart Filter & Host Injection
+        shell: python
         run: |
-          # 1. إعداد الترويسة
-          TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
-          echo "###############################################" > mysubs_new.txt
-          echo "# BRAND: Ghazwan_Pro_Titanium" >> mysubs_new.txt
-          echo "# STATUS: IRAQ OPTIMIZED - PORT 443" >> mysubs_new.txt
-          echo "# UPDATE: $TIMESTAMP" >> mysubs_new.txt
-          echo "###############################################" >> mysubs_new.txt
-          
-          # 2. جلب السيرفرات من أقوى 5 مصادر عالمية (توسيع المصادر)
-          touch raw.txt
-          curl -sL "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/mix" >> raw.txt
-          curl -sL "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt" >> raw.txt
-          curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw.txt
-          curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw.txt
-          curl -sL "https://raw.githubusercontent.com/Sumbul-V2ray/v2ray-collector/main/v2ray-configs.txt" >> raw.txt
-          
-          # 3. الفلترة الذكية: بورت 443 فقط (بدون شروط إضافية لضمان الامتلاء)
-          grep -iE ":443" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "chillguy" | sort -u > clean.txt
+          import requests
+          import base64
+          import json
+          import re
+          from datetime import datetime, timedelta
 
-          # 4. حقن الهوستات (استبدال العنوان)
-          if [ -s clean.txt ]; then
-            sed -n '1,200p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:/g' >> mysubs_new.txt
-            sed -n '201,400p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs_new.txt
-            sed -n '401,600p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs_new.txt
-            sed -n '601,800p' clean.txt | sed -E 's/@[^:]+:/@cdn.braze.com:/g' >> mysubs_new.txt
-          else
-            echo "Searching for more servers..." >> mysubs_new.txt
-          fi
+          # المصادر الخاصة بك (بدون المصادر المتكررة)
+          urls = [
+              "https://raw.githubusercontent.com/yebekhe/TVip/main/Sub/v2ray.txt",
+              "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt",
+              "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt"
+          ]
 
-      - name: Push to Master
+          hosts = [
+              "viberout-lp.viber.com:443",
+              "lp.viber.com:443",
+              "braze-images.com:443",
+              "cdn.braze.com:443"
+          ]
+
+          def process():
+              all_raw_configs = []
+              for url in urls:
+                  try:
+                      res = requests.get(url, timeout=20)
+                      all_raw_configs.extend(res.text.splitlines())
+                  except: continue
+
+              clean_configs = []
+              for config in all_raw_configs:
+                  # الفلترة لا تزال تعمل على 443 و 80 برمجياً لضمان الجودة في العراق
+                  if (":443" in config or ":80" in config) and "tls" in config.lower():
+                      if "chillguy" not in config.lower() and ("vmess" in config or "vless" in config or "trojan" in config):
+                          clean_configs.append(config)
+
+              clean_configs = list(set(clean_configs))
+
+              final_list = []
+              chunk_size = len(clean_configs) // 4 if len(clean_configs) > 4 else 1
+              
+              for i, config in enumerate(clean_configs):
+                  host_index = min(i // chunk_size, 3)
+                  modified = re.sub(r'@[^:]+:', f'@{hosts[host_index]}:', config)
+                  final_list.append(modified)
+
+              # الترويسة بالاسم الرسمي الجديد
+              timestamp = (datetime.utcnow() + timedelta(hours=3)).strftime('%Y-%m-%d %I:%M %p')
+              with open("mysubs_new.txt", "w") as f:
+                  f.write("###############################################\n")
+                  f.write("# BRAND: Ghazwan_Pro_Titanium - IRAQ ELITE\n")
+                  f.write("# STATUS: OPTIMIZED FOR IRAQ INFRASTRUCTURE\n")
+                  f.write(f"# UPDATE: {timestamp}\n")
+                  f.write("###############################################\n\n")
+                  f.write("\n".join(final_list))
+
+          process()
+
+      - name: Commit and Push
         run: |
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git commit -m "Titanium Full Refresh $TIMESTAMP" || echo "No changes"
-          git push || echo "Push failed"
+          git commit -m "Titanium Update: Cleaner Workflow Name $TIMESTAMP" || exit 0
+          git push
