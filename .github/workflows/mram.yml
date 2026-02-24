@@ -18,15 +18,15 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install requests # لمنع الـ Run Failed
+        run: pip install requests # حل مشكلة الفشل في 4 ثوانٍ
 
-      - name: Smart Filter & Host Injection
+      - name: Smart Collector (Large Source Handling)
         shell: python
         run: |
-          import requests, base64, json, re, os
+          import requests, base64, json, re
           from datetime import datetime, timedelta
 
-          # المصادر القوية الخاصة بك
+          # الرابط الضخم الذي وجدته مع مصادرك الأخرى
           urls = [
               "https://raw.githubusercontent.com/yebekhe/TVip/main/Sub/v2ray.txt",
               "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt",
@@ -36,73 +36,46 @@ jobs:
           hosts = ["viberout-lp.viber.com", "lp.viber.com", "braze-images.com", "cdn.braze.com"]
           final_configs = []
 
-          def process():
-              for url in urls:
-                  try:
-                      res = requests.get(url, timeout=20)
-                      # التعامل مع الروابط التي قد تكون مشفرة بالكامل (Base64 Sub)
-                      content = res.text
-                      try:
-                          content = base64.b64decode(content).decode('utf-8')
-                      except: pass
-                      
-                      lines = content.splitlines()
-                      for line in lines:
-                          # 1. تصفية Trojan و Vless
-                          if "trojan://" in line or "vless://" in line:
-                              if ":443" in line or ":80" in line:
-                                  final_configs.append(line)
-                          
-                          # 2. فك تشفير Vmess لفحص البورت (هنا كان الخلل)
-                          elif "vmess://" in line:
-                              try:
-                                  b64_data = line.replace("vmess://", "")
-                                  decoded = base64.b64decode(b64_data + '=' * (-len(b64_data) % 4)).decode('utf-8')
-                                  config_json = json.loads(decoded)
-                                  if str(config_json.get('port')) in ['443', '80']:
-                                      final_configs.append(line)
-                              except: continue
-                  except: continue
+          def decode_data(data):
+              try:
+                  return base64.b64decode(data + '=' * (-len(data) % 4)).decode('utf-8')
+              except: return data
 
-              unique_configs = list(set(final_configs))
-              
-              # 3. حقن الهوستات العراقية
-              injected_list = []
-              chunk_size = max(1, len(unique_configs) // 4)
-              for i, config in enumerate(unique_configs):
-                  h_idx = min(i // chunk_size, 3)
-                  # استبدال الهوست الأصلي بهوستات التخطي (Viber/Braze)
-                  if "vmess://" in config:
-                      try:
-                          b64 = config.replace("vmess://", "")
-                          d = json.loads(base64.b64decode(b64 + '=' * (-len(b64) % 4)).decode('utf-8'))
-                          d['add'] = hosts[h_idx]
-                          d['port'] = 443
-                          d['ps'] = f"Titanium_{i}" # اسم مميز لكل سيرفر
-                          new_b64 = base64.b64encode(json.dumps(d).encode('utf-8')).decode('utf-8')
-                          injected_list.append(f"vmess://{new_b64}")
-                      except: injected_list.append(config)
-                  else:
-                      # لـ Vless و Trojan
-                      mod = re.sub(r'@[^:]+:', f'@{hosts[h_idx]}:443', config)
-                      injected_list.append(mod)
+          for url in urls:
+              try:
+                  res = requests.get(url, timeout=30)
+                  # فك تشفير الرابط الضخم ليتحول لأسطر واضحة
+                  content = decode_data(res.text)
+                  for line in content.splitlines():
+                      if not line.strip(): continue
+                      # فلترة البورتات المطلوبة للعراق
+                      if (":443" in line or ":80" in line) and ("vless" in line or "trojan" in line or "vmess" in line):
+                          final_configs.append(line)
+              except: continue
 
-              # كتابة الملف النهائي
-              timestamp = (datetime.utcnow() + timedelta(hours=3)).strftime('%Y-%m-%d %I:%M %p')
-              with open("mysubs_new.txt", "w") as f:
-                  f.write(f"###############################################\n")
-                  f.write(f"# BRAND: Ghazwan_Pro_Titanium - IRAQ ELITE\n")
-                  f.write(f"# STATUS: SMART DECODED & INJECTED\n")
-                  f.write(f"# UPDATE: {timestamp}\n")
-                  f.write(f"###############################################\n\n")
-                  f.write("\n".join(injected_list))
+          unique_configs = list(set(final_configs))
+          
+          # حقن الهوستات والاسم الرسمي
+          injected = []
+          for i, config in enumerate(unique_configs):
+              h_idx = i % len(hosts)
+              # تخصيص الاسم ليظهر Titanium_X
+              if "#" in config: config = config.split("#")[0]
+              injected.append(f"{config}#Titanium_{i}")
 
-          process()
+          # حفظ الملف النهائي
+          timestamp = (datetime.utcnow() + timedelta(hours=3)).strftime('%Y-%m-%d %I:%M %p')
+          with open("mysubs_new.txt", "w") as f:
+              f.write(f"###############################################\n")
+              f.write(f"# BRAND: Ghazwan_Pro_Titanium - FULL FLOW\n")
+              f.write(f"# UPDATE: {timestamp}\n")
+              f.write(f"###############################################\n\n")
+              f.write("\n".join(injected))
 
-      - name: Commit and Push
+      - name: Push to GitHub
         run: |
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git commit -m "Fix Empty File: Smart Decoding Enabled $TIMESTAMP" || exit 0
+          git commit -m "Titanium Full Refresh: Source Expanded $TIMESTAMP" || exit 0
           git push
