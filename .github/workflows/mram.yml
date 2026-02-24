@@ -1,8 +1,8 @@
-name: Iraq_Elite_Titanium_Optimized
+name: Ghazwan_Pro_Titanium
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # تحديث كل 4 ساعات
+    - cron: '0 */4 * * *' 
   workflow_dispatch: 
 
 jobs:
@@ -12,42 +12,39 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Fetch and Filter (Stable Bash)
+      - name: Collect Titanium Elite Servers
         run: |
-          # 1. الترويسة والوقت
+          # 1. إعداد الترويسة
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs_new.txt
-          echo "# BRAND: Ghazwan_Pro_Titanium - BASIC FLOW" >> mysubs_new.txt
+          echo "# BRAND: Ghazwan_Pro_Titanium" >> mysubs_new.txt
+          echo "# STATUS: IRAQ OPTIMIZED - PORT 443" >> mysubs_new.txt
           echo "# UPDATE: $TIMESTAMP" >> mysubs_new.txt
           echo "###############################################" >> mysubs_new.txt
           
-          # 2. سحب البيانات من "المنجم" والمصادر الأخرى
-          # نستخدم -L لتتبع الروابط وإحضار البيانات الخام مباشرة
-          curl -sL "https://raw.githubusercontent.com/yebekhe/TVip/main/Sub/v2ray.txt" >> raw.txt
+          # 2. جلب السيرفرات من أقوى 5 مصادر عالمية (توسيع المصادر)
+          touch raw.txt
+          curl -sL "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/mix" >> raw.txt
           curl -sL "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt" >> raw.txt
           curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw.txt
+          curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw.txt
+          curl -sL "https://raw.githubusercontent.com/Sumbul-V2ray/v2ray-collector/main/v2ray-configs.txt" >> raw.txt
           
-          # 3. الفلترة المباشرة لبورت 443 و 80 (بدون تعقيد)
-          # نستخدم || true لضمان عدم فشل السكربت (Exit Code) إذا لم يجد نتائج في لحظة معينة
-          grep -iE ":443|:80" raw.txt | grep -Ei "vmess|vless|trojan" | sort -u > clean.txt || true
-          
-          # 4. إضافة بصمة Titanium لجميع السيرفرات المفلترة
+          # 3. الفلترة الذكية: بورت 443 فقط (بدون شروط إضافية لضمان الامتلاء)
+          grep -iE ":443" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "chillguy" | sort -u > clean.txt
+          # 4. حقن الهوستات (استبدال العنوان)
           if [ -s clean.txt ]; then
-            while read -r line; do
-              if [[ $line == *"#"* ]]; then
-                echo "${line%#*}#Titanium" >> mysubs_new.txt
-              else
-                echo "$line#Titanium" >> mysubs_new.txt
-              fi
-            done < clean.txt
+            sed -n '1,200p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:/g' >> mysubs_new.txt
+            sed -n '201,400p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs_new.txt
+            sed -n '401,600p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs_new.txt
+            sed -n '601,800p' clean.txt | sed -E 's/@[^:]+:/@cdn.braze.com:/g' >> mysubs_new.txt
           else
-            echo "# No servers found in this update" >> mysubs_new.txt
+            echo "Searching for more servers..." >> mysubs_new.txt
           fi
-
-      - name: Push Updated List
+      - name: Push to Master
         run: |
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add mysubs_new.txt
-          git commit -m "Titanium Basic Reset: Stable Flow $TIMESTAMP" || exit 0
-          git push
+          git commit -m "Titanium Full Refresh $TIMESTAMP" || echo "No changes"
+          git push || echo "Push failed"
