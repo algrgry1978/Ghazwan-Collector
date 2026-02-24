@@ -12,59 +12,64 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Smart Filter (Original Remarks - Port 443/80)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests # تثبيت المكتبة الناقصة لضمان عدم الفشل
+
+      - name: Smart Filter (Original Names - Port 443/80)
         shell: python
         run: |
           import requests
           import base64
           import json
+          import os
           from datetime import datetime, timedelta
 
           url = "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt"
           
-          def process():
-              try:
-                  response = requests.get(url)
-                  lines = response.text.splitlines()
-                  final_configs = []
+          try:
+              response = requests.get(url, timeout=30)
+              response.raise_for_status() # التأكد من أن الرابط شغال
+              lines = response.text.splitlines()
+              final_configs = []
 
-                  for line in lines:
-                      # 1. معالجة Trojan و Vless: الحفاظ على السطر الأصلي بالكامل
-                      if "trojan://" in line or "vless://" in line:
-                          if ":443" in line or ":80" in line:
+              for line in lines:
+                  # فحص Trojan و Vless
+                  if "trojan://" in line or "vless://" in line:
+                      if ":443" in line or ":80" in line:
+                          final_configs.append(line)
+
+                  # فحص Vmess المشفر
+                  elif "vmess://" in line:
+                      try:
+                          b64_data = line.replace("vmess://", "")
+                          decoded = base64.b64decode(b64_data + '=' * (-len(b64_data) % 4)).decode('utf-8')
+                          config_json = json.loads(decoded)
+                          if str(config_json.get('port')) in ['443', '80']:
                               final_configs.append(line)
+                      except:
+                          continue
 
-                      # 2. معالجة Vmess: فك التشفير لفحص البورت فقط
-                      elif "vmess://" in line:
-                          try:
-                              b64_data = line.replace("vmess://", "")
-                              decoded = base64.b64decode(b64_data + '=' * (-len(b64_data) % 4)).decode('utf-8')
-                              config_json = json.loads(decoded)
-                              
-                              # إذا كان البورت 443 أو 80، نحتفظ بالرابط الأصلي
-                              if str(config_json.get('port')) in ['443', '80']:
-                                  final_configs.append(line)
-                          except:
-                              continue
+              # كتابة الملف النهائي
+              timestamp = (datetime.utcnow() + timedelta(hours=3)).strftime('%Y-%m-%d %I:%M %p')
+              with open("king_of_hearts.txt", "w") as f:
+                  f.write("###############################################\n")
+                  f.write("# SOURCE: MILAD SOURCE (ORIGINAL NAMES)\n")
+                  f.write("# STATUS: VMESS/VLESS/TROJAN | PORT 443/80\n")
+                  f.write(f"# UPDATE: {timestamp}\n")
+                  f.write("###############################################\n\n")
+                  f.write("\n".join(list(set(final_configs))))
+          except Exception as e:
+              print(f"Failed to fetch data: {e}")
 
-                  # 3. كتابة الملف النهائي بدون حقن أي اسم إضافي
-                  timestamp = (datetime.utcnow() + timedelta(hours=3)).strftime('%Y-%m-%d %I:%M %p')
-                  with open("king_of_hearts.txt", "w") as f:
-                      f.write("###############################################\n")
-                      f.write("# SOURCE: MILAD SOURCE (ORIGINAL NAMES)\n")
-                      f.write("# STATUS: VMESS/VLESS/TROJAN | PORT 443/80\n")
-                      f.write(f"# UPDATE: {timestamp}\n")
-                      f.write("###############################################\n\n")
-                      f.write("\n".join(list(set(final_configs))))
-              except Exception as e:
-                  print(f"Error: {e}")
-
-          process()
-
-      - name: Push to GitHub
+      - name: Commit and Push
         run: |
-          git config --global user.name "Ghazwan-Pro-Lab" # هويتك كمهندس
+          git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add king_of_hearts.txt
-          git commit -m "Update: Original server names $TIMESTAMP" || exit 0
+          git commit -m "Auto Update: King of Hearts Full Protocols" || exit 0
           git push
