@@ -1,6 +1,6 @@
 ###############################################
 # MODE: Host Rotation (5 Hosts per Server)
-# UPDATE: 2026-02-25 01:36 PM (BAGHDAD)
+# UPDATE: 2026-02-25 06:13 PM (BAGHDAD)
 ###############################################
 VPN:443 pinned «❤️سرویس تست فاکس نیم  💻 شما عزیزان می‌توانید قبل از خرید هم اکنون سرویس را تست نمایید و سپس اشتراک اختصاصی‌تان را خریداری نمایید.  vless://875ec245-7366-48dc-8756-e8889fec8816@Viberout-lp.viber.com:8080?type=ws&security=none&path=%2F#%40foxnim%20%2F%20TEST  📲از طریق…»
 VPN:443 pinned «❤️سرویس تست فاکس نیم  💻 شما عزیزان می‌توانید قبل از خرید هم اکنون سرویس را تست نمایید و سپس اشتراک اختصاصی‌تان را خریداری نمایید.  vless://875ec245-7366-48dc-8756-e8889fec8816@lp.viber.com:8080?type=ws&security=none&path=%2F#%40foxnim%20%2F%20TEST  📲از طریق…»
@@ -427,11 +427,6 @@ trojan://eed4a583-b20e-4787-bbdb-09018156e53f@lp.viber.com:443?security=tls&sni=
 trojan://eed4a583-b20e-4787-bbdb-09018156e53f@braze-images.com:443?security=tls&sni=bnhhju.9no.ccwu.cc&alpn=http/1.1&insecure=0&allowInsecure=0&type=ws&host=bnhhju.9no.ccwu.cc&path=/8uSIAS1cIyvZXFAbvQEN#✅@AR14N24b
 trojan://eed4a583-b20e-4787-bbdb-09018156e53f@cdn.braze.com:443?security=tls&sni=bnhhju.9no.ccwu.cc&alpn=http/1.1&insecure=0&allowInsecure=0&type=ws&host=bnhhju.9no.ccwu.cc&path=/8uSIAS1cIyvZXFAbvQEN#✅@AR14N24b
 trojan://eed4a583-b20e-4787-bbdb-09018156e53f@go.braze.com:443?security=tls&sni=bnhhju.9no.ccwu.cc&alpn=http/1.1&insecure=0&allowInsecure=0&type=ws&host=bnhhju.9no.ccwu.cc&path=/8uSIAS1cIyvZXFAbvQEN#✅@AR14N24b
-trojan://eed4a583-b20e-4787-bbdb-09018156e53f@Viberout-lp.viber.com:443?security=tls&sni=jmkg.818185.xyz&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=jmkg.818185.xyz&path=%2F8uSIAS1cIyvZXFAbvQEN#[🇨🇦]t.me/ConfigsHub```
-trojan://eed4a583-b20e-4787-bbdb-09018156e53f@lp.viber.com:443?security=tls&sni=jmkg.818185.xyz&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=jmkg.818185.xyz&path=%2F8uSIAS1cIyvZXFAbvQEN#[🇨🇦]t.me/ConfigsHub```
-trojan://eed4a583-b20e-4787-bbdb-09018156e53f@braze-images.com:443?security=tls&sni=jmkg.818185.xyz&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=jmkg.818185.xyz&path=%2F8uSIAS1cIyvZXFAbvQEN#[🇨🇦]t.me/ConfigsHub```
-trojan://eed4a583-b20e-4787-bbdb-09018156e53f@cdn.braze.com:443?security=tls&sni=jmkg.818185.xyz&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=jmkg.818185.xyz&path=%2F8uSIAS1cIyvZXFAbvQEN#[🇨🇦]t.me/ConfigsHub```
-trojan://eed4a583-b20e-4787-bbdb-09018156e53f@go.braze.com:443?security=tls&sni=jmkg.818185.xyz&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=jmkg.818185.xyz&path=%2F8uSIAS1cIyvZXFAbvQEN#[🇨🇦]t.me/ConfigsHub```
 trojan://eed4a583-b20e-4787-bbdb-09018156e53f@Viberout-lp.viber.com:443?security=tls&type=ws&sni=jmkg.818185.xyz&path=/8uSIAS1cIyvZXFAbvQEN&host=jmkg.818185.xyz#%E6%9C%AA%E7%9F%A59
 trojan://eed4a583-b20e-4787-bbdb-09018156e53f@lp.viber.com:443?security=tls&type=ws&sni=jmkg.818185.xyz&path=/8uSIAS1cIyvZXFAbvQEN&host=jmkg.818185.xyz#%E6%9C%AA%E7%9F%A59
 trojan://eed4a583-b20e-4787-bbdb-09018156e53f@braze-images.com:443?security=tls&type=ws&sni=jmkg.818185.xyz&path=/8uSIAS1cIyvZXFAbvQEN&host=jmkg.818185.xyz#%E6%9C%AA%E7%9F%A59
@@ -502,3 +497,8 @@ trojan://humanity@lp.viber.com:443?security=tls&sni=www.multiplydose.com&fp=chro
 trojan://humanity@braze-images.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=/assignment#کانفیگ رایگان = t.me/arisping
 trojan://humanity@cdn.braze.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=/assignment#کانفیگ رایگان = t.me/arisping
 trojan://humanity@go.braze.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=/assignment#کانفیگ رایگان = t.me/arisping
+trojan://humanity@Viberout-lp.viber.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A520
+trojan://humanity@lp.viber.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A520
+trojan://humanity@braze-images.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A520
+trojan://humanity@cdn.braze.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A520
+trojan://humanity@go.braze.com:443?security=tls&type=ws&sni=www.multiplydose.com&path=/assignment#%E6%9C%AA%E7%9F%A520
