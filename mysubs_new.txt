@@ -1,7 +1,7 @@
 ###############################################
 # BRAND: Ghazwan_Pro_Titanium
 # MODE: 10-Server Decade Blocks (No Go Host)
-# UPDATE: 2026-02-25 10:34 PM (BAGHDAD)
+# UPDATE: 2026-02-26 12:49 AM (BAGHDAD)
 ###############################################
 VPN:443 pinned «❤️سرویس تست فاکس نیم  💻 شما عزیزان می‌توانید قبل از خرید هم اکنون سرویس را تست نمایید و سپس اشتراک اختصاصی‌تان را خریداری نمایید.  vless://875ec245-7366-48dc-8756-e8889fec8816@viberout-lp.viber.com:8080?type=ws&security=none&path=%2F#%40foxnim%20%2F%20TEST  📲از طریق…»
 ss://8910cbb3-33b1-4266-a243-ac780ac63394@viberout-lp.viber.com:80?path=/vless/&security=none&encryption=none&type=ws#Telegram:@config_proxy 💦
