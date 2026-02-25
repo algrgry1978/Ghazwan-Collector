@@ -12,37 +12,42 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Rotate Hosts for Each Server
+      - name: Block-Based Host Injection
         run: |
-          # 1. إعداد ترويسة الملف
+          # 1. إعداد ترويسة الملف بتوقيت بغداد
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs.txt
-          echo "# MODE: Host Rotation (5 Hosts per Server)" >> mysubs.txt
+          echo "# BRAND: Ghazwan_Pro_Titanium" >> mysubs.txt
+          echo "# MODE: Block System (4 Main Hosts)" >> mysubs.txt
           echo "# UPDATE: $TIMESTAMP (BAGHDAD)" >> mysubs.txt
           echo "###############################################" >> mysubs.txt
           
-          # 2. جمع السيرفرات وتنظيفها
+          # 2. جمع السيرفرات من المصادر الأصلية حصراً
           touch raw_data.txt
           curl -sL "https://shz.al/~WangCai" >> raw_data.txt
           curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw_data.txt
           curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw_data.txt
           
-          # إبقاء أول 100 سيرفر فريد فقط لتجنب ضخامة الملف (بما أننا سنكررها 5 مرات)
-          grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | sort -u | head -n 100 > clean_data.txt
+          # تنقية السيرفرات: بورت 443 و 80 وحذف SS لضمان العمل في العراق
+          grep -E ":443|:80" raw_data.txt | grep -Ei "vmess|vless|trojan" | sort -u > clean_data.txt
 
-          # 3. عملية التدوير (Rotation)
-          # سنأخذ كل سيرفر ونطبقه على الـ 5 هوستات
-          while read -r line; do
-            echo "$line" | sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' >> mysubs.txt
-            echo "$line" | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs.txt
-            echo "$line" | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs.txt
-            echo "$line" | sed -E 's/@[^:]+:/@cdn.braze.com:/g' >> mysubs.txt
-            echo "$line" | sed -E 's/@[^:]+:/@go.braze.com:/g' >> mysubs.txt
-          done < clean_data.txt
+          # 3. توزيع المجموعات (Block System) - تم حذف هوست go
+          
+          # المجموعة 1: أول 25 سيرفر لهوست Viberout
+          sed -n '1,25p' clean_data.txt | sed -E 's/@[^:]+:/@Viberout-lp.viber.com:/g' >> mysubs.txt
+          
+          # المجموعة 2: من 26 إلى 50 لهوست lp.viber
+          sed -n '26,50p' clean_data.txt | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs.txt
+          
+          # المجموعة 3: من 51 إلى 75 لهوست braze-images
+          sed -n '51,75p' clean_data.txt | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs.txt
+          
+          # المجموعة 4: من 76 إلى 100 لهوست cdn.braze
+          sed -n '76,100p' clean_data.txt | sed -E 's/@[^:]+:/@cdn.braze.com:/g' >> mysubs.txt
 
       - name: Push to Master
         run: |
           git config --global user.name "Auto-Updater"
           git config --global user.email "updater@action.com"
           git add mysubs.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Host Rotation Update $TIMESTAMP" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Titanium Block Update - Removed Go Host $TIMESTAMP" && git push)
