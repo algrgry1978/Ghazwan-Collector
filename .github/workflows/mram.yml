@@ -12,17 +12,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Collect Titanium Elite (10-Server Blocks)
+      - name: Collect Titanium Elite (10-Server Decade Blocks)
         run: |
           # 1. إعداد الترويسة
           TIMESTAMP=$(date -u -d "+3 hours" '+%Y-%m-%d %I:%M %p')
           echo "###############################################" > mysubs_new.txt
           echo "# BRAND: Ghazwan_Pro_Titanium" >> mysubs_new.txt
-          echo "# MODE: 10-Server Block System" >> mysubs_new.txt
-          echo "# UPDATE: $TIMESTAMP" >> mysubs_new.txt
+          echo "# MODE: 10-Server Decade Blocks (No Go Host)" >> mysubs_new.txt
+          echo "# UPDATE: $TIMESTAMP (BAGHDAD)" >> mysubs_new.txt
           echo "###############################################" >> mysubs_new.txt
           
-          # 2. جلب السيرفرات من المصادر القوية
+          # 2. جمع السيرفرات من المصادر القوية
           touch raw.txt
           curl -sL "https://raw.githubusercontent.com/yebekhe/TelegramV2rayCollector/main/sub/normal/mix" >> raw.txt
           curl -sL "https://raw.githubusercontent.com/tina-v2ray/V2Ray-Config/main/All_Configs_Sub.txt" >> raw.txt
@@ -30,22 +30,31 @@ jobs:
           curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw.txt
           curl -sL "https://raw.githubusercontent.com/Sumbul-V2ray/v2ray-collector/main/v2ray-configs.txt" >> raw.txt
           
-          # 3. الفلترة: بورت 443 فقط وحذف الضعيف
-          grep -iE ":443" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "chillguy" | sort -u > clean.txt
+          # 3. الفلترة: بورت 443 و 80 حصراً لضمان العمل في العراق
+          grep -iE ":443|:80" raw.txt | grep -Ei "vmess|vless|trojan" | grep -iv "chillguy" | sort -u > clean.txt
 
-          # 4. توزيع المجموعات (10 سيرفرات لكل هوست بالتناوب)
+          # 4. التوزيع العشري (Decade Blocks) - 10 سيرفرات لكل هوست
           if [ -s clean.txt ]; then
-            # المجموعة الأولى (1-10) هوست Viberout
+            # بلوك 1 (1-10) -> Viberout
             sed -n '1,10p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:/g' >> mysubs_new.txt
-            
-            # المجموعة الثانية (11-20) هوست lp.viber
+            # بلوك 2 (11-20) -> lp.viber
             sed -n '11,20p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs_new.txt
-            
-            # المجموعة الثالثة (21-30) هوست braze-images
+            # بلوك 3 (21-30) -> braze-images
             sed -n '21,30p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs_new.txt
-            
-            # المجموعة الرابعة (31-40) هوست cdn.braze
+            # بلوك 4 (31-40) -> cdn.braze
             sed -n '31,40p' clean.txt | sed -E 's/@[^:]+:/@cdn.braze.com:/g' >> mysubs_new.txt
             
-            # تكرار الدورة لمجموعات إضافية لضمان كثرة السيرفرات
-            sed -n '41,5
+            # تكرار الدورة لمجاميع أخرى (إلى 80 سيرفر)
+            sed -n '41,50p' clean.txt | sed -E 's/@[^:]+:/@viberout-lp.viber.com:/g' >> mysubs_new.txt
+            sed -n '51,60p' clean.txt | sed -E 's/@[^:]+:/@lp.viber.com:/g' >> mysubs_new.txt
+            sed -n '61,70p' clean.txt | sed -E 's/@[^:]+:/@braze-images.com:/g' >> mysubs_new.txt
+            sed -n '71,80p' clean.txt | sed -E 's/@[^:]+:/@cdn.braze.com:/g' >> mysubs_new.txt
+          fi
+
+      - name: Push Changes
+        run: |
+          git config --global user.name "Ghazwan-Pro-Lab"
+          git config --global user.email "lab@ghazwan.pro"
+          git add mysubs_new.txt
+          git commit -m "Titanium 10-Block Refreshed $TIMESTAMP" || echo "No changes"
+          git push || echo "Push failed"
