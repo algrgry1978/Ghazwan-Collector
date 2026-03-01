@@ -1,4 +1,4 @@
-Name: King_of_Hearts_Original_Names
+name: King_of_Hearts_Original_Names # تم تصحيح الحرف الأول إلى n صغيرة
 
 on:
   schedule:
@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions: # حل مشكلة الفشل: إضافة صلاحيات الكتابة
+    permissions:
       contents: write
     steps:
       - name: Checkout Repository
@@ -26,9 +26,6 @@ jobs:
         shell: python
         run: |
           import requests
-          import base64
-          import json
-          import os
           import re
           from datetime import datetime, timedelta
 
@@ -38,33 +35,24 @@ jobs:
           try:
               response = requests.get(url, timeout=30)
               response.raise_for_status()
-              lines = list(set(response.text.splitlines())) # إزالة التكرار فوراً
-              filtered_configs = []
-
-              for line in lines:
-                  # فحص بورت 443 و 80 لضمان العمل في العراق
-                  if ":443" in line or ":80" in line:
-                      if any(proto in line for proto in ["vless://", "trojan://", "vmess://"]):
-                          filtered_configs.append(line)
-
-              # تطبيق نظام المجموعات العشرية (10 سيرفرات لكل هوست)
+              # تنقية السيرفرات (بورت 443 و 80 فقط للعراق)
+              lines = [l for l in list(set(response.text.splitlines())) if ":443" in l or ":80" in l]
+              
               final_output = []
-              for i, config in enumerate(filtered_configs[:100]): # معالجة أول 100 سيرفر فقط لضمان القوة
-                  host_index = (i // 10) % len(hosts) # تغيير الهوست كل 10 سيرفرات
+              # تطبيق نظام المجموعات العشرية (كل 10 سيرفرات بهوست)
+              for i, config in enumerate(lines[:120]):
+                  host_index = (i // 10) % len(hosts)
                   selected_host = hosts[host_index]
-                  
-                  # عملية حقن الهوست (Injection)
+                  # حقن الهوست الجديد
                   new_config = re.sub(r'@[^:]+:', f'@{selected_host}:', config)
                   final_output.append(new_config)
 
-              # كتابة الملف النهائي بتوقيت بغداد
               timestamp = (datetime.utcnow() + timedelta(hours=3)).strftime('%Y-%m-%d %I:%M %p')
               with open("king_of_hearts.txt", "w") as f:
-                  f.write("###############################################\n")
-                  f.write("# BRAND: King of Hearts (Titanium Edition)\n")
-                  f.write("# MODE: 10-Server Decade Blocks\n")
+                  f.write(f"###############################################\n")
+                  f.write(f"# BRAND: King of Hearts (Decade Blocks)\n")
                   f.write(f"# UPDATE: {timestamp} (BAGHDAD)\n")
-                  f.write("###############################################\n\n")
+                  f.write(f"###############################################\n\n")
                   f.write("\n".join(final_output))
           except Exception as e:
               print(f"Error: {e}")
@@ -74,6 +62,5 @@ jobs:
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add king_of_hearts.txt
-          # حل مشكلة الفشل: منع التوقف إذا لم يوجد تغيير
-          git commit -m "Titanium King Update: $TIMESTAMP" || exit 0
-          git push || echo "Push failed but action finished"
+          git commit -m "Fixing Syntax and Updating Blocks" || exit 0
+          git push
