@@ -1,4 +1,4 @@
-Name: King_of_Hearts_Original_Names
+name: King_of_Hearts_Original_Names
 
 on:
   schedule:
@@ -12,15 +12,23 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install requests
+
       - name: Smart Filter (Original Remarks - Port 443/80)
         shell: python
         run: |
           import requests
           import base64
           import json
+          import os
           from datetime import datetime, timedelta
 
-          # قائمة الروابط المحدثة تشمل الرابط الجديد
           urls = [
               "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt",
               "https://shz.al/~WangCai"
@@ -30,26 +38,22 @@ jobs:
               final_configs = []
               for url in urls:
                   try:
-                      response = requests.get(url, timeout=10)
+                      response = requests.get(url, timeout=15)
                       if response.status_code == 200:
                           lines = response.text.splitlines()
                           for line in lines:
                               line = line.strip()
                               if not line: continue
 
-                              # 1. معالجة Trojan و Vless: الحفاظ على السطر الأصلي بالكامل
                               if "trojan://" in line or "vless://" in line:
                                   if ":443" in line or ":80" in line:
                                       final_configs.append(line)
 
-                              # 2. معالجة Vmess: فك التشفير لفحص البورت فقط
                               elif "vmess://" in line:
                                   try:
                                       b64_data = line.replace("vmess://", "")
                                       decoded = base64.b64decode(b64_data + '=' * (-len(b64_data) % 4)).decode('utf-8')
                                       config_json = json.loads(decoded)
-                                      
-                                      # إذا كان البورت 443 أو 80، نحتفظ بالرابط الأصلي
                                       if str(config_json.get('port')) in ['443', '80']:
                                           final_configs.append(line)
                                   except:
@@ -57,19 +61,14 @@ jobs:
                   except Exception as e:
                       print(f"Error fetching {url}: {e}")
 
-              # 3. كتابة الملف النهائي بدون تكرار
-              try:
-                  timestamp = (datetime.utcnow() + timedelta(hours=3)).strftime('%Y-%m-%d %I:%M %p')
-                  with open("king_of_hearts.txt", "w") as f:
-                      f.write("###############################################\n")
-                      f.write("# SOURCE: MULTI-SOURCE (ORIGINAL NAMES)\n")
-                      f.write("# STATUS: VMESS/VLESS/TROJAN | PORT 443/80\n")
-                      f.write(f"# UPDATE: {timestamp}\n")
-                      f.write("###############################################\n\n")
-                      # استخدام set لمنع التكرار الناتج عن دمج المصادر
-                      f.write("\n".join(list(set(final_configs))))
-              except Exception as e:
-                  print(f" Error writing file: {e}")
+              timestamp = (datetime.utcnow() + timedelta(hours=3)).strftime('%Y-%m-%d %I:%M %p')
+              with open("king_of_hearts.txt", "w") as f:
+                  f.write("###############################################\n")
+                  f.write("# SOURCE: MULTI-SOURCE (ORIGINAL NAMES)\n")
+                  f.write("# STATUS: VMESS/VLESS/TROJAN | PORT 443/80\n")
+                  f.write(f"# UPDATE: {timestamp}\n")
+                  f.write("###############################################\n\n")
+                  f.write("\n".join(list(set(final_configs))))
 
           process()
 
@@ -78,5 +77,5 @@ jobs:
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add king_of_hearts.txt
-          git commit -m "Update: Added new source and updated configs" || exit 0
+          git commit -m "Update configs from multi-sources" || exit 0
           git push
