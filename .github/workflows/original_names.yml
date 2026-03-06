@@ -2,8 +2,8 @@ name: King_of_Hearts_Original_Names
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # تحديث كل 4 ساعات
-  workflow_dispatch: 
+    - cron: '0 */4 * * *' # تحديث تلقائي كل 4 ساعات
+  workflow_dispatch: # إمكانية التشغيل اليدوي
 
 jobs:
   build:
@@ -20,13 +20,13 @@ jobs:
       - name: Install Dependencies
         run: pip install requests
 
-      - name: Smart Filter (Original Remarks - Port 443/80 ONLY)
+      - name: Smart Filter and Base64 Encoding
         shell: python
         run: |
           import requests
           import base64
           import json
-          from datetime import datetime, timedelta
+          import os
 
           # المصادر المطلوبة
           urls = [
@@ -48,41 +48,5 @@ jobs:
                               line = line.strip()
                               if not line: continue
 
-                              # فحص Trojan و Vless (فقط بورت 443 و 80)
-                              if "trojan://" in line or "vless://" in line:
-                                  if any(port in line for port in target_ports):
-                                      final_configs.append(line)
-
-                              # فحص Vmess (فك التشفير للتأكد من البورت)
-                              elif "vmess://" in line:
-                                  try:
-                                      b64_data = line.replace("vmess://", "")
-                                      decoded = base64.b64decode(b64_data + '=' * (-len(b64_data) % 4)).decode('utf-8')
-                                      config_json = json.loads(decoded)
-                                      if str(config_json.get('port')) in vmess_ports:
-                                          final_configs.append(line)
-                                  except:
-                                      continue
-                  except Exception as e:
-                      print(f"Error fetching {url}: {e}")
-
-              # كتابة الملف النهائي
-              timestamp = (datetime.utcnow() + timedelta(hours=3)).strftime('%Y-%m-%d %I:%M %p')
-              with open("king_of_hearts.txt", "w") as f:
-                  f.write("###############################################\n")
-                  f.write("# SOURCE: MULTI-SOURCE (ORIGINAL NAMES)\n")
-                  f.write("# FILTER: PORT 443 & 80 ONLY\n")
-                  f.write(f"# UPDATE: {timestamp}\n")
-                  f.write("###############################################\n\n")
-                  # إزالة التكرار
-                  f.write("\n".join(list(set(final_configs))))
-
-          process()
-
-      - name: Push to GitHub
-        run: |
-          git config --global user.name "Ghazwan-Pro-Lab"
-          git config --global user.email "lab@ghazwan.pro"
-          git add king_of_hearts.txt
-          git commit -m "Update: Filtered Port 443/80 from multiple sources" || exit 0
-          git push
+                              # تصفية Trojan و Vless
+                              if "trojan://" in line or
