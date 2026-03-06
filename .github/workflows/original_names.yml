@@ -1,4 +1,4 @@
-name: King_of_Hearts_Original_Names
+Name: King_of_Hearts_Original_Names
 
 on:
   schedule:
@@ -20,51 +20,63 @@ jobs:
           import json
           from datetime import datetime, timedelta
 
-          url = "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt"
+          # قائمة الروابط المحدثة تشمل الرابط الجديد
+          urls = [
+              "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt",
+              "https://shz.al/~WangCai"
+          ]
           
           def process():
+              final_configs = []
+              for url in urls:
+                  try:
+                      response = requests.get(url, timeout=10)
+                      if response.status_code == 200:
+                          lines = response.text.splitlines()
+                          for line in lines:
+                              line = line.strip()
+                              if not line: continue
+
+                              # 1. معالجة Trojan و Vless: الحفاظ على السطر الأصلي بالكامل
+                              if "trojan://" in line or "vless://" in line:
+                                  if ":443" in line or ":80" in line:
+                                      final_configs.append(line)
+
+                              # 2. معالجة Vmess: فك التشفير لفحص البورت فقط
+                              elif "vmess://" in line:
+                                  try:
+                                      b64_data = line.replace("vmess://", "")
+                                      decoded = base64.b64decode(b64_data + '=' * (-len(b64_data) % 4)).decode('utf-8')
+                                      config_json = json.loads(decoded)
+                                      
+                                      # إذا كان البورت 443 أو 80، نحتفظ بالرابط الأصلي
+                                      if str(config_json.get('port')) in ['443', '80']:
+                                          final_configs.append(line)
+                                  except:
+                                      continue
+                  except Exception as e:
+                      print(f"Error fetching {url}: {e}")
+
+              # 3. كتابة الملف النهائي بدون تكرار
               try:
-                  response = requests.get(url)
-                  lines = response.text.splitlines()
-                  final_configs = []
-
-                  for line in lines:
-                      # 1. معالجة Trojan و Vless: الحفاظ على السطر الأصلي بالكامل
-                      if "trojan://" in line or "vless://" in line:
-                          if ":443" in line or ":80" in line:
-                              final_configs.append(line)
-
-                      # 2. معالجة Vmess: فك التشفير لفحص البورت فقط
-                      elif "vmess://" in line:
-                          try:
-                              b64_data = line.replace("vmess://", "")
-                              decoded = base64.b64decode(b64_data + '=' * (-len(b64_data) % 4)).decode('utf-8')
-                              config_json = json.loads(decoded)
-                              
-                              # إذا كان البورت 443 أو 80، نحتفظ بالرابط الأصلي
-                              if str(config_json.get('port')) in ['443', '80']:
-                                  final_configs.append(line)
-                          except:
-                              continue
-
-                  # 3. كتابة الملف النهائي بدون حقن أي اسم إضافي
                   timestamp = (datetime.utcnow() + timedelta(hours=3)).strftime('%Y-%m-%d %I:%M %p')
                   with open("king_of_hearts.txt", "w") as f:
                       f.write("###############################################\n")
-                      f.write("# SOURCE: MILAD SOURCE (ORIGINAL NAMES)\n")
+                      f.write("# SOURCE: MULTI-SOURCE (ORIGINAL NAMES)\n")
                       f.write("# STATUS: VMESS/VLESS/TROJAN | PORT 443/80\n")
                       f.write(f"# UPDATE: {timestamp}\n")
                       f.write("###############################################\n\n")
+                      # استخدام set لمنع التكرار الناتج عن دمج المصادر
                       f.write("\n".join(list(set(final_configs))))
               except Exception as e:
-                  print(f"Error: {e}")
+                  print(f" Error writing file: {e}")
 
           process()
 
       - name: Push to GitHub
         run: |
-          git config --global user.name "Ghazwan-Pro-Lab" # هويتك كمهندس
+          git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add king_of_hearts.txt
-          git commit -m "Update: Original server names $TIMESTAMP" || exit 0
+          git commit -m "Update: Added new source and updated configs" || exit 0
           git push
