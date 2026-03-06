@@ -1,4 +1,4 @@
-name: King_of_Hearts_Original_Names
+name: Ghazwan_Pro_Titanium_Checker
 
 on:
   schedule:
@@ -23,59 +23,70 @@ jobs:
       - name: Install Dependencies
         run: pip install requests
 
-      - name: Smart Filter and V2RayNG Format
+      - name: Smart Filter and Live Checker
         shell: python
         run: |
           import requests
           import base64
           import json
+          import socket
+          from urllib.parse import urlparse
 
           urls = [
               "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt",
               "https://shz.al/~WangCai"
           ]
-          
+
+          def is_port_open(address, port):
+              try:
+                  with socket.create_connection((address, int(port)), timeout=2):
+                      return True
+              except:
+                  return False
+
           def process():
               final_configs = []
-              target_ports = [':443', ':80']
-              vmess_ports = [443, 80, "443", "80"]
+              target_ports = [443, 80]
 
               for url in urls:
                   try:
                       response = requests.get(url, timeout=15)
                       if response.status_code == 200:
-                          lines = response.text.splitlines()
-                          for line in lines:
+                          for line in response.text.splitlines():
                               line = line.strip()
                               if not line: continue
-                              if "trojan://" in line or "vless://" in line:
-                                  if any(port in line for port in target_ports):
-                                      final_configs.append(line)
-                              elif "vmess://" in line:
-                                  try:
-                                      b64_data = line.replace("vmess://", "")
-                                      decoded = base64.b64decode(b64_data + '=' * (-len(b64_data) % 4)).decode('utf-8')
-                                      config_json = json.loads(decoded)
-                                      if config_json.get('port') in vmess_ports:
+                              
+                              try:
+                                  # فحص Vless و Trojan
+                                  if "vless://" in line or "trojan://" in line:
+                                      parts = line.split('@')[1].split('?')[0].split(':')
+                                      host, port = parts[0], int(parts[1])
+                                      if port in target_ports and is_port_open(host, port):
                                           final_configs.append(line)
-                                  except: continue
-                  except Exception as e:
-                      print(f"Error: {e}")
 
-              # دمج الروابط وتحويلها لـ Base64 بدون أسطر فارغة إضافية
+                                  # فحص Vmess
+                                  elif "vmess://" in line:
+                                      b64_data = line.replace("vmess://", "")
+                                      decoded = json.loads(base64.b64decode(b64_data + '=' * (-len(b64_data) % 4)).decode('utf-8'))
+                                      host, port = decoded.get('add'), int(decoded.get('port'))
+                                      if port in target_ports and is_port_open(host, port):
+                                          final_configs.append(line)
+                              except: continue
+                  except: continue
+
+              # تحويل للـ Base64 ليتوافق مع v2rayNG
               unique_configs = list(set(final_configs))
-              combined_text = "\n".join(unique_configs)
-              encoded_output = base64.b64encode(combined_text.encode('utf-8')).decode('utf-8')
+              encoded_output = base64.b64encode("\n".join(unique_configs).encode('utf-8')).decode('utf-8')
 
               with open("king_of_hearts.txt", "w") as f:
                   f.write(encoded_output)
 
           process()
 
-      - name: Push to GitHub
+      - name: Push Updates
         run: |
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add king_of_hearts.txt
-          git commit -m "Update: Optimized for v2rayNG" || exit 0
+          git commit -m "Update: Live configs only (443/80)" || exit 0
           git push
