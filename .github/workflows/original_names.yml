@@ -5,7 +5,6 @@ on:
     - cron: '0 */4 * * *' 
   workflow_dispatch: 
 
-# هذا الجزء ضروري جداً لحل مشكلة الفشل في الصورة
 permissions:
   contents: write
 
@@ -24,13 +23,12 @@ jobs:
       - name: Install Dependencies
         run: pip install requests
 
-      - name: Smart Filter and Base64 Encoding
+      - name: Smart Filter and V2RayNG Format
         shell: python
         run: |
           import requests
           import base64
           import json
-          import os
 
           urls = [
               "https://raw.githubusercontent.com/miladtahanian/Config-Collector/main/mixed_iran.txt",
@@ -39,7 +37,6 @@ jobs:
           
           def process():
               final_configs = []
-              # تصفية البورتات المطلوبة حصراً
               target_ports = [':443', ':80']
               vmess_ports = [443, 80, "443", "80"]
 
@@ -51,11 +48,9 @@ jobs:
                           for line in lines:
                               line = line.strip()
                               if not line: continue
-
                               if "trojan://" in line or "vless://" in line:
                                   if any(port in line for port in target_ports):
                                       final_configs.append(line)
-
                               elif "vmess://" in line:
                                   try:
                                       b64_data = line.replace("vmess://", "")
@@ -63,12 +58,11 @@ jobs:
                                       config_json = json.loads(decoded)
                                       if config_json.get('port') in vmess_ports:
                                           final_configs.append(line)
-                                  except:
-                                      continue
+                                  except: continue
                   except Exception as e:
-                      print(f"Error fetching {url}: {e}")
+                      print(f"Error: {e}")
 
-              # إزالة التكرار وتحويل القائمة لنص مشفر (Base64)
+              # دمج الروابط وتحويلها لـ Base64 بدون أسطر فارغة إضافية
               unique_configs = list(set(final_configs))
               combined_text = "\n".join(unique_configs)
               encoded_output = base64.b64encode(combined_text.encode('utf-8')).decode('utf-8')
@@ -83,5 +77,5 @@ jobs:
           git config --global user.name "Ghazwan-Pro-Lab"
           git config --global user.email "lab@ghazwan.pro"
           git add king_of_hearts.txt
-          git commit -m "Update: Port 443/80 and Base64 encoded" || exit 0
+          git commit -m "Update: Optimized for v2rayNG" || exit 0
           git push
