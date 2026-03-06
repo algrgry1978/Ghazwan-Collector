@@ -1,0 +1,41 @@
+name: Ghazwan Pro-Collector
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Global Harvest - No SS - Branding
+        run: |
+          # ترويسة الملف
+          echo "# Professional Server List - Ports 443 & 80 Only" > mysubs.txt
+          echo "# Filter: No SS Configs - Project: Baby House" >> mysubs.txt
+          
+          # تجميع من المصادر العالمية
+          touch raw_data.txt
+          curl -sL "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt" >> raw_data.txt
+          curl -sL "https://raw.githubusercontent.com/MahdiHoseinZade/V2rayCollector/main/sub/sub_merge.txt" >> raw_data.txt
+          curl -sL "https://raw.githubusercontent.com/MatinGhanbari/v2ray-config/main/all.txt" >> raw_data.txt
+          
+          # الفلترة الذكية:
+          # 1. اختيار المنافذ 443 و 80
+          # 2. حذف أي رابط يبدأ بـ ss:// (عبر أمر grep -v)
+          # 3. وضع بصمة "Ghazwan-Pro"
+          grep -E ":443|:80" raw_data.txt | grep -v "^ss://" | sed 's/#.*/#Ghazwan-Pro-Server/' | sort -u >> mysubs.txt
+
+          echo "# Total Verified Servers: $(wc -l < mysubs.txt)" >> mysubs.txt
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "Ghazwan-Designer"
+          git config --global user.email "ghazwan@example.com"
+          git add mysubs.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Clean Sync - No SS Protocols" && git push)
+
