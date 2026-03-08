@@ -1,6 +1,6 @@
 ###############################################
 # BRAND: Ghazwan_pro
-# UPDATE: 2026-03-08 07:57 PM (BAGHDAD)
+# UPDATE: 2026-03-08 11:53 PM (BAGHDAD)
 ###############################################
 vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@Viberout-lp.viber.com:443/?type=ws&encryption=none&flow=&host=ylnhh.cc.cd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&sni=ylnhh.cc.cd&fp=chrome#Ghazwan_pro
 vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@Viberout-lp.viber.com:443/?type=ws&encryption=none&flow=&host=ylnhh.cc.cd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&sni=ylnhh.cc.cd&fp=chrome#Ghazwan_pro
