@@ -1,6 +1,6 @@
 ###############################################
 # BRAND: Ghazwan_pro
-# UPDATE: 2026-03-16 09:06 AM (BAGHDAD)
+# UPDATE: 2026-03-16 12:07 PM (BAGHDAD)
 ###############################################
 trojan://)5,9FW.Kk166@Viberout-lp.viber.com:443?path=/eyJqdW5rIjoiU2oxczB0b0tSIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ&security=tls&alpn=http/1.1&insecure=0&host=028.electrocellco-cf-028.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=028.eLECtRocEllco-Cf-028.worKErS.dev#Ghazwan_pro
 trojan://)5,9FW.Kk166@Viberout-lp.viber.com:443?path=/eyJqdW5rIjoiU2oxczB0b0tSIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560&security=tls&alpn=http/1.1&host=028.electrocellco-cf-028.workers.dev&fp=chrome&type=ws&sni=028.eLECtRocEllco-Cf-028.worKErS.dev#Ghazwan_pro
@@ -861,7 +861,6 @@ vless://5a54a377-a9d3-4ea5-b7b0-17bd899e202d@braze-images.com:80?path=%2Fvless%2
 vless://5a54a377-a9d3-4ea5-b7b0-17bd899e202d@braze-images.com:80?path=/vless/&security=none&encryption=none&type=ws#Ghazwan_pro
 vless://5a5d7457-e139-4c13-9cab-f06c42695430@braze-images.com:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=HqP6zNUg2Ch8kzjSWuEQtjVECiOcmv3Y3Z61yphclAo&security=reality&sid=783eaf02&sni=www.google.com&type=tcp#Ghazwan_pro
 vless://5ac2d3b6-33cc-4442-9c0b-ae3909cabaae@braze-images.com:443?encryption=none&path=%2F&security=none&type=ws#Ghazwan_pro
-vless://5ac2d3b6-33cc-4442-9c0b-ae3909cabaae@braze-images.com:443?path=/&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Btype=ws#Ghazwan_pro
 vless://5ac2d3b6-33cc-4442-9c0b-ae3909cabaae@braze-images.com:443?path=/&security=none&encryption=none&type=ws#Ghazwan_pro
 vless://5adfc317-2483-45ad-bd84-d2779540ffa3@braze-images.com:80?path=/%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Pr%E2%80%A6%3C/div%3E#Ghazwan_pro
 vless://5adfc317-2483-45ad-bd84-d2779540ffa3@braze-images.com:80?path=/%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.&amp%3Btype=ws#Ghazwan_pro
@@ -902,7 +901,7 @@ vless://60c4d55d-bee3-4719-9568-aabf45153f9f@braze-images.com:80?encryption=none
 vless://60c4d55d-bee3-4719-9568-aabf45153f9f@braze-images.com:80?encryption=none&host=nu9.0g0.ccwu.cc&path=/gPvZ4oCcNDyuc3szX7xhuvpEm&security=none&type=ws#Ghazwan_pro
 vless://60c4d55d-bee3-4719-9568-aabf45153f9f@braze-images.com:80?encryption=none&host=b8ki.0g0.ccwu.cc&path=/gPvZ4oCcNDyuc3szX7xhuvpEm&security=none&type=ws#Ghazwan_pro
 vless://60c4d55d-bee3-4719-9568-aabf45153f9f@braze-images.com:80?encryption=none&host=b8ki.0g0.ccwu.cc&path=/gPvZ4oCcNDyuc3szX7xhuvpEm&security=none&type=ws#Ghazwan_pro
-vless://60c4d55d-bee3-4719-9568-aabf45153f9f@cdn.braze.com:80?encryption=none&host=huu89.0h0.ccwu.cc&path=/gPvZ4oCcNDyuc3szX7xhuvpEm&security=none&type=ws#Ghazwan_pro
+vless://60c4d55d-bee3-4719-9568-aabf45153f9f@braze-images.com:80?encryption=none&host=huu89.0h0.ccwu.cc&path=/gPvZ4oCcNDyuc3szX7xhuvpEm&security=none&type=ws#Ghazwan_pro
 vless://60c4d55d-bee3-4719-9568-aabf45153f9f@cdn.braze.com:80?encryption=none&host=huu89.0h0.ccwu.cc&path=/gPvZ4oCcNDyuc3szX7xhuvpEm&security=none&type=ws#Ghazwan_pro
 vless://60c4d55d-bee3-4719-9568-aabf45153f9f@cdn.braze.com:80?encryption=none&host=nu9.0g0.ccwu.cc&path=/gPvZ4oCcNDyuc3szX7xhuvpEm&security=none&type=ws#Ghazwan_pro
 vless://60c4d55d-bee3-4719-9568-aabf45153f9f@cdn.braze.com:80?encryption=none&host=vb-p.0c0.ccwu.cc&path=/gPvZ4oCcNDyuc3szX7xhuvpEm&security=none&type=ws#Ghazwan_pro
@@ -1202,7 +1201,7 @@ vless://8cbec16e-e110-4ebc-8ae4-827258c4fcb2@cdn.braze.com:443?type=xhttp&path=/
 vless://8d4a8cc8-b4f6-411e-b0ce-b7172bcbcfd2@cdn.braze.com:443?security=reality&encryption=none&pbk=52C4orGcI61wImoX9_Ou2F8WPXi3Ry8gLRxYLe4kExM&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=merch.smmfather.org&sid=11ca57582ecf3764#Ghazwan_pro
 vless://8d4a8cc8-b4f6-411e-b0ce-b7172bcbcfd2@cdn.braze.com:443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=payeer.smmfather.org&sid=6ba85179e30d4fc2#Ghazwan_pro
 vless://8d99fda8-4df2-41ff-8b41-1316773e096f@cdn.braze.com:443?type=tcp&path=/&host=zula.ir&headerType=http&security=none#Ghazwan_pro
-vless://8d99fda8-4df2-41ff-8b41-1316773e096f@go.braze.com:443?type=tcp&path=/&host=zula.ir&headerType=http&security=none#Ghazwan_pro
+vless://8d99fda8-4df2-41ff-8b41-1316773e096f@cdn.braze.com:443?type=tcp&path=/&host=zula.ir&headerType=http&security=none#Ghazwan_pro
 vless://8e0d168b-f984-0bb8-865f-88b9a46fb48f@go.braze.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=max.ru&fp=chrome&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323&type=tcp&headerType=none#Ghazwan_pro
 vless://8e0d168b-f984-0bb8-865f-88b9a46fb48f@go.braze.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=max.ru&fp=chrome&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323&type=tcp&headerType=none#Ghazwan_pro
 vless://8e3bf431-98ad-413b-b34f-cf5ee154a4ba@go.braze.com:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=Z--Ieq3GtHx_Qtqj3NUyK5wY2foVBtlOkyzXqESeswU&security=reality&sid=0c80cc39&sni=store.steampowered.com&type=tcp#Ghazwan_pro
@@ -1502,3 +1501,4 @@ vless://b9233171-b534-4bdd-8826-7921c3ac59ac@go.braze.com:443?path=/no?ed=443&se
 vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@go.braze.com:443?path=/%3Fed%3D2048&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Bhost=3k.pureboy.eu.org&amp%3Btype=ws&amp%3Bsni=3k.pureboy.eu.org#Ghazwan_pro
 vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@go.braze.com:443?path=path/TELEGRAM-PROXY_MTM%3Fed%3D2048&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Bhost=3k.pureboy.eu.org&amp%3Btype=ws&amp%3Bsni=3k.pureboy.eu.org#Ghazwan_pro
 vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@go.braze.com:443?path=/%3Fed%3D2048&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Bhost=3k.pureboy.eu.org&amp%3Btype=ws&amp%3Bsni=3k.pureboy.eu.org#Ghazwan_pro
+vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@go.braze.com:443?path=/%3Fed%3D2048&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Bhost=3k.pureboy.eu.org&amp%3Bfp=chrome&amp%3Btype=ws&amp%3Bsni=3k.pureboy.eu.org#Ghazwan_pro
