@@ -1,6 +1,6 @@
 ###############################################
 # BRAND: Ghazwan_pro
-# UPDATE: 2026-03-23 04:25 PM (BAGHDAD)
+# UPDATE: 2026-03-23 08:01 PM (BAGHDAD)
 ###############################################
 hy2://123456789StrongPass@Viberout-lp.viber.com:443/?insecure=1&sni=www.cloudflare.com#Ghazwan_pro
 trojan://0000@Viberout-lp.viber.com:443?path=/?ed=2560&security=tls&host=masterserver1-masterserver1-masterserver1-masterserver1.liciba7155.workers.dev&fp=chrome&type=ws&sni=masterserver1-masterserver1-masterserver1-masterserver1.liciba7155.workers.dev#Ghazwan_pro
@@ -19,13 +19,13 @@ trojan://7964@Viberout-lp.viber.com:443?path=/?ed=2560&security=tls&host=v2ngfas
 trojan://842b5f9dd11e458d8613c907c4cc5723@Viberout-lp.viber.com:443?encryption=none&amp%3Bsecurity=tls&amp%3Bsni=www.gpt123.one&amp%3Binsecure=1&amp%3Btype=raw&amp%3Bheadertype=none#Ghazwan_pro
 trojan://FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D@Viberout-lp.viber.com:443?security=tls&amp%3BheaderType=none&amp%3Btype=tcp&amp%3Bsni=kuame.missionsec.us#Ghazwan_pro
 trojan://IL37892054@Viberout-lp.viber.com:443?security=tls#Ghazwan_pro
-trojan://IL37892054@Viberout-lp.viber.com:443?security=tls#Ghazwan_pro
 trojan://IL37892054@Viberout-lp.viber.com:443?security=tls&sni=enhanced-crayfish.rooster465.autos#Ghazwan_pro
-trojan://IL37892054@Viberout-lp.viber.com:443?security=tls#Ghazwan_pro
+trojan://IL37892054@Viberout-lp.viber.com:443?security=tls&sni=fluent-stingray.crayfish192.xyz#Ghazwan_pro
 trojan://IL37892054@Viberout-lp.viber.com:443?security=tls&sni=fluent-stingray.crayfish192.xyz#Ghazwan_pro
 trojan://IL37892054@Viberout-lp.viber.com:443?security=tls#Ghazwan_pro
 trojan://IL37892054@Viberout-lp.viber.com:443?security=tls&sni=outgoing-ladybird.rooster465.autos#Ghazwan_pro
 trojan://IL37892054@Viberout-lp.viber.com:443?security=tls&sni=select-marmoset.rooster465.autos#Ghazwan_pro
+trojan://IL37892054@Viberout-lp.viber.com:443?security=tls&sni=steady-lemming.rooster465.autos#Ghazwan_pro
 trojan://IL37892054@Viberout-lp.viber.com:443?security=tls&sni=steady-lemming.rooster465.autos#Ghazwan_pro
 trojan://M08tvzYWtUEJNtbpHp@Viberout-lp.viber.com:443?allowInsecure=1#Ghazwan_pro
 trojan://M08tvzYWtUEJNtbpHp@Viberout-lp.viber.com:443?allowInsecure=1#Ghazwan_pro
