@@ -1,6 +1,6 @@
 ###############################################
 # BRAND: Ghazwan_pro
-# UPDATE: 2026-04-06 06:29 AM (BAGHDAD)
+# UPDATE: 2026-04-06 09:03 AM (BAGHDAD)
 ###############################################
 hy2://123456789StrongPass@Viberout-lp.viber.com:443/?insecure=1&sni=www.cloudflare.com#Ghazwan_pro
 trojan://%295%2C9FW.Kk166@Viberout-lp.viber.com:443?path=/eyJqdW5rIjoiU2oxczB0b0tSIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D%3Fed%3D2560&amp%3Bsecurity=tls&amp%3Balpn=http/1.1&amp%3Binsecure=0&amp%3Bhost=028.electrocellco-cf-028.workers.dev&amp%3Bfp=chrome&amp%3Btype=ws&amp%3BallowInsecure=0&amp%3Bsni=028.eLECtRocEllco-Cf-028.worKErS.dev#Ghazwan_pro
@@ -22,14 +22,13 @@ trojan://M7v%w11Se*@Viberout-lp.viber.com:443?security=tls&sni=hyfuuf6.wsone.icu
 trojan://ad8bab9c-f5e2-4957-96fa-3f59e7e4007b@Viberout-lp.viber.com:443?security=tls&amp%3BheaderType=none&amp%3Btype=tcp&amp%3Bsni=206.237.5.220#Ghazwan_pro
 trojan://b65cbe72-59e2-4011-a22b-760621b5921f@Viberout-lp.viber.com:80?security=tls&headerType=none&type=tcp&sni=fl.configasli.xyz#Ghazwan_pro
 trojan://c7f9b8f0-bfdb-11ee-a15c-1239d0255272@Viberout-lp.viber.com:443?security=tls&amp%3Btype=ws&amp%3BheaderType=none&amp%3Bpath=%252Fhowdy&amp%3Bsni=de1.test3.net&amp%3Bhost=de1.test3.net#Ghazwan_pro
-trojan://de7d6444-a7a8-4b3a-bf26-bc6939bb0279@Viberout-lp.viber.com:443?security=tls&sni=n1.chateditimage.com#Ghazwan_pro
-trojan://de7d6444-a7a8-4b3a-bf26-bc6939bb0279@Viberout-lp.viber.com:443?security=tls&sni=n2.chateditimage.com#Ghazwan_pro
 trojan://freedom@Viberout-lp.viber.com:443?allowInsecure=1&alpn=http%2F1.1&host=047.electrocellco-cf-047.workers.dev&path=%2FeyJqdW5rIjoienRVUEM4N2p6dXE2Wm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119&sni=047.eleCTROCelLco-Cf-047.woRkers.DEV&type=ws#Ghazwan_pro
 trojan://humanity@Viberout-lp.viber.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&allowInsecure=1&type=ws&path=%2Fassignment#Ghazwan_pro
 trojan://humanity@Viberout-lp.viber.com:443?security=tls&sni=www.gossipglove.com&fp=chrome&allowInsecure=1&type=ws&path=%2Fassignment#Ghazwan_pro
 trojan://humanity@Viberout-lp.viber.com:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.calmlunch.com#Ghazwan_pro
 trojan://humanity@Viberout-lp.viber.com:443?path=%2Fassignment&security=tls&insecure=1&host=www.gossipglove.com&type=ws&allowInsecure=1&sni=www.gossipglove.com#Ghazwan_pro
 trojan://humanity@Viberout-lp.viber.com:443?path=/assignment&amp%3Bsecurity=tls&amp%3Bhost=www.gossipglove.com&amp%3Btype=ws&amp%3Bsni=www.gossipglove.com#Ghazwan_pro
+trojan://humanity@Viberout-lp.viber.com:443?allowInsecure=1&host=www.gossipglove.com&path=%2Fassignment&sni=www.gossipglove.com&type=ws#Ghazwan_pro
 trojan://humanity@Viberout-lp.viber.com:443?allowInsecure=1&host=www.gossipglove.com&path=/assignment&sni=www.gossipglove.com&type=ws#Ghazwan_pro
 trojan://humanity@Viberout-lp.viber.com:443?allowInsecure=1&host=www.gossipglove.com&path=/assignment&sni=www.gossipglove.com&type=ws#Ghazwan_pro
 trojan://humanity@Viberout-lp.viber.com:443?path=%2Fassignment&security=tls&host=www.creationlong.org&type=ws&sni=www.creationlong.org#Ghazwan_pro
@@ -72,15 +71,12 @@ vless://0833debf-4a9e-4c31-a5b7-a88574bddf18@Viberout-lp.viber.com:443?allowInse
 vless://0833debf-4a9e-4c31-a5b7-a88574bddf18@Viberout-lp.viber.com:443?allowInsecure=1&encryption=none&host=fancy-haze-01e3.ipv4-917.workers.dev&path=%2F&security=tls&sni=fancy-haze-01e3.ipv4-917.workers.dev&type=ws#Ghazwan_pro
 vless://08c41e17-9d1c-4d4a-9edc-242d3d71c1ac@Viberout-lp.viber.com:443?security=tls&amp%3Bsni=oRdEr.fortGIFT.ir&amp%3Balpn=http/1.1&amp%3Bfp=randomized&amp%3Btype=ws&amp%3Bpath=/B7tnDeiaEFHTS0Li&amp%3Bhost=order.fortgift.ir&amp%3Bencryption=none#Ghazwan_pro
 vless://08c41e17-9d1c-4d4a-9edc-242d3d71c1ac@Viberout-lp.viber.com:8080?amp%3Btype=ws&amp%3Bpath=/sSUjDivtRLx305Hr&amp%3Bhost=order.fortgift.ir&amp%3Bencryption=none#Ghazwan_pro
-vless://098fd515-29de-4d74-b77d-d8ab878a7e2c@Viberout-lp.viber.com:443?allowInsecure=1&encryption=none&host=rivvers.info&path=%2Fresgdws&security=tls&sni=rivvers.info&type=ws#Ghazwan_pro
-vless://098fd515-29de-4d74-b77d-d8ab878a7e2c@Viberout-lp.viber.com:443?allowInsecure=1&encryption=none&host=rivvers.info&path=%2Fresgdws&security=tls&sni=rivvers.info&type=ws#Ghazwan_pro
-vless://098fd515-29de-4d74-b77d-d8ab878a7e2c@Viberout-lp.viber.com:443?allowInsecure=1&encryption=none&host=rivvers.info&path=%2Fresgdws&security=tls&sni=rivvers.info&type=ws#Ghazwan_pro
 vless://09d12e6b-c25b-4c78-bc5d-99941c52177e@Viberout-lp.viber.com:80?path=/&security=none&encryption=none&host=ar.liarashop.ir&type=ws#Ghazwan_pro
 vless://0b2fe47a-f51c-4e00-85ba-eeae70addc80@Viberout-lp.viber.com:443?security=&encryption=none&headerType=none&type=tcp#Ghazwan_pro
 vless://0b2fe47a-f51c-4e00-85ba-eeae70addc80@Viberout-lp.viber.com:443?security=none&encryption=none&headerType=none&type=tcp#Ghazwan_pro
 vless://0bb6dff2-0029-4b81-8c81-4fc70fae1ed9@Viberout-lp.viber.com:443?security=reality&amp%3Bencryption=none&amp%3Bpbk=BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs&amp%3Bfp=chrome&amp%3Btype=tcp&amp%3Bflow=xtls-rprx-vision&amp%3Bsni=www.halfords.com#Ghazwan_pro
 vless://0bbe589a-620e-47b9-a615-60bda9903f31@Viberout-lp.viber.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.google.com&fp=chrome&security=reality&pbk=AB6wH4gz73w4F0Fdt8RlJTiNWY9BJKn9NOUwPQPVjg4&sid=#Ghazwan_pro
-vless://0bbe589a-620e-47b9-a615-60bda9903f31@Viberout-lp.viber.com:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=AB6wH4gz73w4F0Fdt8RlJTiNWY9BJKn9NOUwPQPVjg4&security=reality&sni=www.google.com&type=tcp#Ghazwan_pro
+vless://0bbe589a-620e-47b9-a615-60bda9903f31@Viberout-lp.viber.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.google.com&fp=chrome&security=reality&pbk=AB6wH4gz73w4F0Fdt8RlJTiNWY9BJKn9NOUwPQPVjg4&sid=#Ghazwan_pro
 vless://0ca855d9-7c03-40eb-929b-919f934abdc3@Viberout-lp.viber.com:80?encryption=none&host=amirvpn.amirhm00100.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
 vless://0ca855d9-7c03-40eb-929b-919f934abdc3@Viberout-lp.viber.com:80?encryption=none&host=amirvpn.amirhm00100.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
 vless://0ca855d9-7c03-40eb-929b-919f934abdc3@Viberout-lp.viber.com:80?encryption=none&host=amirvpn.amirhm00100.workers.dev&security=none&type=ws#Ghazwan_pro
@@ -109,8 +105,8 @@ vless://1260fbdc-57b6-4e2c-a76f-c6f748d26917@Viberout-lp.viber.com:80?mode=auto&
 vless://14e1775b-d92c-455b-8db3-e6c6d61909e0@Viberout-lp.viber.com:80?encryption=none&host=vpnpro.eshghiabolfazl2009.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
 vless://14e1775b-d92c-455b-8db3-e6c6d61909e0@Viberout-lp.viber.com:80?encryption=none&host=vpnpro.eshghiabolfazl2009.workers.dev&path=%F0%9F%94%92&security=none&type=ws#Ghazwan_pro
 vless://157cb924-2adc-4f4e-9d54-ba105b6dff30@Viberout-lp.viber.com:443?type=ws&amp%3Bpath=/&amp%3Bhost=vip.hackers855.sbs&amp%3Bsecurity=tls&amp%3Bfp=chrome&amp%3Bsni=vip.hackers855.sbs#Ghazwan_pro
+vless://15cbab96-197e-46a5-9042-073b3980c798@Viberout-lp.viber.com:80/?type=ws&encryption=none&flow=&host=fsdns.ectunnelvpn.me&path=%2Fvless#Ghazwan_pro
 vless://15cbab96-197e-46a5-9042-073b3980c798@Viberout-lp.viber.com:80/?type=ws&encryption=none&flow=&host=fsdns.ectunnelvpn.me&path=/vless#Ghazwan_pro
-vless://15cbab96-197e-46a5-9042-073b3980c798@Viberout-lp.viber.com:80?encryption=none&host=fsdns.ectunnelvpn.me&path=%2Fvless&security=none&type=ws#Ghazwan_pro
 vless://1679af35-6dd6-4c09-ae3b-18f239217f3e@Viberout-lp.viber.com:443?allowInsecure=1&encryption=none&host=rAyAn-007.pArViN.DpDnS.OrG&path=%2F&security=tls&sni=rAyAn-007.pArViN.DpDnS.OrG&type=ws#Ghazwan_pro
 vless://1679af35-6dd6-4c09-ae3b-18f239217f3e@Viberout-lp.viber.com:443?allowInsecure=1&encryption=none&host=rAyAn-007.pArViN.DpDnS.OrG&path=%2F&security=tls&sni=rAyAn-007.pArViN.DpDnS.OrG&type=ws#Ghazwan_pro
 vless://1679af35-6dd6-4c09-ae3b-18f239217f3e@Viberout-lp.viber.com:443?encryption=none&security=tls&sni=rAyAn-007.pArViN.DpDnS.OrG&allowInsecure=1&type=ws&host=rAyAn-007.pArViN.DpDnS.OrG&path=%2F%3Fed%3D2560fp%3Dchrome#Ghazwan_pro
@@ -118,8 +114,8 @@ vless://1679af35-6dd6-4c09-ae3b-18f239217f3e@Viberout-lp.viber.com:443?security=
 vless://17c4e377-ea15-0bb8-98b2-3e348c9ff5d9@Viberout-lp.viber.com:443?security=reality&encryption=none&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=d8c6b58bcbb0c323#Ghazwan_pro
 vless://17c4e377-ea15-0bb8-98b2-3e348c9ff5d9@Viberout-lp.viber.com:443?security=reality&encryption=none&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=d8c6b58bcbb0c323#Ghazwan_pro
 vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@Viberout-lp.viber.com:443?encryption=none&security=tls&sni=lively-brook-c471.nedena3319.workers.dev&fp=chrome&type=ws&host=lively-brook-c471.nedena3319.workers.dev&path=/?ed%3D2048&packetEncoding=xudp#Ghazwan_pro
+vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@Viberout-lp.viber.com:80/?type=ws&encryption=none&flow=&host=lively-brook-c471.nedena3319.workers.dev&path=%2F#Ghazwan_pro
 vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@Viberout-lp.viber.com:80/?type=ws&encryption=none&flow=&host=lively-brook-c471.nedena3319.workers.dev&path=/#Ghazwan_pro
-vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@Viberout-lp.viber.com:80?encryption=none&host=lively-brook-c471.nedena3319.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
 vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@Viberout-lp.viber.com:443?allowInsecure=1&encryption=none&host=lively-brook-c471.nedena3319.workers.dev&path=%2F&security=tls&sni=lively-brook-c471.nedena3319.workers.dev&type=ws#Ghazwan_pro
 vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@Viberout-lp.viber.com:443?allowInsecure=1&encryption=none&host=lively-brook-c471.nedena3319.workers.dev&path=%2F&security=tls&sni=lively-brook-c471.nedena3319.workers.dev&type=ws#Ghazwan_pro
 vless://17ebee4e-97ea-4cad-8737-cc228478ca9d@Viberout-lp.viber.com:443?security=tls&type=ws&path=/?ed=2048&host=lively-brook-c471.nedena3319.workers.dev&sni=lively-brook-c471.nedena3319.workers.dev&fp=chrome&encryption=none#Ghazwan_pro
@@ -148,8 +144,8 @@ vless://22753114-c3cb-4613-9f2d-759a871489f7@Viberout-lp.viber.com:443?security=
 vless://22c71398-f576-4608-8b1f-b65badde088b@Viberout-lp.viber.com:443?security=tls&sni=rAYAN108-WzqDnd-3.RAyan-108.workERs.DEV&fp=chrome&type=ws&path=/?ed%3D2560&host=rAYAN108-WzqDnd-3.RAyan-108.workERs.DEV&encryption=none#Ghazwan_pro
 vless://23adc6b0-dcf7-4bef-8136-72d2c566b1c5@Viberout-lp.viber.com:8080?type=ws&amp%3Bpath=/telegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%3Fed%3D2048&amp%3Bhost=Kanal-polproxy.Vipnufilter.Online.&amp%3Bsecurity=none#Ghazwan_pro
 vless://2730487f-0ed5-4f04-92d5-f95f9253d4f4@Viberout-lp.viber.com:443?path=ws&security=tls&encryption=none&host=v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev&fp=chrome&type=ws&sni=v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev#Ghazwan_pro
+vless://27950cc1-85b4-4ecc-ad3a-4507360504af@Viberout-lp.viber.com:8080/?type=ws&encryption=none&flow=&host=031.electrocellco-cf-031.workers.dev&path=%2FeyJqdW5rIjoiQjE1UDBKNGN6UnEzNjg2IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTg1LjIxMy4yMTEuMjkiLCIzMS40NC4yLjU3IiwiNzcuMjQ2LjEwOC4xMzAiXX0%3D#Ghazwan_pro
 vless://27950cc1-85b4-4ecc-ad3a-4507360504af@Viberout-lp.viber.com:8080/?type=ws&encryption=none&flow=&host=031.electrocellco-cf-031.workers.dev&path=/eyJqdW5rIjoiQjE1UDBKNGN6UnEzNjg2IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTg1LjIxMy4yMTEuMjkiLCIzMS40NC4yLjU3IiwiNzcuMjQ2LjEwOC4xMzAiXX0=#Ghazwan_pro
-vless://27950cc1-85b4-4ecc-ad3a-4507360504af@Viberout-lp.viber.com:8080?encryption=none&host=031.electrocellco-cf-031.workers.dev&path=%2FeyJqdW5rIjoiQjE1UDBKNGN6UnEzNjg2IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTg1LjIxMy4yMTEuMjkiLCIzMS40NC4yLjU3IiwiNzcuMjQ2LjEwOC4xMzAiXX0%3D&security=none&type=ws#Ghazwan_pro
 vless://27bbde38-b656-439c-8f26-7868189bf0ec@Viberout-lp.viber.com:443?path=/&amp%3Bsecurity=tls&amp%3Balpn=http/1.1&amp%3Bencryption=none&amp%3Binsecure=0&amp%3Bhost=dgf.addressprovider.lat&amp%3Bfp=chrome&amp%3Btype=ws&amp%3BallowInsecure=0&amp%3Bsni=dgf.addressprovider.lat#Ghazwan_pro
 vless://29af39ed-f8c8-49b8-9a5f-ea24fad97a09@Viberout-lp.viber.com:443?path=/%3Fed%3D1024&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Balpn=h2%2Chttp/1.1&amp%3Bhost=fastopra.com&amp%3Bfp=firefox&amp%3Btype=ws&amp%3Bsni=video.nordkapp-boats.no#Ghazwan_pro
 vless://2ac6e527-6410-48ce-b9ba-cc8135ee2a3b@Viberout-lp.viber.com:80?encryption=none&host=fragrant-recipe-09f4.wopecuyubak61.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
@@ -302,10 +298,10 @@ vless://55b0463c-e27f-455b-a25a-70123297b9f4@Viberout-lp.viber.com:443?security=
 vless://55b0463c-e27f-455b-a25a-70123297b9f4@Viberout-lp.viber.com:443?security=tls&sni=rAyAn-cOnFiG-sg-1.pAriSa.dPdNs.oRg&allowInsecure=1&fp=chrome&type=ws&path=/ws&host=rAyAn-cOnFiG-sg-1.pAriSa.dPdNs.oRg&encryption=none#Ghazwan_pro
 vless://55b0463c-e27f-455b-a25a-70123297b9f4@Viberout-lp.viber.com:443?security=tls&sni=rAyAn-cOnFiG-sg-1.pArSa.dPdNs.oRg&allowInsecure=1&fp=chrome&type=ws&path=/ws&host=rAyAn-cOnFiG-sg-1.pArSa.dPdNs.oRg&encryption=none#Ghazwan_pro
 vless://55b0463c-e27f-455b-a25a-70123297b9f4@Viberout-lp.viber.com:443?security=tls&sni=rAyAn-cOnFiG-sg-1.pArSa.dPdNs.oRg&allowInsecure=1&fp=chrome&type=ws&path=/ws&host=rAyAn-cOnFiG-sg-1.pArSa.dPdNs.oRg&encryption=none#Ghazwan_pro
-vless://55cb8179-ce11-4ec8-a03c-333f797265f9@lp.viber.com:80/?type=ws&encryption=none&flow=&host=long-forest-ac72.salari1382m.workers.dev&path=%2F#Ghazwan_pro
-vless://55cb8179-ce11-4ec8-a03c-333f797265f9@lp.viber.com:80/?type=ws&encryption=none&flow=&host=long-forest-ac72.salari1382m.workers.dev&path=/#Ghazwan_pro
-vless://55cb8179-ce11-4ec8-a03c-333f797265f9@lp.viber.com:80?encryption=none&host=long-forest-ac72.salari1382m.workers.dev&path=/&security=none&type=ws#Ghazwan_pro
-vless://55d7c587-7d65-4cd2-a51a-0a7fb6a63285@lp.viber.com:80?mode=auto&amp%3Bpath=/%40v2pediabot%40v2pediabot%40v2pediabot%40v2pediabot%40v2pediabot%40v2pediabot%3Fed%3D2048&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=v2pediabot71.net&amp%3Btype=xhttp#Ghazwan_pro
+vless://55cb8179-ce11-4ec8-a03c-333f797265f9@Viberout-lp.viber.com:80/?type=ws&encryption=none&flow=&host=long-forest-ac72.salari1382m.workers.dev&path=%2F#Ghazwan_pro
+vless://55cb8179-ce11-4ec8-a03c-333f797265f9@Viberout-lp.viber.com:80/?type=ws&encryption=none&flow=&host=long-forest-ac72.salari1382m.workers.dev&path=/#Ghazwan_pro
+vless://55cb8179-ce11-4ec8-a03c-333f797265f9@Viberout-lp.viber.com:80?encryption=none&host=long-forest-ac72.salari1382m.workers.dev&path=/&security=none&type=ws#Ghazwan_pro
+vless://55d7c587-7d65-4cd2-a51a-0a7fb6a63285@Viberout-lp.viber.com:80?mode=auto&amp%3Bpath=/%40v2pediabot%40v2pediabot%40v2pediabot%40v2pediabot%40v2pediabot%40v2pediabot%3Fed%3D2048&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=v2pediabot71.net&amp%3Btype=xhttp#Ghazwan_pro
 vless://568db765-6970-40c8-8087-83ea9ba2429e@lp.viber.com:443?security=tls&sni=rAyAn-007.pArAsToO.DpDnS.OrG&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=rAyAn-007.pArAsToO.DpDnS.OrG&encryption=none#Ghazwan_pro
 vless://57ae96d8-4250-4db4-b11e-c6216acc403a@lp.viber.com:443?path=ws&security=tls&encryption=none&host=v2ngfast-v2ngfast-v2ngfast-v2ngfast.ftdbcdh.workers.dev&fp=chrome&type=ws&sni=v2ngfast-v2ngfast-v2ngfast-v2ngfast.ftdbcdh.workers.dev#Ghazwan_pro
 vless://5874ce17-1e4a-4cf5-b67e-c88da6194616@lp.viber.com:443?path=/eyJqdW5rIjoicHFDN0R3VG1PTmZVIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560&security=tls&alpn=http/1.1&encryption=none&host=royal-limit-4b1c.rosomo9596.workers.dev&fp=chrome&type=ws&sni=rOYAl-LiMIt-4B1C.ROSomO9596.workerS.deV#Ghazwan_pro
@@ -407,8 +403,8 @@ vless://6fb65356-788e-4118-8280-148ec6eca18a@lp.viber.com:443?allowInsecure=1&en
 vless://6fb65356-788e-4118-8280-148ec6eca18a@lp.viber.com:443?&security=tls&fp=chrome&sni=xn--cz8h.pages.dev&type=ws&headerType=none&host=xn--cz8h.pages.dev&path=pyip=proxyip.cmliussss.net#Ghazwan_pro
 vless://6fb65356-788e-4118-8280-148ec6eca18a@lp.viber.com:443?encryption=none&host=xn--cz8h.pages.dev&path=pyip%3Dproxyip.cmliussss.net&security=tls&sni=xn--cz8h.pages.dev&type=ws#Ghazwan_pro
 vless://6fd9f786-d974-49d0-b5c4-397678de69a2@lp.viber.com:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs&security=reality&sni=www.cybo.com&type=tcp#Ghazwan_pro
+vless://733a9a09-ba93-4e73-b1f3-ae0bcbd88310@lp.viber.com:443?allowInsecure=1&encryption=none&host=noisy-paper-6b70.grirbp.workers.dev&path=%2F&security=tls&sni=noisy-paper-6b70.grirbp.workers.dev&type=ws#Ghazwan_pro
 vless://733a9a09-ba93-4e73-b1f3-ae0bcbd88310@lp.viber.com:443?allowInsecure=1&encryption=none&host=noisy-paper-6b70.grirbp.workers.dev&path=/&security=tls&sni=noisy-paper-6b70.grirbp.workers.dev&type=ws#Ghazwan_pro
-vless://733a9a09-ba93-4e73-b1f3-ae0bcbd88310@lp.viber.com:443?allowInsecure=1&encryption=none&host=noisy-paper-6b70.grirbp.workers.dev&security=tls&sni=noisy-paper-6b70.grirbp.workers.dev&type=ws#Ghazwan_pro
 vless://73a4456a-0442-4550-8b4f-c719871a4eeb@lp.viber.com:443?security=tls&type=ws&host=011.electrocellco-cf-011.workers.dev&path=/eyJqdW5rIjoibWRiMjNWaUwxNHVWIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMjE3LjE0Mi4yMzYuOTMiXX0=?ed=2560&sni=011.electrOCELlCO-CF-011.WorKERS.dEV&fp=chrome#Ghazwan_pro
 vless://73d17f62-d0c0-4c90-903c-a2b3f3806cca@lp.viber.com:80?encryption=none&host=fragrant-tooth-a5b7.cajeba6448.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
 vless://75e1fde7-6bf6-48ef-ba43-400e960e185b@lp.viber.com:80/?type=ws&encryption=none&flow=&host=pq-bosniaandherzegovina1.09vpn.com&path=%2Fvless%2F#Ghazwan_pro
@@ -461,7 +457,7 @@ vless://90c9c25c-df6c-4438-83d3-ef97166a9184@lp.viber.com:443/?type=tcp&encrypti
 vless://90c9c25c-df6c-4438-83d3-ef97166a9184@lp.viber.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=5post-gate.x5.ru&fp=chrome&security=reality&pbk=A3PWLCRX9oeSyPvrmrwj2jUXcLo2uCwAISRBHtNE1Xw&sid=#Ghazwan_pro
 vless://92ecde58-6f95-4958-aab9-923c3a2f6c7c@lp.viber.com:80?path=/&security=none&encryption=none&host=vip3-nightgemshop.sap-tanbol.ir&type=ws#Ghazwan_pro
 vless://93526fcb-8dbf-442e-a656-eb304f1da4ef@lp.viber.com:80/?type=ws&encryption=none&flow=&host=lucky-voice-d6f3.difat89954-0c6.workers.dev#Ghazwan_pro
-vless://93526fcb-8dbf-442e-a656-eb304f1da4ef@lp.viber.com:80?encryption=none&host=lucky-voice-d6f3.difat89954-0c6.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
+vless://93526fcb-8dbf-442e-a656-eb304f1da4ef@lp.viber.com:80/?type=ws&encryption=none&flow=&host=lucky-voice-d6f3.difat89954-0c6.workers.dev#Ghazwan_pro
 vless://93526fcb-8dbf-442e-a656-eb304f1da4ef@lp.viber.com:80?encryption=none&host=lucky-voice-d6f3.difat89954-0c6.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
 vless://93526fcb-8dbf-442e-a656-eb304f1da4ef@lp.viber.com:80?encryption=none&host=lucky-voice-d6f3.difat89954-0c6.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
 vless://937d410f-1858-471d-bc0e-cdf3b43e78b8@lp.viber.com:443?allowInsecure=1&alpn=http%2F1.1&encryption=none&host=60ysrd9-v10nswi4duhvlrv0yxuspeth.efownd9to.workers.dev&path=%2FeyJqdW5rIjoiMnlwZUVocGtVZSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D&security=tls&sni=60ysrd9-v10nswi4duhvlrv0yxuspeth.efownd9to.workers.dev&type=ws#Ghazwan_pro
@@ -486,7 +482,6 @@ vless://9ccd06a2-5616-47e3-9763-f9696959d7ad@lp.viber.com:443?security=tls&sni=r
 vless://9ccd06a2-5616-47e3-9763-f9696959d7ad@lp.viber.com:443?security=tls&sni=rAyAn-cOnFiG-de-1.pAriSa.dPdNs.oRg&allowInsecure=1&fp=chrome&type=ws&path=/ws&host=rAyAn-cOnFiG-de-1.pAriSa.dPdNs.oRg&encryption=none#Ghazwan_pro
 vless://9ccd06a2-5616-47e3-9763-f9696959d7ad@lp.viber.com:443?security=tls&sni=rAyAn-cOnFiG-de-1.pArSa.dPdNs.oRg&allowInsecure=1&fp=chrome&type=ws&path=/ws&host=rAyAn-cOnFiG-de-1.pArSa.dPdNs.oRg&encryption=none#Ghazwan_pro
 vless://9e13716d-c43d-48b3-8cab-65e02d938ab5@lp.viber.com:443?path=/&amp%3Bsecurity=tls&amp%3Balpn=http/1.1&amp%3Bencryption=none&amp%3Binsecure=0&amp%3Bhost=snapp.athenashoppp.ir&amp%3Bfp=chrome&amp%3Btype=ws&amp%3BallowInsecure=0&amp%3Bsni=snaPP.athenashOppp.ir#Ghazwan_pro
-vless://9e20b04d-5a81-4e16-b421-01e502f0aac6@lp.viber.com:80?encryption=none&host=google.com&path=%2Fvless%2F&security=none&type=ws#Ghazwan_pro
 vless://Come_To_VPNCUSTOMIZE@lp.viber.com:8080?path=/Join--VPNCUSTOMIZE.V2ray.re%3Fed%3D8080&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=VPNCUSTOMIZE.V2ray.Community.&amp%3Btype=ws#Ghazwan_pro
 vless://SVNTEAM@lp.viber.com:80?path=/SvnTeam-TeleGram-ChaNnel-VIP%3Fed%3D2048&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=SvnTeamV2rayGm7.7.7.7.ir.Com.Site.xn--fhq0laa256bac7403eea044azr5g.CoM.&amp%3Btype=ws#Ghazwan_pro
 vless://TELEGRAM-CONFiGLiNE-29@lp.viber.com:80?mode=auto&amp%3Bpath=/telegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D2048&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=panelvipasli.io&amp%3Btype=xhttp#Ghazwan_pro
@@ -507,7 +502,7 @@ vless://a114d067-b900-4f60-87a5-50d4d63972b8@lp.viber.com:443?security=tls&sni=P
 vless://a2a7636b-25d9-4f83-941c-ba88cef9e2e2@lp.viber.com:443?type=xhttp&amp%3Bencryption=none&amp%3Bpath=/stream/cubic&amp%3Bmode=auto&amp%3Bsecurity=reality&amp%3Bpbk=2Y_6l4fk42l4SRZ2XKPQHu27uEWCWZnYOdh_dtQzcAI&amp%3Bfp=chrome&amp%3Bsni=mirror.arvancloud.ir&amp%3Bsid=33a6&amp%3Bspx=/#Ghazwan_pro
 vless://a2af6e7c-a792-4e51-9460-fff4bd74fbfc@lp.viber.com:80?encryption=none&host=vahidqaz-ft33vt-1.vahidqaz.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
 vless://a2af6e7c-a792-4e51-9460-fff4bd74fbfc@lp.viber.com:80/?type=ws&encryption=none&flow=&host=vahidqaz-ft33vt-1.vahidqaz.workers.dev#Ghazwan_pro
-vless://a2af6e7c-a792-4e51-9460-fff4bd74fbfc@lp.viber.com:80?encryption=none&host=vahidqaz-ft33vt-1.vahidqaz.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
+vless://a2af6e7c-a792-4e51-9460-fff4bd74fbfc@lp.viber.com:80/?type=ws&encryption=none&flow=&host=vahidqaz-ft33vt-1.vahidqaz.workers.dev#Ghazwan_pro
 vless://a43ecdaf-c1e9-44f6-bbd9-1c113cb7d48f@lp.viber.com:80?security=none&encryption=none&host=q6.19kalA.co&type=ws#Ghazwan_pro
 vless://a46fd309-e506-4207-9148-22c162b10a71@lp.viber.com:443?encryption=no%E2%80%A6%3C/div%3E#Ghazwan_pro
 vless://a46fd309-e506-4207-9148-22c162b10a71@lp.viber.com:80?encryption=none&amp%3Bsecurity=none&amp%3Btype=ws&amp%3Bhost=outnika.snappfoodi.ir&amp%3Bpath=/api/v2#Ghazwan_pro
@@ -520,8 +515,8 @@ vless://a73b8135-ec7a-4f70-bac6-81fbccad4515@lp.viber.com:443?allowInsecure=1&en
 vless://a73b8135-ec7a-4f70-bac6-81fbccad4515@lp.viber.com:443?encryption=none&security=tls&sni=labeller.neonime83.workers.dev&allowInsecure=true&type=ws&host=labeller.neonime83.workers.dev&path=/&packetEncoding=xudp#Ghazwan_pro
 vless://a73b8135-ec7a-4f70-bac6-81fbccad4515@lp.viber.com:443?allowInsecure=1&encryption=none&host=labeller.neonime83.workers.dev&path=%2F&security=tls&sni=labeller.neonime83.workers.dev&type=ws#Ghazwan_pro
 vless://a7444b2b-20fb-461f-9840-63e5c8c7d883@lp.viber.com:80?encryption=none&host=mute-violet-c674.poviy66273.workers.dev&path=%2F&security=none&type=ws#Ghazwan_pro
+vless://a7444b2b-20fb-461f-9840-63e5c8c7d883@lp.viber.com:80/?type=ws&encryption=none&flow=&host=mute-violet-c674.poviy66273.workers.dev&path=%2F%3Fed#Ghazwan_pro
 vless://a7444b2b-20fb-461f-9840-63e5c8c7d883@lp.viber.com:80/?type=ws&encryption=none&flow=&host=mute-violet-c674.poviy66273.workers.dev&path=/?ed#Ghazwan_pro
-vless://a7444b2b-20fb-461f-9840-63e5c8c7d883@lp.viber.com:80?encryption=none&host=mute-violet-c674.poviy66273.workers.dev&path=%2F%3Fed&security=none&type=ws#Ghazwan_pro
 vless://a75cb418-c1d6-476a-9464-ad1bd5181e3c@lp.viber.com:443?path=/&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Balpn=h2%2Chttp/1.1&amp%3Bhost=e.vpncustomize.Website&amp%3Bfp=chrome&amp%3Btype=ws&amp%3Bsni=de.vpncustomize.Website#Ghazwan_pro
 vless://a91e1b4f-09f0-48af-a0c8-cd389bd3223c@lp.viber.com:443?allowInsecure=1&encryption=none&host=nnet.online&path=%2Fvless-tls&security=tls&sni=VPn.nnet.Online&type=ws#Ghazwan_pro
 vless://a91e1b4f-09f0-48af-a0c8-cd389bd3223c@lp.viber.com:443?allowInsecure=1&encryption=none&host=nnet.online&path=%2Fvless-tls&security=tls&sni=VPn.nnet.Online&type=ws#Ghazwan_pro
@@ -549,6 +544,7 @@ vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@lp.viber.com:443?path=path/TELEGRAM
 vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@lp.viber.com:443?path=/%3Fed%3D2048&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Bhost=3k.pureboy.eu.org&amp%3Btype=ws&amp%3Bsni=3k.pureboy.eu.org#Ghazwan_pro
 vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@lp.viber.com:443?path=/%3Fed%3D2048&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Bhost=3k.pureboy.eu.org&amp%3Bfp=chrome&amp%3Btype=ws&amp%3Bsni=3k.pureboy.eu.org#Ghazwan_pro
 vless://ba49d874-fe02-465d-82d3-ed981dc7694f@lp.viber.com:443?allowInsecure=1&alpn=http%2F1.1&encryption=none&host=o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev&security=tls&sni=o94yv7lIF0-AnXiSd9EFeHVVS7mxn6Bh.z-ULe-IKA-d-e-Ne-k-E.WORKERs.DEv&type=ws#Ghazwan_pro
+vless://ba49d874-fe02-465d-82d3-ed981dc7694f@lp.viber.com:443?allowInsecure=1&alpn=http%2F1.1&encryption=none&host=o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev&security=tls&sni=o94Yv7LIF0-aNXISd9eFehvvS7mxn6bH.Z-ULe-iKa-d-e-ne-K-e.wORkeRs.Dev&type=ws#Ghazwan_pro
 vless://ba49d874-fe02-465d-82d3-ed981dc7694f@lp.viber.com:443?allowInsecure=1&alpn=http/1.1&encryption=none&host=o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev&security=tls&sni=o94Yv7LIF0-aNXISd9eFehvvS7mxn6bH.Z-ULe-iKa-d-e-ne-K-e.wORkeRs.Dev&type=ws#Ghazwan_pro
 vless://bec44ac3-a662-4179-a9dd-2aa881706dde@lp.viber.com:443?security=reality&encryption=none&pbk=Ajk0QudeMVQocN88OG14PpsxparFuRJlvqzXDlW-gyQ&headerType=&fp=chrome&type=tcp&sni=analytics.google.com&sid=aba7bc9a#Ghazwan_pro
 vless://bf4c614f-c46d-4db9-b031-62f7e4b85c2c@lp.viber.com:443?allowInsecure=1&encryption=none&host=hex.1tb.workers.dev&path=ws&security=tls&sni=hex.1tb.workers.dev&type=ws#Ghazwan_pro
@@ -592,23 +588,20 @@ vless://c8d1c6d3-388f-48fc-a8f0-ed90d955d096@lp.viber.com:443?encryption=none&fl
 vless://c8d1c6d3-388f-48fc-a8f0-ed90d955d096@lp.viber.com:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw&security=reality&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp#Ghazwan_pro
 vless://c8d1c6d3-388f-48fc-a8f0-ed90d955d096@lp.viber.com:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw&security=reality&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp#Ghazwan_pro
 vless://c8d1c6d3-388f-48fc-a8f0-ed90d955d096@lp.viber.com:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw&security=reality&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp#Ghazwan_pro
-vless://c8d65a3a-5002-4dff-bfd6-d4b9ef90b9cc@lp.viber.com:443?encryption=none&security=none&serviceName=pol-x1.plugvpn.ru&type=grpc#Ghazwan_pro
-vless://c8d65a3a-5002-4dff-bfd6-d4b9ef90b9cc@lp.viber.com:443?encryption=none&security=none&serviceName=pol-x1.plugvpn.ru&type=grpc#Ghazwan_pro
 vless://c984bf83-d7cb-49d5-98ba-6ed29bf419f0@lp.viber.com:80?path=/&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Btype=ws#Ghazwan_pro
 vless://c984bf83-d7cb-49d5-98ba-6ed29bf419f0@lp.viber.com:80?path=/&security=none&encryption=none&type=ws#Ghazwan_pro
-vless://ca73d911-29f4-42d8-ada5-81dee679e96a@lp.viber.com:80?encryption=none&host=vps.zakir.web.id&path=vless&security=none&type=ws#Ghazwan_pro
 vless://cbb2d3b3-9164-46cc-84f9-82722fbf1353@lp.viber.com:443?allowInsecure=1&encryption=none&host=0n0w5jre3ro-p4vmk-dilf-3hcr9u9fc.talumy147.workers.dev&path=%2FeyJqdW5rIjoiVXhYd0VacUYxaUEzIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D&security=tls&sni=0n0W5JrE3RO-P4VmK-DILF-3HCr9U9fC.taLUmY147.WOrKErS.deV&type=ws#Ghazwan_pro
 vless://cbb2d3b3-9164-46cc-84f9-82722fbf1353@lp.viber.com:443?allowInsecure=1&encryption=none&host=0n0w5jre3ro-p4vmk-dilf-3hcr9u9fc.talumy147.workers.dev&path=%2FeyJqdW5rIjoiVXhYd0VacUYxaUEzIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D&security=tls&sni=0n0W5JrE3RO-P4VmK-DILF-3HCr9U9fC.taLUmY147.WOrKErS.deV&type=ws#Ghazwan_pro
 vless://cc827222-bc88-4947-b857-83180a9bc4c4@lp.viber.com:80?path=/&security=none&encryption=none&host=ss1.elmovipservice.ir&type=ws#Ghazwan_pro
 vless://ccac781d-1f3e-4e5b-99c2-d07d653b81e8@lp.viber.com:80?security=none&encryption=none&type=ws#Ghazwan_pro
 vless://cdb38f5b-12c3-414b-eacd-a635dc633701@lp.viber.com:443?mode=gun&amp%3Bsecurity=reality&amp%3Bencryption=none&amp%3Bpbk=rsoZpDByMW3Ukcj68I5vw_-k-CivE6CV6TPJxyPl6WY&amp%3Bfp=chrome&amp%3Bspx=/storage&amp%3Btype=grpc&amp%3Bsni=mega.io&amp%3Bsid=07a9a22b#Ghazwan_pro
-vless://cee53ba2-31d6-4821-8bef-d55f2f05f120@braze-images.com:443?allowInsecure=1&alpn=h3%252Ch2%252Chttp%252F1.1&encryption=none&host=xiao.xiao0772.ccwu.cc&path=%2F&security=tls&sni=xiao.xiao0772.ccwu.cc&type=ws#Ghazwan_pro
-vless://d00a29d1-6e6c-4281-9e46-263caa77bb44@braze-images.com:443?security=tls&type=ws&host=pedaratvpn.ar-ahmadiyan86.workers.dev&path=/eyJqdW5rIjoiYk9WYlJsYlFGIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsibmltYS5uc2NsLmlyIl19&sni=pEdaRAtVPn.ar-AhmadiYan86.WoRKers.dev&fp=chrome#Ghazwan_pro
-vless://d057338f-0f7b-4245-80b3-6bcabd365b84@braze-images.com:443?allowInsecure=1&encryption=none&host=edge26-topnet.topnet1127.workers.dev&path=%2FeyJqdW5rIjoicVZMOXFIcEN4UkI2azNnIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D&security=tls&sni=edgE26-TOPnET.TopnEt1127.wOrkErs.DeV&type=ws#Ghazwan_pro
-vless://d22e6077-bfe7-430a-8484-9ddc672d2b76@braze-images.com:443?path=ws&security=tls&encryption=none&host=v2ngfast-v2ngfast-v2ngfast-v2ngfast.eevqny.workers.dev&fp=chrome&type=ws&sni=v2ngfast-v2ngfast-v2ngfast-v2ngfast.eevqny.workers.dev#Ghazwan_pro
-vless://d2d0f796-edb0-427a-af32-ae360679f9e7@braze-images.com:443?allowInsecure=1&encryption=none&host=rayan-007.foton.dpdns.org&path=%2F&security=tls&sni=rAyAn-007.fOtOn.dPdNs.oRg&type=ws#Ghazwan_pro
-vless://d2d0f796-edb0-427a-af32-ae360679f9e7@braze-images.com:443?allowInsecure=1&encryption=none&host=rayan-007.foton.dpdns.org&path=%2F&security=tls&sni=rAyAn-007.fOtOn.dPdNs.oRg&type=ws#Ghazwan_pro
-vless://d2d0f796-edb0-427a-af32-ae360679f9e7@braze-images.com:443/?type=ws&encryption=none&flow=&host=rAyAn-007.fOtOn.dPdNs.oRg&path=%2F&security=tls&sni=rAyAn-007.fOtOn.dPdNs.oRg&allowInsecure=1#Ghazwan_pro
+vless://cee53ba2-31d6-4821-8bef-d55f2f05f120@lp.viber.com:443?allowInsecure=1&alpn=h3%252Ch2%252Chttp%252F1.1&encryption=none&host=xiao.xiao0772.ccwu.cc&path=%2F&security=tls&sni=xiao.xiao0772.ccwu.cc&type=ws#Ghazwan_pro
+vless://d00a29d1-6e6c-4281-9e46-263caa77bb44@lp.viber.com:443?security=tls&type=ws&host=pedaratvpn.ar-ahmadiyan86.workers.dev&path=/eyJqdW5rIjoiYk9WYlJsYlFGIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsibmltYS5uc2NsLmlyIl19&sni=pEdaRAtVPn.ar-AhmadiYan86.WoRKers.dev&fp=chrome#Ghazwan_pro
+vless://d057338f-0f7b-4245-80b3-6bcabd365b84@lp.viber.com:443?allowInsecure=1&encryption=none&host=edge26-topnet.topnet1127.workers.dev&path=%2FeyJqdW5rIjoicVZMOXFIcEN4UkI2azNnIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ%3D%3D&security=tls&sni=edgE26-TOPnET.TopnEt1127.wOrkErs.DeV&type=ws#Ghazwan_pro
+vless://d22e6077-bfe7-430a-8484-9ddc672d2b76@lp.viber.com:443?path=ws&security=tls&encryption=none&host=v2ngfast-v2ngfast-v2ngfast-v2ngfast.eevqny.workers.dev&fp=chrome&type=ws&sni=v2ngfast-v2ngfast-v2ngfast-v2ngfast.eevqny.workers.dev#Ghazwan_pro
+vless://d2d0f796-edb0-427a-af32-ae360679f9e7@lp.viber.com:443?allowInsecure=1&encryption=none&host=rayan-007.foton.dpdns.org&path=%2F&security=tls&sni=rAyAn-007.fOtOn.dPdNs.oRg&type=ws#Ghazwan_pro
+vless://d2d0f796-edb0-427a-af32-ae360679f9e7@lp.viber.com:443?allowInsecure=1&encryption=none&host=rayan-007.foton.dpdns.org&path=%2F&security=tls&sni=rAyAn-007.fOtOn.dPdNs.oRg&type=ws#Ghazwan_pro
+vless://d2d0f796-edb0-427a-af32-ae360679f9e7@lp.viber.com:443/?type=ws&encryption=none&flow=&host=rAyAn-007.fOtOn.dPdNs.oRg&path=%2F&security=tls&sni=rAyAn-007.fOtOn.dPdNs.oRg&allowInsecure=1#Ghazwan_pro
 vless://d2d0f796-edb0-427a-af32-ae360679f9e7@braze-images.com:443?security=tls&sni=rAyAn-007.fOtOn.dPdNs.oRg&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=rayan-007.foton.dpdns.org&encryption=none#Ghazwan_pro
 vless://d342d11e-d424-4583-b36e-524ab1f0afa4@braze-images.com:80?path=/%3Fed%3D2560&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=a.xn--i-sx6a60i.us.kg.&amp%3Btype=ws#Ghazwan_pro
 vless://d34dac88-5207-49a3-b5dc-1b737e2a7f6f@braze-images.com:443?path=/141.95.127.113%3D2053&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Binsecure=0&amp%3Bhost=lutranautilus.qzz.io&amp%3Btype=ws&amp%3BallowInsecure=0&amp%3Bsni=lutranautilus.qzz.io#Ghazwan_pro
@@ -630,6 +623,7 @@ vless://d8680ca0-b97c-40cf-9726-16c362eadf88@braze-images.com:80?path=/?ed=2048&
 vless://d9c4d8a1-f6a6-4cb8-b0b5-31d218ec3bce@braze-images.com:8080?type=ws&amp%3Bpath=/telegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%3Fed%3D2048&amp%3Bhost=15.v2ray.mihanyas.ir.mbj.farsroid.com.xn--fhq0la447aac5504dea701axr1g.online.&amp%3Bsecurity=none#Ghazwan_pro
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@braze-images.com:80?encryption=none&path=%2Fhttp&security=none&type=ws#Ghazwan_pro
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@braze-images.com:80?path=%2Fhttp%23Telegram%40V2ray_Alpha%2F%3Fed%3D2560&security=none&encryption=none&host=google.com&type=ws#Ghazwan_pro
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@braze-images.com:80?encryption=none&host=de.vpnbase.net&path=%2Fhttp&security=none&type=ws#Ghazwan_pro
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@braze-images.com:80?encryption=none&host=de.vpnbase.net&path=/http&security=none&type=ws#Ghazwan_pro
 vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@braze-images.com:443?path=/--Telegram---MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN&security=tls&encryption=none&host=mitivpn-s1.global.ssl.fastly.net&fp=chrome&type=ws&sni=mitivpn-s1.global.ssl.fastly.net#Ghazwan_pro
 vless://de543079-9ff5-4dce-8b68-97f61685efd7@braze-images.com:443?path=/LNGeLLJXXIlSdZMqnuxG&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Balpn=h2&amp%3Bhost=hdfy1c1.cpiforpersia.uk&amp%3Bfp=chrome&amp%3Btype=ws&amp%3Bsni=hdfy1c1.cpiforpersia.uk#Ghazwan_pro
@@ -690,10 +684,10 @@ vless://f7e08961-ba18-4ac8-aac0-e925107417af@braze-images.com:443?path=/&amp%3Bs
 vless://f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed@braze-images.com:443?mode=gun&security=tls&encryption=none&insecure=0&fp=chrome&type=grpc&serviceName=ssp&allowInsecure=0&sni=u710297u3374s249.okgfw.top#Ghazwan_pro
 vless://f81b7cb0-70c6-3d1a-9b30-c95b1227f6ed@braze-images.com:443?mode=gun&security=tls&encryption=none&insecure=0&fp=chrome&type=grpc&serviceName=ssp&allowInsecure=0&sni=u710297u3374s249.okgfw.top#Ghazwan_pro
 vless://f929cc78-e2a1-4ce3-8051-3e9538405144@braze-images.com:80/?type=ws&encryption=none&flow=&host=germany.xydcqd.workers.dev#Ghazwan_pro
-vless://f929cc78-e2a1-4ce3-8051-3e9538405144@braze-images.com:80?encryption=none&host=britain.xydcqd.workers.dev&path=%2F%40WireXnet&security=none&type=ws#Ghazwan_pro
+vless://f929cc78-e2a1-4ce3-8051-3e9538405144@braze-images.com:80/?type=ws&encryption=none&flow=&host=germany.xydcqd.workers.dev#Ghazwan_pro
 vless://f929cc78-e2a1-4ce3-8051-3e9538405144@braze-images.com:80?encryption=none&host=netherlands.xydcqd.workers.dev&security=none&type=ws#Ghazwan_pro
 vless://f929cc78-e2a1-4ce3-8051-3e9538405144@braze-images.com:80/?type=ws&encryption=none&flow=&host=us.xydcqd.workers.dev#Ghazwan_pro
-vless://f929cc78-e2a1-4ce3-8051-3e9538405144@braze-images.com:80?encryption=none&host=us.xydcqd.workers.dev&security=none&type=ws#Ghazwan_pro
+vless://f929cc78-e2a1-4ce3-8051-3e9538405144@braze-images.com:80/?type=ws&encryption=none&flow=&host=us.xydcqd.workers.dev#Ghazwan_pro
 vless://f98e06c6-6b36-47f1-a0e3-77d7937c3ec7@braze-images.com:443?type=xhttp&amp%3Bpath=/Sauron/&amp%3Bmode=auto&amp%3Bsecurity=tls&amp%3Bfp=randomized&amp%3Balpn=h3%2Ch2%2Chttp/1.1&amp%3BallowInsecure=1&amp%3Bsni=sauron.melkore.ir#Ghazwan_pro
 vless://fae38aae-0342-4752-834d-@braze-images.com:443?mode=stream-one&path=/&security=none&encryption=none&type=xhttp#Ghazwan_pro
 vless://fb51a713-fe1f-4640-804f-3f5822f28e1e@braze-images.com:80?path=/filimo-video/177430809054030600/1774365690/cb857b0770767a2b38b3ebc9d4c44d7fc5630fdd/196328x264new1-1080p.mp4/s-20-v1-a1.ts&security=none&encryption=none&host=byebye.22.avenflow.ir&type=ws#Ghazwan_pro
