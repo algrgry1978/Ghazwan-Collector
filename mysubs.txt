@@ -1,6 +1,6 @@
 ###############################################
 # BRAND: Ghazwan_pro
-# UPDATE: 2026-08-27 02:15 AM (BAGHDAD)
+# UPDATE: 2026-08-27 11:52 AM (BAGHDAD)
 ###############################################
 https://mrwdfNTD8M79LCukCieldrqZWqs%3D:exaxgqkKkd0TAMrCxeonWg%3D%3D@Viberout-lp.viber.com:443#Ghazwan_pro
 hy2://1427eb10-7529-4d38-a6a2-01b337868b37@Viberout-lp.viber.com:4433/?insecure=1&sni=hk2.xiaoliyu.cyou#Ghazwan_pro
@@ -412,6 +412,7 @@ vless://11af1c47-865a-47c6-92ff-118013655d78@lp.viber.com:8080?path=%2F%3Fed&sec
 vless://11af1c47-865a-47c6-92ff-118013655d78@lp.viber.com:8080?path=/&security=none&encryption=none&type=ws&sni=40.160.68.186#Ghazwan_pro
 vless://11af1c47-865a-47c6-92ff-118013655d78@lp.viber.com:8080?path=/&security=none&encryption=none&type=ws&sni=40.160.68.233#Ghazwan_pro
 vless://11af1c47-865a-47c6-92ff-118013655d78@lp.viber.com:8080?encryption=none&security=none&type=ws&path=/?ed=2048#Ghazwan_pro
+vless://11af1c47-865a-47c6-92ff-118013655d78@lp.viber.com:8080?path=%2F%3Fed%3D2048&security=none&encryption=none&type=ws#Ghazwan_pro
 vless://11af1c47-865a-47c6-92ff-118013655d78@lp.viber.com:8080?path=/?ed=2048&security=none&encryption=none&type=ws#Ghazwan_pro
 vless://11beaf11-726d-4c11-8ce9-27308c1c608c@lp.viber.com:443?security=reality&encryption=none&pbk=v3EwzA9RIIh5Ndxm-gypRY6RCJhOpQ-2WO7KaH8nsC8&headerType=none&fp=chrome&type=tcp&sni=analytics.google.com&sid=eab26c4a32#Ghazwan_pro
 vless://11e559f8-f5b7-48be-9ab5-7fc0915569e0@lp.viber.com:443?encryption=none&security=reality&sni=google.com&fp=chrome&pbk=MvZRXOgSBhkQB88kC6CnjiKs7pveuPMWA_TFSOvyRQ0&sid=cf12caecc0&type=tcp&headerType=none#Ghazwan_pro
@@ -521,7 +522,6 @@ vless://14b59caf-a196-4ec2-8c70-c7b388062f5b@lp.viber.com:443?path=/rdfgtws&secu
 vless://14b59caf-a196-4ec2-8c70-c7b388062f5b@lp.viber.com:443?path=/rdfgtws&security=tls&encryption=none&insecure=0&host=vangoghhh.info&type=ws&allowInsecure=0&sni=vangoghhh.info#Ghazwan_pro
 vless://14ba9603-1936-4d79-889a-f2b12d7508c2@lp.viber.com:80?mode=auto&path=/assets&security=none&encryption=none&host=xn--9kqz4c3d8f2a9b7e6h5m4n3p2q1r0s8t7u6v5w4x.global.ssl.fastly.net&type=xhttp#Ghazwan_pro
 vless://14c44521-e28f-4561-a12c-337d8cc44d87@lp.viber.com:443?mode=auto&path=/TiMbErSaW&security=tls&alpn=h3,h2,http/1.1&encryption=none&extra={"xPaddingBytes":"16-64","xPaddingObfsMode":true,"xPaddingKey":"_dc","xPaddingHeader":"X-Cache","xPaddingMethod":"tokenish"}&insecure=0&host=beaver.kaftarkakolbesarwifi.com&fp=chrome&type=xhttp&allowInsecure=0&sni=beaver.kaftarkakolbesarwifi.com#Ghazwan_pro
-vless://14c44521-e28f-4561-a12c-337d8cc44d87@lp.viber.com:443?type=xhttp&encryption=none&path=%2FTiMbErSaW&host=beaver.kaftarkakolbesarwifi.com&mode=auto&x_padding_bytes=16-64&extra=%7B%22xPaddingBytes%22%3A%2216-64%22%2C%22xPaddingObfsMode%22%3Atrue%2C%22xPaddingKey%22%3A%22_dc%22%2C%22xPaddingHeader%22%3A%22X-Cache%22%2C%22xPaddingMethod%22%3A%22tokenish%22%7D&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&sni=beaver.kaftarkakolbesarwifi.com#Ghazwan_pro
 vless://14da77da-4fb3-4e49-ac4f-7881ea19b267@lp.viber.com:443?security=none&encryption=none&type=ws#Ghazwan_pro
 vless://14da77da-4fb3-4e49-ac4f-7881ea19b267@lp.viber.com:443?security=none&encryption=none&type=ws#Ghazwan_pro
 vless://14da77da-4fb3-4e49-ac4f-7881ea19b267@lp.viber.com:443?security=none&encryption=none&type=ws#Ghazwan_pro
