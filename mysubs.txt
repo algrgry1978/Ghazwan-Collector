@@ -1,6 +1,6 @@
 ###############################################
 # BRAND: Ghazwan_pro
-# UPDATE: 2026-10-07 06:27 PM (BAGHDAD)
+# UPDATE: 2026-10-08 12:10 AM (BAGHDAD)
 ###############################################
 hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@Viberout-lp.viber.com:443/?insecure=1&sni=https%3A%2F%2Ft.me%2Foneclickvpnkeys#Ghazwan_pro
 hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@Viberout-lp.viber.com:443/?insecure=1&sni=202.146.222.29#Ghazwan_pro
@@ -993,6 +993,7 @@ vless://2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5@cdn.braze.com:443?security=reality&
 vless://2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5@cdn.braze.com:443?security=reality&encryption=none&pbk=_IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cz.cloudtechone.org&sid=f93c9d5127e622e4#Ghazwan_pro
 vless://2b2ea9d8-501e-4b79-8fd9-19bff6ed5cf5@cdn.braze.com:443?security=reality&encryption=none&pbk=_IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=pl.cloudtechone.org&sid=f93c9d5127e622e4#Ghazwan_pro
 vless://2b59f595-bc0e-4642-a542-e8e0fc8926b6@cdn.braze.com:8080?path=/Telegram:@cdn.braze.com:@cdn.braze.com:@vmessorg?ed=8080&security=none&encryption=none&host=join-to.vmessorg.Community.&type=ws#Ghazwan_pro
+vless://2b781b4a-5942-48e0-a7f3-5a07b7b488c1@cdn.braze.com:443?encryption=none&security=reality&sni=ru-pro.sworkingvpn.com&fp=firefox&pbk=AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI&sid=15bcc0a77c3cacdf&type=grpc&authority=&serviceName=API&mode=gun#Ghazwan_pro
 vless://2b781b4a-5942-48e0-a7f3-5a07b7b488c1@cdn.braze.com:443?mode=gun&security=reality&encryption=none&pbk=AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI&fp=chrome&type=grpc&serviceName=API&sni=ru-pro.sworkingvpn.com&sid=15bcc0a77c3cacdf#Ghazwan_pro
 vless://2b98faff-5a9f-4c84-9f89-8eb0328a698e@cdn.braze.com:443?path=/ws/2b98faff-5a9f-4c84-9f89-8eb0328a698e&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=higv-production.up.railway.app&fp=chrome&type=ws&allowInsecure=0&sni=higv-production.up.railway.app#Ghazwan_pro
 vless://2bb8b13c-b3f0-2552-da05-d0929bfb36db@cdn.braze.com:443?mode=auto&path=/&security=reality&encryption=none&pbk=skXBkyphBIt0TWVM0R5U3U-8UG0cuW00ONkaQpJ-OxU&fp=chrome&type=xhttp&sni=download.nvidia.com#Ghazwan_pro
@@ -1201,7 +1202,7 @@ vless://33918b20-9e02-4dc6-8b30-79b2d4b2e0e6@cdn.braze.com:443?path=/eyJqdW5rIjo
 vless://33e1a095-1e25-4198-bfe7-ec312e4f98ee@cdn.braze.com:80?path=/?ed&security=&encryption=none&host=CREDibLe-pLaNt7ddV4jJ7et.OnEeaT.CO.&type=ws#Ghazwan_pro
 vless://33e1a095-1e25-4198-bfe7-ec312e4f98ee@cdn.braze.com:80?path=/?ed&security=none&encryption=none&host=CREDibLe-pLaNt7ddV4jJ7et.OnEeaT.CO.&type=ws&note=@FreeOnlineVPN#Ghazwan_pro
 vless://33e6d4f8-5bd2-4b9c-8123-3c9d9d94514d@cdn.braze.com:443?path=/vl/Oo7KuQEty2wqQDXCPlgaK8RdPqZflNY?ed=2560&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=6q7ur2wcmgu9hymh-xzqg140tdp86.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=6q7uR2WCmgu9hYMh-xzQG140tdP86.PAGES.deV#Ghazwan_pro
-vless://3423809a-08e5-4b93-bd76-c6cdcbfd9b52@cdn.braze.com:443?path=/vl/1zCIGMyxlm8xzeGwdyy&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev#Ghazwan_pro
+vless://3423809a-08e5-4b93-bd76-c6cdcbfd9b52@go.braze.com:443?path=/vl/1zCIGMyxlm8xzeGwdyy&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev#Ghazwan_pro
 vless://3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b@go.braze.com:443?mode=gun&security=reality&encryption=none&pbk=tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI&fp=chrome&type=grpc&serviceName=vless-grpc&sni=samsung.com#Ghazwan_pro
 vless://3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b@go.braze.com:443?mode=gun&security=reality&encryption=none&pbk=BxlEx2j9ehglh9Lq7mPILI73gyxbvlAYiuZqXFaZEGI&fp=chrome&type=grpc&serviceName=vless-grpc&sni=samsung.com.com#Ghazwan_pro
 vless://3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b@go.braze.com:443?mode=gun&security=reality&encryption=none&pbk=0V_2rGeVoX0_zwtgNG2XJBVNiu0j_b6s89tP2AfxFhw&fp=chrome&type=grpc&serviceName=vless-grpc&sni=samsung.com#Ghazwan_pro
@@ -1501,4 +1502,3 @@ vless://4d6d8e9b-0738-43c6-994f-ab475a7b3381@go.braze.com:443?security=tls&encry
 vless://4d6d8e9b-0738-43c6-994f-ab475a7b3381@go.braze.com:80?security=none&encryption=none&type=ws&host=cxrolvpn.vipserver4.workers.dev&path=/c6L2QcfPLGJiqj1c?ed=2560#Ghazwan_pro
 vless://4d6d8e9b-0738-43c6-994f-ab475a7b3381@go.braze.com:443?security=tls&encryption=none&type=ws&host=cxrolvpn.vipserver4.workers.dev&path=/WJwsI9Rdz0wyh3rH?ed=2560&sni=cxrolvpn.vipserver4.workers.dev&fp=chrome&alpn=http/1.1#Ghazwan_pro
 vless://4d6d8e9b-0738-43c6-994f-ab475a7b3381@go.braze.com:80?security=none&encryption=none&type=ws&host=cxrolvpn.vipserver4.workers.dev&path=/I7f6VOnkgtdCosoK?ed=2560#Ghazwan_pro
-vless://4d6d8e9b-0738-43c6-994f-ab475a7b3381@go.braze.com:443?security=tls&encryption=none&type=ws&host=cxrolvpn.vipserver4.workers.dev&path=/flrSNTQ2nbV5eH6t?ed=2560&sni=cxrolvpn.vipserver4.workers.dev&fp=chrome&alpn=http/1.1#Ghazwan_pro
