@@ -1,6 +1,6 @@
 ###############################################
 # BRAND: Ghazwan_pro
-# UPDATE: 2026-11-06 09:11 AM (BAGHDAD)
+# UPDATE: 2026-11-06 06:50 PM (BAGHDAD)
 ###############################################
 hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@Viberout-lp.viber.com:443/?insecure=1&sni=https%3A%2F%2Ft.me%2Foneclickvpnkeys#Ghazwan_pro
 hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@Viberout-lp.viber.com:443/?insecure=1&sni=202.146.222.29#Ghazwan_pro
@@ -44,6 +44,7 @@ trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=api.browseseniorrolesandenhanceyourcareertoday.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&host=/?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI&headerType=none&type=tcp&allowInsecure=0&sni=api.browseseniorrolesandenhanceyourcareertoday.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&host=/?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI&headerType=none&type=tcp&allowInsecure=0&sni=api.browseseniorrolesandenhanceyourcareertoday.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=api.browseseniorrolesandenhanceyourcareertoday.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=api.browseseniorrolesandenhanceyourcareertoday.com&type=tcp&headerType=none#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=api.browseseniorrolesandenhanceyourcareertoday.com&type=tcp&headerType=none&host=/?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&host=/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&type=tcp&allowInsecure=0&sni=courses.browseseniorrolesandenhanceyourcareertoday.com#Ghazwan_pro
@@ -136,12 +137,15 @@ trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=learn.yourultimateprofessionalcareerhub.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=learn.yourultimateprofessionalcareerhub.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=learn.yourultimateprofessionalcareerhub.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=courses.yourultimateprofessionalcareerhub.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=cdn.findlocaljobnetworkandbuildcommunityconnections.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=courses.findlocaljobnetworkandbuildcommunityconnections.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=courses.findlocaljobnetworkandbuildcommunityconnections.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=courses.findlocaljobnetworkandbuildcommunityconnections.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=learn.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=learn.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=learn.connectingpeoplewithgreatjobs.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=learn.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=courses.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=courses.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=courses.connectingpeoplewithgreatjobs.com#Ghazwan_pro
@@ -154,6 +158,7 @@ trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=api.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&host=/?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=api.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&host=/?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=api.connectingpeoplewithgreatjobs.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=api.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=api.connectingpeoplewithgreatjobs.com&fp=chrome&type=tcp&headerType=none#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=blog.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=blog.connectingpeoplewithgreatjobs.com#Ghazwan_pro
@@ -164,6 +169,7 @@ trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=blog.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=blog.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=blog.connectingpeoplewithgreatjobs.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=blog.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=cdn.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=cdn.connectingpeoplewithgreatjobs.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=cdn.connectingpeoplewithgreatjobs.com#Ghazwan_pro
@@ -295,13 +301,12 @@ trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=www.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&headerType=none&type=tcp&sni=api.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=api.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=api.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=resources.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=resources.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@Viberout-lp.viber.com:443?security=tls&sni=cdn.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=api.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=api.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=resources.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&sni=resources.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&sni=cdn.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=courses.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=courses.discovergreatjobsandadvanceyourcareer.com#Ghazwan_pro
@@ -330,6 +335,7 @@ trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&insecure
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=indyourperfectremotetechjobfromthecomfortofhome.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=indyourperfectremotetechjobfromthecomfortofhome.com&host=/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&insecure=0&host=/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&type=tcp&allowInsecure=0&sni=indyourperfectremotetechjobfromthecomfortofhome.com#Ghazwan_pro
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&sni=indyourperfectremotetechjobfromthecomfortofhome.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&sni=indyourperfectremotetechjobfromthecomfortofhome.com#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?security=tls&sni=indyourperfectremotetechjobfromthecomfortofhome.com&type=tcp&headerType=none#Ghazwan_pro
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@lp.viber.com:443?sni=indyourperfectremotetechjobfromthecomfortofhome.com#Ghazwan_pro
@@ -388,7 +394,6 @@ trojan://8deb189a-3aed-4865-843b-b72dae954c46@lp.viber.com:443?host=api.85s.me&p
 trojan://8r<[9'l6hAO#Ghazwan_pro
 trojan://8r<[9'l6hAO#Ghazwan_pro
 trojan://8r<[9'l6hAO#Ghazwan_pro
-trojan://F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0@lp.viber.com:443?security=tls&sni=stutter.freetrade.link#Ghazwan_pro
 trojan://FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF@lp.viber.com:443?security=tls&alpn=h2,http/1.1&headerType=none&fp=chrome&type=tcp&sni=connect-se.mimowhat.online#Ghazwan_pro
 trojan://FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF@lp.viber.com:443?security=tls&alpn=h2,http/1.1&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=connect-se.mimowhat.online#Ghazwan_pro
 trojan://FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF@lp.viber.com:443?security=tls&sni=connect-se.mimowhat.online&alpn=h2,http/1.1&fp=chrome&type=tcp&headerType=none#Ghazwan_pro
@@ -470,11 +475,9 @@ trojan://MiTiVPN@lp.viber.com:443?pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece23
 trojan://PQ05174892@lp.viber.com:443/?type=tcp&security=tls&sni=learning-leopard.rooster465.autos&fp=chrome#Ghazwan_pro
 trojan://Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q@lp.viber.com:443?path=/tjwsLhx0SFASG4l9FERJ1g&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=mfyousheng.nl.eu.org#Ghazwan_pro
 trojan://Q@lp.viber.com:443?path=/tr/iPNjTpnee2Dadanj376J?ed=2560&security=tls&alpn=http/1.1&insecure=0&host=puy6yli3nkuapmghaf6jm.c1sqm88lyu.workers.dev&type=ws&allowInsecure=0&sni=pUy6yLi3NKuApmghAf6jM.C1SQM88Lyu.worKerS.Dev#Ghazwan_pro
-trojan://SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ@lp.viber.com:443?security=tls&sni=arbettp.freetrade.link#Ghazwan_pro
 trojan://Telegram-Config0plus@lp.viber.com:443?path=/ca-cl&security=tls&insecure=0&host=go.appsflyer.com.r3xxe.eu.cc&type=ws&allowInsecure=0&sni=go.appsflyer.com.r3xxe.eu.cc#Ghazwan_pro
 trojan://Tg3RnK7Xp8B1@lp.viber.com:443?allowInsecure=1&sni=ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com#Ghazwan_pro
 trojan://WFer-5gN21nfHbVB2N8s71Z74EPUfzVj@lp.viber.com:443?security=tls&alpn=h2,http/1.1&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=fi.zhabulik.ru#Ghazwan_pro
-trojan://ZRYSly2IRuFlgpZCaep3Ey3DDXqTDczO04aeC8F36OjaYSCABnA573wN8xxK9S@lp.viber.com:443?security=tls&sni=httah.freetrade.link#Ghazwan_pro
 trojan://auto@lp.viber.com:443?path=/@Azarakhsh_Proxy?ed=2560&security=tls&alpn=http/1.1&host=tg.cmliussss.us.kg&fp=chrome&type=ws&sni=tg.cmliussss.us.kg#Ghazwan_pro
 trojan://auto@lp.viber.com:443?path=/@Azarakhsh_Proxy?ed=2560&security=tls&alpn=http/1.1&host=tg.cmliussss.us.kg&fp=chrome&type=ws&sni=tg.cmliussss.us.kg#Ghazwan_pro
 trojan://bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E@lp.viber.com:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0#Ghazwan_pro
@@ -599,9 +602,9 @@ trojan://humanity@lp.viber.com:443?path=/assignment&security=tls&insecure=0&host
 trojan://humanity@lp.viber.com:443?path=/assignment?ed#Ghazwan_pro
 trojan://humanity@lp.viber.com:443?path=/assignment?ed#Ghazwan_pro
 trojan://humanity@lp.viber.com:443?path=/assignment?ed#Ghazwan_pro
-trojan://humanity@lp.viber.com:443?allowInsecure=0&security=tls&insecure=0&alpn=http/1.1&host=www.calmlunch.com&type=ws&fp=chrome&sni=www.calmlunch.com&ech=cloudflare-ech.com+udp://1.1.1.1&path=/assignment#Ghazwan_pro
-trojan://humanity@lp.viber.com:443?cs=TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_RSA_WITH_AES_128_GCM_SHA256:TLS_RSA_WITH_AES_256_GCM_SHA384:TLS_RSA_WITH_AES_128_CBC_SHA:TLS_RSA_WITH_AES_256_CBC_SHA&path=/assignment?ed#Ghazwan_pro
-trojan://humanity@lp.viber.com:443?path=/assignment&security=tls&alpn=http/1.1&insecure=0&host=www.pleadcourt.org&fp=chrome&ech=cloudflare-ech.com udp://1.1.1.1&type=ws&allowInsecure=0&sni=www.pleadcourt.org#Ghazwan_pro
+trojan://humanity@braze-images.com:443?allowInsecure=0&security=tls&insecure=0&alpn=http/1.1&host=www.calmlunch.com&type=ws&fp=chrome&sni=www.calmlunch.com&ech=cloudflare-ech.com+udp://1.1.1.1&path=/assignment#Ghazwan_pro
+trojan://humanity@braze-images.com:443?cs=TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_RSA_WITH_AES_128_GCM_SHA256:TLS_RSA_WITH_AES_256_GCM_SHA384:TLS_RSA_WITH_AES_128_CBC_SHA:TLS_RSA_WITH_AES_256_CBC_SHA&path=/assignment?ed#Ghazwan_pro
+trojan://humanity@braze-images.com:443?path=/assignment&security=tls&alpn=http/1.1&insecure=0&host=www.pleadcourt.org&fp=chrome&ech=cloudflare-ech.com udp://1.1.1.1&type=ws&allowInsecure=0&sni=www.pleadcourt.org#Ghazwan_pro
 trojan://humanity@braze-images.com:443?path=/assignment&security=tls&alpn=http/1.1&insecure=0&host=www.pleadcourt.org&fp=chrome&ech=cloudflare-ech.com udp://1.1.1.1&type=ws&allowInsecure=0&sni=www.pleadcourt.org#Ghazwan_pro
 trojan://humanity@braze-images.com:443?path=/assignment&security=tls&alpn=http/1.1&insecure=0&host=www.pleadcourt.org&fp=chrome&ech=cloudflare-ech.com+udp://1.1.1.1&type=ws&allowInsecure=0&sni=www.pleadcourt.org#Ghazwan_pro
 trojan://humanity@braze-images.com:443?path=/assignment?ed#Ghazwan_pro
@@ -899,9 +902,9 @@ vless://13ad36e6-c091-43f2-8505-47d868dd544c@braze-images.com:80/?type=ws&encryp
 vless://13aef2e0-b3fb-4322-a0e9-c10b908ce6b5@braze-images.com:443?security=reality&encryption=none&pbk=J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.techradar.com&sid=87f895f23064#Ghazwan_pro
 vless://13ba9154-0ace-443b-b38a-5349031d4e1d@braze-images.com:443?path=/---------DisVpn---------DisVpn---------DisVpn&security=tls&encryption=none&alpn=h2,http/1.1&host=DisVpn.us.kg&fp=chrome&type=ws&sni=DisVpn.us.kg#Ghazwan_pro
 vless://1443b7a1-7ba9-4ec9-b904-2e867367b5d7@braze-images.com:443?path=/sync&security=tls&encryption=none&insecure=0&host=odd-violet-5440.asdgrweeee13.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=odd-violet-5440.asdgrweeee13.workers.dev#Ghazwan_pro
-vless://146eb6cf-a99c-4022-85ca-022cf81502dc@braze-images.com:443?security=reality&encryption=none&pbk=7ReQIe2kMtP4rCrptgH5glkOM-JGcSAPzHNxOED-Z0s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=web.max.ru&sid=247fd6dab1a34a48#Ghazwan_pro
-vless://14b48651-3738-4926-bc09-4c04e87ff80b@braze-images.com:443?mode=stream-one&path=/Join-JavidnamanIran-on-Telegram&security=tls&alpn=h2&encryption=none&insecure=0&host=static.lotussec.com&fp=chrome&type=xhttp&allowInsecure=0&sni=static.lotussec.com#Ghazwan_pro
-vless://14b48651-3738-4926-bc09-4c04e87ff80b@braze-images.com:443?mode=stream-one&path=/Join-JavidnamanIran-on-Telegram&security=tls&alpn=h2&encryption=none&insecure=0&host=static.lotussec.com&fp=chrome&type=xhttp&allowInsecure=0&sni=static.lotussec.com#Ghazwan_pro
+vless://146eb6cf-a99c-4022-85ca-022cf81502dc@cdn.braze.com:443?security=reality&encryption=none&pbk=7ReQIe2kMtP4rCrptgH5glkOM-JGcSAPzHNxOED-Z0s&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=web.max.ru&sid=247fd6dab1a34a48#Ghazwan_pro
+vless://14b48651-3738-4926-bc09-4c04e87ff80b@cdn.braze.com:443?mode=stream-one&path=/Join-JavidnamanIran-on-Telegram&security=tls&alpn=h2&encryption=none&insecure=0&host=static.lotussec.com&fp=chrome&type=xhttp&allowInsecure=0&sni=static.lotussec.com#Ghazwan_pro
+vless://14b48651-3738-4926-bc09-4c04e87ff80b@cdn.braze.com:443?mode=stream-one&path=/Join-JavidnamanIran-on-Telegram&security=tls&alpn=h2&encryption=none&insecure=0&host=static.lotussec.com&fp=chrome&type=xhttp&allowInsecure=0&sni=static.lotussec.com#Ghazwan_pro
 vless://14b48651-3738-4926-bc09-4c04e87ff80b@cdn.braze.com:443?encryption=none&security=tls&sni=static.lotussec.com&fp=chrome&alpn=h2&insecure=0&allowInsecure=0&type=xhttp&host=static.lotussec.com&path=/Join-JavidnamanIran-on-Telegram&mode=stream-one#Ghazwan_pro
 vless://14b48651-3738-4926-bc09-4c04e87ff80b@cdn.braze.com:443?mode=stream-one&path=/Join-JavidnamanIran-on-Telegram&security=tls&alpn=h2&encryption=none&insecure=0&host=static.lotussec.com&fp=chrome&type=xhttp&allowInsecure=0&sni=static.lotussec.com#Ghazwan_pro
 vless://14b48651-3738-4926-bc09-4c04e87ff80b@cdn.braze.com:443?mode=stream-one&path=/Join-JavidnamanIran-on-Telegram&security=tls&alpn=h2&encryption=none&insecure=0&host=static.lotussec.com&fp=chrome&type=xhttp&allowInsecure=0&sni=static.lotussec.com#Ghazwan_pro
@@ -1073,6 +1076,7 @@ vless://2232d904-8e6a-4202-8240-6efd8aec02e9@cdn.braze.com:443?security=reality&
 vless://2232d904-8e6a-4202-8240-6efd8aec02e9@cdn.braze.com:443?security=reality&encryption=none&pbk=92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=api37.betust.net&sid=b7a5c406#Ghazwan_pro
 vless://2232d904-8e6a-4202-8240-6efd8aec02e9@cdn.braze.com:443?security=reality&encryption=none&pbk=92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=api37.betust.net&sid=b7a5c406#Ghazwan_pro
 vless://2232d904-8e6a-4202-8240-6efd8aec02e9@cdn.braze.com:443?security=reality&encryption=none&pbk=92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=api37.betust.net&sid=b7a5c406#Ghazwan_pro
+vless://2232d904-8e6a-4202-8240-6efd8aec02e9@cdn.braze.com:443?security=reality&encryption=none&pbk=92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=api37.betust.net&sid=b7a5c406#Ghazwan_pro
 vless://226c8b99-407a-4215-b00c-ff44b02b8b63@cdn.braze.com:443?security=tls&sni=RAYaN106-9uIaCO-1.rayan-106.wOrKErs.DeV&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=RAYaN106-9uIaCO-1.rayan-106.wOrKErs.DeV&encryption=none#Ghazwan_pro
 vless://22ae3f9a-574a-45c5-895e-c16c1702d601@cdn.braze.com:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=ga2gqv6u8.dendiboss.org&pbk=tEjpJHMrZU8Lx9935ubHem8HoKTx636RBiG3Cnwx8mM&sid=11a4389e0f&type=tcp&headerType=none#Ghazwan_pro
 vless://22c71398-f576-4608-8b1f-b65badde088b@cdn.braze.com:443?security=tls&sni=rAYAN108-WzqDnd-3.RAyan-108.workERs.DEV&fp=chrome&type=ws&path=/?ed%3D2560&host=rAYAN108-WzqDnd-3.RAyan-108.workERs.DEV&encryption=none#Ghazwan_pro
@@ -1198,10 +1202,10 @@ vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@cdn.braze.com:443?mode=gun&security
 vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@cdn.braze.com:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=chrome&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#Ghazwan_pro
 vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@cdn.braze.com:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=chrome&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#Ghazwan_pro
 vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@cdn.braze.com:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=chrome&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#Ghazwan_pro
-vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@cdn.braze.com:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=chrome&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#Ghazwan_pro
-vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@cdn.braze.com:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=chrome&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#Ghazwan_pro
-vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@cdn.braze.com:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=chrome&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#Ghazwan_pro
-vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@cdn.braze.com:443?mode=gun&security=reality&encryption=none&authority=/?TELEGRAM--MARAMBASHI--MARAMBASHI&pbk=X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE&fp=chrome&spx=/HesarWeb&type=grpc&serviceName=gw.v1.ObjectService&sni=rs5.univesalsrv.com&sid=4872856d5489c37d#Ghazwan_pro
+vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@go.braze.com:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=chrome&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#Ghazwan_pro
+vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@go.braze.com:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=chrome&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#Ghazwan_pro
+vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@go.braze.com:443?mode=gun&security=reality&encryption=none&pbk=sXsJ4ET-50TYqlhKZf03nPQr2JIy1F0D4m6lOsI0cAs&fp=chrome&type=grpc&serviceName=media.v1.StreamService&sni=rs4.univesalsrv.com&sid=861ac7d66953e55f#Ghazwan_pro
+vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@go.braze.com:443?mode=gun&security=reality&encryption=none&authority=/?TELEGRAM--MARAMBASHI--MARAMBASHI&pbk=X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE&fp=chrome&spx=/HesarWeb&type=grpc&serviceName=gw.v1.ObjectService&sni=rs5.univesalsrv.com&sid=4872856d5489c37d#Ghazwan_pro
 vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@go.braze.com:443?mode=gun&security=reality&encryption=none&authority=/t.me/V2rayBaaz&pbk=X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE&fp=chrome&type=grpc&serviceName=gw.v1.ObjectService&sni=rs5.univesalsrv.com&sid=4872856d5489c37d#Ghazwan_pro
 vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@go.braze.com:443?mode=gun&security=reality&encryption=none&pbk=X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE&fp=chrome&type=grpc&serviceName=gw.v1.ObjectService&sni=rs5.univesalsrv.com&sid=4872856d5489c37d#Ghazwan_pro
 vless://2f35965a-9a9b-45fd-ba32-987296dfb6be@go.braze.com:443?mode=gun&security=reality&encryption=none&pbk=X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE&fp=chrome&type=grpc&serviceName=gw.v1.ObjectService&sni=rs5.univesalsrv.com&sid=4872856d5489c37d#Ghazwan_pro
@@ -1498,7 +1502,3 @@ vless://3d9d91c0-0a90-471a-a518-a0ff66a1970a@go.braze.com:443?pcs=cd6e838b9bfe31
 vless://3d9d91c0-0a90-471a-a518-a0ff66a1970a@go.braze.com:443?pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&security=tls&encryption=none&insecure=0&host=copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.&type=ws&allowInsecure=0&sni=community.fastly.steamstatic.com#Ghazwan_pro
 vless://3d9d91c0-0a90-471a-a518-a0ff66a1970a@go.braze.com:443?pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&security=tls&encryption=none&insecure=0&host=copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.&type=ws&allowInsecure=0&sni=community.fastly.steamstatic.com&path=/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#Ghazwan_pro
 vless://3d9d91c0-0a90-471a-a518-a0ff66a1970a@go.braze.com:443?security=tls&insecure=0&pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&type=ws&host=copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.&encryption=none&sni=community.fastly.steamstatic.com&allowInsecure=0#Ghazwan_pro
-vless://3d9d91c0-0a90-471a-a518-a0ff66a1970a@go.braze.com:443?pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&security=tls&encryption=none&insecure=0&host=copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net.&type=ws&allowInsecure=0&sni=cdn.akamai.steamstatic.com#Ghazwan_pro
-vless://3d9d91c0-0a90-471a-a518-a0ff66a1970a@go.braze.com:443?pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&security=tls&encryption=none&insecure=0&host=copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net.&type=ws&allowInsecure=0&sni=cdn.akamai.steamstatic.com#Ghazwan_pro
-vless://3d9d91c0-0a90-471a-a518-a0ff66a1970a@go.braze.com:443?pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&security=tls&encryption=none&insecure=0&host=copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net.&type=ws&allowInsecure=0&sni=cdn.akamai.steamstatic.com#Ghazwan_pro
-vless://3d9d91c0-0a90-471a-a518-a0ff66a1970a@go.braze.com:443?pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&security=tls&encryption=none&insecure=0&host=copy_az_channel_NUFiLTER_8i.global.ssl.fastly.net.&type=ws&allowInsecure=0&sni=cdn.akamai.steamstatic.com#Ghazwan_pro
