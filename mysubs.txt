@@ -1,6 +1,6 @@
 ###############################################
 # BRAND: Ghazwan_pro
-# UPDATE: 2026-11-15 02:47 AM (BAGHDAD)
+# UPDATE: 2026-11-15 08:59 AM (BAGHDAD)
 ###############################################
 hy2://146d567c-6335-4e63-a8aa-7ec068642440@Viberout-lp.viber.com:443/?insecure=1&sni=nlll.obxodvpn.us#Ghazwan_pro
 hy2://307ee0e53ea04dfd86a7f2f9fcd53844@Viberout-lp.viber.com:443/?hop_interval=10&sni=s5.libertyrunet.store#Ghazwan_pro
