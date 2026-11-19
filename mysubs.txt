@@ -1,6 +1,6 @@
 ###############################################
 # BRAND: Ghazwan_pro
-# UPDATE: 2026-11-19 04:48 AM (BAGHDAD)
+# UPDATE: 2026-11-19 03:45 PM (BAGHDAD)
 ###############################################
 hy2://H7mP2xY9kJ4nQ8wR5tF6vB3z@Viberout-lp.viber.com:443/?insecure=1#Ghazwan_pro
 hy2://qQe1z5kU8kN6SlKnDt9Ru3Qp@Viberout-lp.viber.com:443?insecure=1&sni=vk.com&type=tcp&allowInsecure=1&upmbps=10&downmbps=50#Ghazwan_pro
@@ -10,4 +10,3 @@ hysteria2://6aab8efdf13945829ae3699c342be406@Viberout-lp.viber.com:443?security=
 hysteria2://b36a14f8-fc3f-4142-968f-48031cf5f330@Viberout-lp.viber.com:443?sni=hy2-eee-1.aloranode.top&insecure=0#Ghazwan_pro
 hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@Viberout-lp.viber.com:443?security=tls&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3&insecure=0&sni=hy2.aspidnet.xyz#Ghazwan_pro
 vless://667016ca-f02e-4b5f-bfc3-3d8ed81e9bec@Viberout-lp.viber.com:443?encryption=none&security=tls&sni=base.hosamobenl.co.uk&fp=firefox&type=tcp&headerType=none#Ghazwan_pro
-vless://7d43670b-6b08-45b9-8a24-8f3971abc132@Viberout-lp.viber.com:443?security=reality&encryption=none&pbk=j4Uc6ljg9by_VKYywo5h2N-eh3kpUbFL5Bsp8-AX4Qk&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=poland.biznes.lol#Ghazwan_pro
